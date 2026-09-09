@@ -23,16 +23,49 @@ except Exception as e:
     sys.exit(1)
 
 try:
-    df = pd.read_excel(BytesIO(response.content))
+    # Pula as primeiras linhas que não são dados
+    # O cabeçalho real geralmente está na linha 8 ou 9
+    df = pd.read_excel(
+        BytesIO(response.content), 
+        header=8,  # Pula as primeiras 8 linhas
+        skiprows=0
+    )
     print(f"✅ Arquivo lido com sucesso! {len(df)} registros")
+    print(f"📋 Colunas: {list(df.columns)}")
 except Exception as e:
     print(f"❌ Erro ao ler Excel: {e}")
     sys.exit(1)
 
-# Mostra as colunas para debug
-print(f"📋 Colunas disponíveis: {list(df.columns)}")
+# Remove linhas vazias
+df = df.dropna(how='all')
 
-# Tenta identificar as colunas
+# Se a primeira linha ainda for lixo, usa a primeira linha válida como cabeçalho
+if 'Unnamed' in str(df.columns[0]):
+    print("🔍 Colunas não identificadas, tentando encontrar o cabeçalho real...")
+    # Pula mais linhas (tenta até a linha 15)
+    for skip in range(5, 20):
+        try:
+            df_temp = pd.read_excel(
+                BytesIO(response.content), 
+                header=skip
+            )
+            # Verifica se encontrou colunas com nomes esperados
+            cols = [str(c).upper() for c in df_temp.columns]
+            if any('ESTADO' in c for c in cols) or any('MUNICIPIO' in c for c in cols):
+                df = df_temp
+                print(f"✅ Encontrado cabeçalho na linha {skip}")
+                print(f"📋 Colunas: {list(df.columns)}")
+                break
+        except:
+            continue
+
+# Limpa espaços extras e linhas vazias
+df = df.dropna(how='all')
+df.columns = [str(c).strip() for c in df.columns]
+
+print(f"📊 Total de registros após limpeza: {len(df)}")
+
+# Identifica colunas
 col_estado = None
 col_municipio = None
 col_produto = None
@@ -61,25 +94,29 @@ if not all([col_estado, col_municipio, col_produto, col_valor]):
 print(f"🔍 Usando colunas: {col_estado}, {col_municipio}, {col_produto}, {col_valor}")
 
 # Filtra gasolina e etanol
-df_filtrado = df[df[col_produto].str.contains('GASOLINA|ETANOL', case=False, na=False)]
+df_filtrado = df[df[col_produto].astype(str).str.contains('GASOLINA|ETANOL', case=False, na=False)]
 print(f"📊 Registros de gasolina/etanol: {len(df_filtrado)}")
 
 if len(df_filtrado) == 0:
     print("❌ Nenhum registro de gasolina/etanol encontrado!")
-    print(f"📋 Produtos disponíveis: {df[col_produto].unique()[:10]}")
+    print(f"📋 Produtos disponíveis: {df[col_produto].unique()[:20]}")
     sys.exit(1)
 
 # Converte valor para número
-df_filtrado[col_valor] = df_filtrado[col_valor].astype(float)
+try:
+    df_filtrado[col_valor] = df_filtrado[col_valor].astype(float)
+except:
+    # Tenta substituir vírgula por ponto
+    df_filtrado[col_valor] = df_filtrado[col_valor].astype(str).str.replace(',', '.').astype(float)
 
-# Agrupa e calcula a média por estado, município e produto
+# Agrupa e calcula média
 precos_media = df_filtrado.groupby(
     [col_estado, col_municipio, col_produto]
 )[col_valor].mean().reset_index()
 
 print(f"📊 Total de combinações (UF + Cidade + Produto): {len(precos_media)}")
 
-# Gera o JSON com TODOS os municípios
+# Gera JSON
 resultado = {}
 for _, row in precos_media.iterrows():
     estado = str(row[col_estado]).strip().upper()
@@ -97,7 +134,7 @@ for _, row in precos_media.iterrows():
     elif 'ETANOL' in produto:
         resultado[estado][municipio]['etanol'] = valor
 
-# Conta quantos municípios têm gasolina e etanol
+# Conta municípios
 total_gasolina = 0
 total_etanol = 0
 for estado in resultado:
@@ -111,13 +148,12 @@ print(f"📊 Total de estados: {len(resultado)}")
 print(f"📊 Total de municípios com gasolina: {total_gasolina}")
 print(f"📊 Total de municípios com etanol: {total_etanol}")
 
-# Salva o JSON completo
 with open('precos.json', 'w', encoding='utf-8') as f:
     json.dump(resultado, f, ensure_ascii=False, indent=2)
 
 print(f"✅ precos.json gerado com sucesso!")
 
-# Mostra alguns exemplos
+# Mostra exemplos
 print("\n📋 Exemplos de preços (primeiros 3 estados):")
 for estado in list(resultado.keys())[:3]:
     cidades = list(resultado[estado].keys())[:2]

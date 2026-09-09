@@ -1,18 +1,1592 @@
 {
-  "SP": {
-    "SAO PAULO": {
-      "gasolina": 6.42,
-      "etanol": 4.58
+  "ACRE": {
+    "CRUZEIRO DO SUL": {
+      "etanol": 6.39,
+      "gasolina": 8.46
     },
-    "CAMPINAS": {
-      "gasolina": 6.35,
-      "etanol": 4.45
+    "RIO BRANCO": {
+      "etanol": 5.0,
+      "gasolina": 7.28
     }
   },
-  "RJ": {
+  "ALAGOAS": {
+    "ARAPIRACA": {
+      "etanol": 5.0,
+      "gasolina": 6.72
+    },
+    "DELMIRO GOUVEIA": {
+      "etanol": 5.42,
+      "gasolina": 7.61
+    },
+    "MACEIO": {
+      "etanol": 4.99,
+      "gasolina": 6.67
+    },
+    "PALMEIRA DOS INDIOS": {
+      "etanol": 4.9,
+      "gasolina": 6.68
+    },
+    "RIO LARGO": {
+      "etanol": 5.0,
+      "gasolina": 6.65
+    }
+  },
+  "AMAPA": {
+    "MACAPA": {
+      "etanol": 5.81,
+      "gasolina": 6.57
+    },
+    "SANTANA": {
+      "gasolina": 6.68
+    }
+  },
+  "AMAZONAS": {
+    "MANACAPURU": {
+      "etanol": 4.79,
+      "gasolina": 6.79
+    },
+    "MANAUS": {
+      "etanol": 5.07,
+      "gasolina": 7.21
+    },
+    "PARINTINS": {
+      "gasolina": 8.99
+    }
+  },
+  "BAHIA": {
+    "ALAGOINHAS": {
+      "etanol": 4.1,
+      "gasolina": 6.27
+    },
+    "BARREIRAS": {
+      "etanol": 4.06,
+      "gasolina": 6.79
+    },
+    "BRUMADO": {
+      "etanol": 4.26,
+      "gasolina": 7.28
+    },
+    "CAETITE": {
+      "etanol": 4.69,
+      "gasolina": 6.99
+    },
+    "EUNAPOLIS": {
+      "etanol": 4.95,
+      "gasolina": 6.97
+    },
+    "FEIRA DE SANTANA": {
+      "etanol": 4.39,
+      "gasolina": 6.37
+    },
+    "GUANAMBI": {
+      "etanol": 4.25,
+      "gasolina": 6.45
+    },
+    "ILHEUS": {
+      "etanol": 4.51,
+      "gasolina": 6.72
+    },
+    "IRECE": {
+      "etanol": 4.62,
+      "gasolina": 6.85
+    },
+    "ITABUNA": {
+      "etanol": 4.52,
+      "gasolina": 6.69
+    },
+    "ITAMARAJU": {
+      "etanol": 4.75,
+      "gasolina": 6.99
+    },
+    "JACOBINA": {
+      "etanol": 4.62,
+      "gasolina": 6.88
+    },
+    "JAGUAQUARA": {
+      "etanol": 4.78,
+      "gasolina": 6.68
+    },
+    "JEQUIE": {
+      "etanol": 4.44,
+      "gasolina": 6.7
+    },
+    "JUAZEIRO": {
+      "etanol": 5.21,
+      "gasolina": 7.23
+    },
+    "LIVRAMENTO DE NOSSA SENHORA": {
+      "etanol": 4.78,
+      "gasolina": 7.16
+    },
+    "PAULO AFONSO": {
+      "etanol": 4.71,
+      "gasolina": 6.59
+    },
+    "POCOES": {
+      "etanol": 4.61,
+      "gasolina": 6.56
+    },
+    "PORTO SEGURO": {
+      "etanol": 4.88,
+      "gasolina": 6.86
+    },
+    "SALVADOR": {
+      "etanol": 4.3,
+      "gasolina": 6.37
+    },
+    "SANTO ANTONIO DE JESUS": {
+      "etanol": 4.99,
+      "gasolina": 6.99
+    },
+    "SENHOR DO BONFIM": {
+      "etanol": 4.77,
+      "gasolina": 6.88
+    },
+    "SERRINHA": {
+      "etanol": 4.47,
+      "gasolina": 6.77
+    },
+    "TEIXEIRA DE FREITAS": {
+      "etanol": 4.57,
+      "gasolina": 7.03
+    },
+    "VALENCA": {
+      "etanol": 5.04,
+      "gasolina": 7.0
+    },
+    "VITORIA DA CONQUISTA": {
+      "etanol": 4.16,
+      "gasolina": 6.46
+    }
+  },
+  "CEARA": {
+    "CANINDE": {
+      "etanol": 5.34,
+      "gasolina": 6.89
+    },
+    "CAUCAIA": {
+      "etanol": 4.89,
+      "gasolina": 6.98
+    },
+    "CRATEUS": {
+      "etanol": 5.94,
+      "gasolina": 6.68
+    },
+    "FORTALEZA": {
+      "etanol": 4.97,
+      "gasolina": 6.98
+    },
+    "ICO": {
+      "etanol": 5.67,
+      "gasolina": 7.11
+    },
+    "IGUATU": {
+      "etanol": 5.09,
+      "gasolina": 7.27
+    },
+    "ITAPIPOCA": {
+      "etanol": 5.74,
+      "gasolina": 7.49
+    },
+    "JUAZEIRO DO NORTE": {
+      "etanol": 5.21,
+      "gasolina": 6.93
+    },
+    "LIMOEIRO DO NORTE": {
+      "etanol": 5.44,
+      "gasolina": 6.91
+    },
+    "QUIXADA": {
+      "etanol": 5.05,
+      "gasolina": 6.66
+    },
+    "SOBRAL": {
+      "etanol": 5.37,
+      "gasolina": 7.1
+    }
+  },
+  "DISTRITO FEDERAL": {
+    "BRASILIA": {
+      "etanol": 4.29,
+      "gasolina": 6.63
+    }
+  },
+  "ESPIRITO SANTO": {
+    "ARACRUZ": {
+      "gasolina": 6.69
+    },
+    "CACHOEIRO DE ITAPEMIRIM": {
+      "gasolina": 7.19
+    },
+    "CARIACICA": {
+      "etanol": 4.48,
+      "gasolina": 6.36
+    },
+    "COLATINA": {
+      "etanol": 4.69,
+      "gasolina": 6.68
+    },
+    "LINHARES": {
+      "gasolina": 6.69
+    },
+    "SAO MATEUS": {
+      "etanol": 4.86,
+      "gasolina": 6.64
+    },
+    "SERRA": {
+      "etanol": 4.65,
+      "gasolina": 6.35
+    },
+    "VILA VELHA": {
+      "etanol": 4.41,
+      "gasolina": 6.29
+    },
+    "VITORIA": {
+      "etanol": 4.51,
+      "gasolina": 6.29
+    }
+  },
+  "GOIAS": {
+    "AGUAS LINDAS DE GOIAS": {
+      "etanol": 4.29,
+      "gasolina": 6.59
+    },
+    "ANAPOLIS": {
+      "etanol": 4.08,
+      "gasolina": 6.68
+    },
+    "APARECIDA DE GOIANIA": {
+      "etanol": 4.06,
+      "gasolina": 6.53
+    },
+    "CALDAS NOVAS": {
+      "etanol": 3.73,
+      "gasolina": 6.64
+    },
+    "CATALAO": {
+      "etanol": 3.89,
+      "gasolina": 6.43
+    },
+    "FORMOSA": {
+      "etanol": 3.53,
+      "gasolina": 5.74
+    },
+    "GOIANIA": {
+      "etanol": 3.88,
+      "gasolina": 6.48
+    },
+    "ITUMBIARA": {
+      "etanol": 3.82,
+      "gasolina": 6.36
+    },
+    "LUZIANIA": {
+      "etanol": 3.89,
+      "gasolina": 6.17
+    },
+    "MINEIROS": {
+      "etanol": 3.98,
+      "gasolina": 6.55
+    },
+    "PORANGATU": {
+      "etanol": 3.92,
+      "gasolina": 6.64
+    },
+    "RIO VERDE": {
+      "etanol": 3.58,
+      "gasolina": 6.26
+    },
+    "TRINDADE": {
+      "etanol": 3.99,
+      "gasolina": 6.7
+    },
+    "VALPARAISO DE GOIAS": {
+      "etanol": 3.96,
+      "gasolina": 6.25
+    }
+  },
+  "MARANHAO": {
+    "ACAILANDIA": {
+      "etanol": 5.03,
+      "gasolina": 6.79
+    },
+    "BACABAL": {
+      "gasolina": 6.47
+    },
+    "BALSAS": {
+      "etanol": 5.58,
+      "gasolina": 7.19
+    },
+    "BARRA DO CORDA": {
+      "etanol": 5.55,
+      "gasolina": 6.73
+    },
+    "CODO": {
+      "etanol": 5.57,
+      "gasolina": 7.31
+    },
+    "IMPERATRIZ": {
+      "etanol": 5.24,
+      "gasolina": 6.46
+    },
+    "PINHEIRO": {
+      "etanol": 5.72,
+      "gasolina": 7.12
+    },
+    "PRESIDENTE DUTRA": {
+      "etanol": 5.43,
+      "gasolina": 6.82
+    },
+    "SAO JOSE DE RIBAMAR": {
+      "etanol": 4.94,
+      "gasolina": 6.44
+    },
+    "SAO LUIS": {
+      "etanol": 4.9,
+      "gasolina": 6.53
+    }
+  },
+  "MATO GROSSO": {
+    "ALTA FLORESTA": {
+      "etanol": 3.74,
+      "gasolina": 7.09
+    },
+    "CACERES": {
+      "etanol": 3.75,
+      "gasolina": 6.55
+    },
+    "CUIABA": {
+      "etanol": 3.98,
+      "gasolina": 6.98
+    },
+    "RONDONOPOLIS": {
+      "etanol": 3.74,
+      "gasolina": 6.6
+    },
+    "SINOP": {
+      "etanol": 3.57,
+      "gasolina": 6.6
+    },
+    "SORRISO": {
+      "etanol": 3.74,
+      "gasolina": 6.87
+    },
+    "VARZEA GRANDE": {
+      "etanol": 3.93,
+      "gasolina": 6.9
+    }
+  },
+  "MATO GROSSO DO SUL": {
+    "CAMPO GRANDE": {
+      "etanol": 3.81,
+      "gasolina": 6.26
+    },
+    "CORUMBA": {
+      "etanol": 4.91,
+      "gasolina": 7.1
+    },
+    "DOURADOS": {
+      "etanol": 4.18,
+      "gasolina": 6.69
+    },
+    "PONTA PORA": {
+      "etanol": 3.93,
+      "gasolina": 6.73
+    },
+    "TRES LAGOAS": {
+      "etanol": 3.76,
+      "gasolina": 6.47
+    }
+  },
+  "MINAS GERAIS": {
+    "ALFENAS": {
+      "etanol": 4.06,
+      "gasolina": 6.45
+    },
+    "ARAGUARI": {
+      "etanol": 3.97,
+      "gasolina": 6.13
+    },
+    "ARAXA": {
+      "etanol": 4.19,
+      "gasolina": 6.34
+    },
+    "BARBACENA": {
+      "etanol": 4.2,
+      "gasolina": 6.59
+    },
+    "BELO HORIZONTE": {
+      "etanol": 4.07,
+      "gasolina": 6.36
+    },
+    "BETIM": {
+      "etanol": 4.0,
+      "gasolina": 6.21
+    },
+    "BOM DESPACHO": {
+      "etanol": 3.95,
+      "gasolina": 6.15
+    },
+    "CAMPO BELO": {
+      "etanol": 4.01,
+      "gasolina": 6.1
+    },
+    "CARATINGA": {
+      "etanol": 4.15,
+      "gasolina": 6.37
+    },
+    "CONGONHAS": {
+      "etanol": 4.1,
+      "gasolina": 6.34
+    },
+    "CONTAGEM": {
+      "etanol": 3.99,
+      "gasolina": 6.27
+    },
+    "CORONEL FABRICIANO": {
+      "etanol": 4.03,
+      "gasolina": 6.28
+    },
+    "CURVELO": {
+      "etanol": 4.0,
+      "gasolina": 6.39
+    },
+    "DIVINOPOLIS": {
+      "etanol": 3.94,
+      "gasolina": 6.03
+    },
+    "FORMIGA": {
+      "etanol": 3.99,
+      "gasolina": 6.17
+    },
+    "FRUTAL": {
+      "etanol": 3.72,
+      "gasolina": 6.16
+    },
+    "GOVERNADOR VALADARES": {
+      "etanol": 3.95,
+      "gasolina": 6.03
+    },
+    "GUAXUPE": {
+      "etanol": 4.0,
+      "gasolina": 6.3
+    },
+    "ITAJUBA": {
+      "etanol": 4.15,
+      "gasolina": 6.43
+    },
+    "ITAUNA": {
+      "etanol": 3.84,
+      "gasolina": 6.08
+    },
+    "ITUIUTABA": {
+      "etanol": 3.79,
+      "gasolina": 6.1
+    },
+    "JANAUBA": {
+      "etanol": 3.93,
+      "gasolina": 6.25
+    },
+    "JANUARIA": {
+      "etanol": 4.06,
+      "gasolina": 6.58
+    },
+    "JOAO MONLEVADE": {
+      "etanol": 4.24,
+      "gasolina": 6.36
+    },
+    "JOAO PINHEIRO": {
+      "etanol": 4.08,
+      "gasolina": 6.26
+    },
+    "JUIZ DE FORA": {
+      "etanol": 4.49,
+      "gasolina": 6.61
+    },
+    "LAVRAS": {
+      "etanol": 3.99,
+      "gasolina": 6.27
+    },
+    "LEOPOLDINA": {
+      "etanol": 4.8,
+      "gasolina": 6.83
+    },
+    "MONTE CARMELO": {
+      "etanol": 3.83,
+      "gasolina": 6.1
+    },
+    "MONTES CLAROS": {
+      "etanol": 3.94,
+      "gasolina": 5.98
+    },
+    "OLIVEIRA": {
+      "etanol": 4.03,
+      "gasolina": 6.26
+    },
+    "OURO PRETO": {
+      "etanol": 4.29,
+      "gasolina": 6.29
+    },
+    "PARA DE MINAS": {
+      "etanol": 3.99,
+      "gasolina": 6.34
+    },
+    "PARACATU": {
+      "etanol": 3.83,
+      "gasolina": 6.25
+    },
+    "PASSOS": {
+      "etanol": 3.93,
+      "gasolina": 6.03
+    },
+    "PATROCINIO": {
+      "etanol": 4.3,
+      "gasolina": 6.52
+    },
+    "POCOS DE CALDAS": {
+      "etanol": 4.06,
+      "gasolina": 6.54
+    },
+    "SABARA": {
+      "etanol": 4.14,
+      "gasolina": 6.22
+    },
+    "SAO JOAO DEL REI": {
+      "etanol": 4.29,
+      "gasolina": 6.46
+    },
+    "SAO SEBASTIAO DO PARAISO": {
+      "etanol": 4.1,
+      "gasolina": 6.29
+    },
+    "SETE LAGOAS": {
+      "etanol": 3.75,
+      "gasolina": 5.92
+    },
+    "TEOFILO OTONI": {
+      "etanol": 3.84,
+      "gasolina": 5.98
+    },
+    "TIMOTEO": {
+      "etanol": 4.03,
+      "gasolina": 6.26
+    },
+    "TRES CORACOES": {
+      "etanol": 4.44,
+      "gasolina": 6.71
+    },
+    "UBA": {
+      "etanol": 4.44,
+      "gasolina": 6.43
+    },
+    "UBERABA": {
+      "etanol": 4.2,
+      "gasolina": 6.4
+    },
+    "UBERLANDIA": {
+      "etanol": 4.01,
+      "gasolina": 6.5
+    },
+    "UNAI": {
+      "etanol": 3.81,
+      "gasolina": 6.09
+    },
+    "VARGINHA": {
+      "etanol": 3.88,
+      "gasolina": 6.13
+    },
+    "VICOSA": {
+      "etanol": 4.27,
+      "gasolina": 6.63
+    }
+  },
+  "PARA": {
+    "ABAETETUBA": {
+      "gasolina": 6.89
+    },
+    "ALENQUER": {
+      "etanol": 4.99,
+      "gasolina": 6.98
+    },
+    "ALTAMIRA": {
+      "etanol": 5.56,
+      "gasolina": 7.3
+    },
+    "ANANINDEUA": {
+      "etanol": 4.21,
+      "gasolina": 6.19
+    },
+    "BELEM": {
+      "etanol": 4.42,
+      "gasolina": 6.54
+    },
+    "BRAGANCA": {
+      "etanol": 5.2,
+      "gasolina": 7.01
+    },
+    "CASTANHAL": {
+      "etanol": 4.85,
+      "gasolina": 6.52
+    },
+    "CONCEICAO DO ARAGUAIA": {
+      "etanol": 5.62,
+      "gasolina": 7.02
+    },
+    "MARABA": {
+      "etanol": 5.04,
+      "gasolina": 6.7
+    },
+    "PARAGOMINAS": {
+      "etanol": 5.02,
+      "gasolina": 7.02
+    }
+  },
+  "PARAIBA": {
+    "BAYEUX": {
+      "etanol": 4.6,
+      "gasolina": 6.37
+    },
+    "CABEDELO": {
+      "etanol": 4.79,
+      "gasolina": 6.43
+    },
+    "CAMPINA GRANDE": {
+      "etanol": 4.74,
+      "gasolina": 6.52
+    },
+    "JOAO PESSOA": {
+      "etanol": 4.57,
+      "gasolina": 6.35
+    },
+    "PATOS": {
+      "etanol": 5.03,
+      "gasolina": 6.69
+    },
+    "SOUSA": {
+      "etanol": 5.28,
+      "gasolina": 6.76
+    }
+  },
+  "PARANA": {
+    "APUCARANA": {
+      "etanol": 4.09,
+      "gasolina": 6.51
+    },
+    "ARAPONGAS": {
+      "etanol": 3.62,
+      "gasolina": 6.25
+    },
+    "CAMBE": {
+      "etanol": 3.76,
+      "gasolina": 6.62
+    },
+    "CAMPO MOURAO": {
+      "etanol": 3.6,
+      "gasolina": 6.2
+    },
+    "CASCAVEL": {
+      "etanol": 3.95,
+      "gasolina": 6.48
+    },
+    "CASTRO": {
+      "etanol": 4.75,
+      "gasolina": 6.98
+    },
+    "CIANORTE": {
+      "etanol": 3.61,
+      "gasolina": 6.52
+    },
+    "CORNELIO PROCOPIO": {
+      "etanol": 4.02,
+      "gasolina": 6.66
+    },
+    "CURITIBA": {
+      "etanol": 4.65,
+      "gasolina": 6.83
+    },
+    "FOZ DO IGUACU": {
+      "etanol": 3.72,
+      "gasolina": 6.44
+    },
+    "FRANCISCO BELTRAO": {
+      "etanol": 4.02,
+      "gasolina": 6.33
+    },
+    "GUARAPUAVA": {
+      "etanol": 3.65,
+      "gasolina": 5.93
+    },
+    "LONDRINA": {
+      "etanol": 3.64,
+      "gasolina": 6.39
+    },
+    "MARINGA": {
+      "etanol": 3.94,
+      "gasolina": 6.97
+    },
+    "PARANAGUA": {
+      "etanol": 4.22,
+      "gasolina": 6.5
+    },
+    "PARANAVAI": {
+      "etanol": 3.57,
+      "gasolina": 6.57
+    },
+    "PATO BRANCO": {
+      "etanol": 4.1,
+      "gasolina": 6.56
+    },
+    "PONTA GROSSA": {
+      "etanol": 3.96,
+      "gasolina": 6.33
+    },
+    "TOLEDO": {
+      "etanol": 3.84,
+      "gasolina": 6.46
+    },
+    "UMUARAMA": {
+      "etanol": 3.93,
+      "gasolina": 6.56
+    },
+    "UNIAO DA VITORIA": {
+      "etanol": 4.62,
+      "gasolina": 6.8
+    }
+  },
+  "PERNAMBUCO": {
+    "ARARIPINA": {
+      "etanol": 5.11,
+      "gasolina": 7.56
+    },
+    "ARCOVERDE": {
+      "etanol": 5.2,
+      "gasolina": 6.79
+    },
+    "BELO JARDIM": {
+      "etanol": 4.81,
+      "gasolina": 6.47
+    },
+    "CABO DE SANTO AGOSTINHO": {
+      "etanol": 4.92,
+      "gasolina": 6.74
+    },
+    "CARUARU": {
+      "etanol": 4.88,
+      "gasolina": 6.6
+    },
+    "GARANHUNS": {
+      "etanol": 4.71,
+      "gasolina": 6.46
+    },
+    "GOIANA": {
+      "etanol": 4.86,
+      "gasolina": 6.73
+    },
+    "IGARASSU": {
+      "etanol": 4.97,
+      "gasolina": 6.76
+    },
+    "JABOATAO DOS GUARARAPES": {
+      "etanol": 4.89,
+      "gasolina": 6.75
+    },
+    "LAJEDO": {
+      "etanol": 5.02,
+      "gasolina": 6.46
+    },
+    "OLINDA": {
+      "etanol": 4.92,
+      "gasolina": 6.74
+    },
+    "PAULISTA": {
+      "etanol": 4.95,
+      "gasolina": 6.75
+    },
+    "PETROLINA": {
+      "etanol": 5.36,
+      "gasolina": 7.34
+    },
+    "RECIFE": {
+      "etanol": 4.95,
+      "gasolina": 6.75
+    },
+    "SALGUEIRO": {
+      "etanol": 5.58,
+      "gasolina": 6.99
+    },
+    "SERRA TALHADA": {
+      "etanol": 5.28,
+      "gasolina": 6.63
+    },
+    "VITORIA DE SANTO ANTAO": {
+      "etanol": 4.87,
+      "gasolina": 6.47
+    }
+  },
+  "PIAUI": {
+    "PARNAIBA": {
+      "etanol": 4.73,
+      "gasolina": 6.72
+    },
+    "PICOS": {
+      "etanol": 5.16,
+      "gasolina": 6.66
+    },
+    "PIRIPIRI": {
+      "etanol": 4.97,
+      "gasolina": 6.71
+    },
+    "TERESINA": {
+      "etanol": 4.81,
+      "gasolina": 6.83
+    }
+  },
+  "RIO DE JANEIRO": {
+    "ANGRA DOS REIS": {
+      "etanol": 5.56,
+      "gasolina": 7.12
+    },
+    "ARARUAMA": {
+      "etanol": 4.93,
+      "gasolina": 6.93
+    },
+    "BARRA DO PIRAI": {
+      "etanol": 5.01,
+      "gasolina": 6.93
+    },
+    "BARRA MANSA": {
+      "etanol": 4.69,
+      "gasolina": 6.69
+    },
+    "BELFORD ROXO": {
+      "etanol": 4.69,
+      "gasolina": 6.48
+    },
+    "CABO FRIO": {
+      "etanol": 5.04,
+      "gasolina": 6.89
+    },
+    "DUQUE DE CAXIAS": {
+      "etanol": 4.49,
+      "gasolina": 6.46
+    },
+    "ITABORAI": {
+      "etanol": 4.77,
+      "gasolina": 6.51
+    },
+    "ITAPERUNA": {
+      "etanol": 4.67,
+      "gasolina": 6.75
+    },
+    "MACAE": {
+      "etanol": 5.24,
+      "gasolina": 6.78
+    },
+    "MARICA": {
+      "etanol": 4.67,
+      "gasolina": 6.66
+    },
+    "NILOPOLIS": {
+      "etanol": 4.62,
+      "gasolina": 6.44
+    },
+    "NITEROI": {
+      "etanol": 4.55,
+      "gasolina": 6.56
+    },
+    "NOVA FRIBURGO": {
+      "etanol": 4.62,
+      "gasolina": 6.86
+    },
+    "PETROPOLIS": {
+      "etanol": 5.33,
+      "gasolina": 7.12
+    },
+    "RESENDE": {
+      "etanol": 4.38,
+      "gasolina": 6.42
+    },
+    "RIO BONITO": {
+      "etanol": 4.87,
+      "gasolina": 6.75
+    },
     "RIO DE JANEIRO": {
-      "gasolina": 6.38,
-      "etanol": 4.62
+      "etanol": 4.69,
+      "gasolina": 6.53
+    },
+    "SANTO ANTONIO DE PADUA": {
+      "etanol": 4.46,
+      "gasolina": 6.49
+    },
+    "SAO GONCALO": {
+      "etanol": 4.69,
+      "gasolina": 6.57
+    },
+    "SAO JOAO DE MERITI": {
+      "etanol": 4.6,
+      "gasolina": 6.4
+    },
+    "SAQUAREMA": {
+      "etanol": 4.93,
+      "gasolina": 6.88
+    },
+    "TRES RIOS": {
+      "etanol": 4.92,
+      "gasolina": 6.81
+    },
+    "VALENCA": {
+      "etanol": 4.89,
+      "gasolina": 6.74
+    },
+    "VOLTA REDONDA": {
+      "etanol": 4.96,
+      "gasolina": 6.94
+    }
+  },
+  "RIO GRANDE DO NORTE": {
+    "CAICO": {
+      "etanol": 6.03,
+      "gasolina": 6.9
+    },
+    "MOSSORO": {
+      "etanol": 5.06,
+      "gasolina": 6.65
+    },
+    "NATAL": {
+      "etanol": 5.21,
+      "gasolina": 6.78
+    },
+    "PARNAMIRIM": {
+      "etanol": 5.24,
+      "gasolina": 6.74
+    }
+  },
+  "RIO GRANDE DO SUL": {
+    "ALEGRETE": {
+      "etanol": 4.99,
+      "gasolina": 6.69
+    },
+    "ALVORADA": {
+      "etanol": 4.54,
+      "gasolina": 6.21
+    },
+    "BAGE": {
+      "etanol": 5.17,
+      "gasolina": 7.23
+    },
+    "BENTO GONCALVES": {
+      "etanol": 4.73,
+      "gasolina": 6.28
+    },
+    "CACHOEIRA DO SUL": {
+      "etanol": 4.39,
+      "gasolina": 5.96
+    },
+    "CACHOEIRINHA": {
+      "etanol": 4.29,
+      "gasolina": 6.13
+    },
+    "CANOAS": {
+      "etanol": 4.01,
+      "gasolina": 5.92
+    },
+    "CAXIAS DO SUL": {
+      "etanol": 4.53,
+      "gasolina": 6.21
+    },
+    "CRUZ ALTA": {
+      "etanol": 4.72,
+      "gasolina": 6.27
+    },
+    "ERECHIM": {
+      "etanol": 4.89,
+      "gasolina": 6.27
+    },
+    "ESTEIO": {
+      "etanol": 4.33,
+      "gasolina": 5.9
+    },
+    "GRAMADO": {
+      "etanol": 5.01,
+      "gasolina": 6.69
+    },
+    "GRAVATAI": {
+      "etanol": 4.09,
+      "gasolina": 6.22
+    },
+    "GUAIBA": {
+      "etanol": 4.41,
+      "gasolina": 6.03
+    },
+    "IJUI": {
+      "etanol": 5.03,
+      "gasolina": 6.31
+    },
+    "LAJEADO": {
+      "etanol": 4.81,
+      "gasolina": 6.07
+    },
+    "NOVO HAMBURGO": {
+      "etanol": 4.1,
+      "gasolina": 5.92
+    },
+    "OSORIO": {
+      "etanol": 4.12,
+      "gasolina": 5.97
+    },
+    "PASSO FUNDO": {
+      "etanol": 4.79,
+      "gasolina": 6.49
+    },
+    "PELOTAS": {
+      "etanol": 4.6,
+      "gasolina": 6.58
+    },
+    "PORTO ALEGRE": {
+      "etanol": 4.26,
+      "gasolina": 5.9
+    },
+    "SANTA CRUZ DO SUL": {
+      "gasolina": 6.69
+    },
+    "SANTA MARIA": {
+      "etanol": 4.9,
+      "gasolina": 6.21
+    },
+    "SANTA ROSA": {
+      "etanol": 4.99,
+      "gasolina": 6.6
+    },
+    "SANTANA DO LIVRAMENTO": {
+      "etanol": 5.39,
+      "gasolina": 6.89
+    },
+    "SANTO ANGELO": {
+      "etanol": 4.93,
+      "gasolina": 6.56
+    },
+    "SAO LEOPOLDO": {
+      "etanol": 4.11,
+      "gasolina": 6.02
+    },
+    "SAO LUIZ GONZAGA": {
+      "etanol": 4.92,
+      "gasolina": 6.49
+    },
+    "SAPIRANGA": {
+      "etanol": 4.24,
+      "gasolina": 5.99
+    },
+    "SAPUCAIA DO SUL": {
+      "etanol": 4.05,
+      "gasolina": 5.93
+    },
+    "TORRES": {
+      "etanol": 4.39,
+      "gasolina": 6.39
+    },
+    "URUGUAIANA": {
+      "etanol": 5.29,
+      "gasolina": 6.48
+    },
+    "VACARIA": {
+      "etanol": 4.71,
+      "gasolina": 6.28
+    },
+    "VIAMAO": {
+      "etanol": 4.79,
+      "gasolina": 5.91
+    }
+  },
+  "RONDONIA": {
+    "CACOAL": {
+      "etanol": 5.36,
+      "gasolina": 7.19
+    },
+    "JI-PARANA": {
+      "etanol": 5.31,
+      "gasolina": 7.23
+    },
+    "PIMENTA BUENO": {
+      "etanol": 5.49,
+      "gasolina": 7.38
+    },
+    "PORTO VELHO": {
+      "etanol": 5.11,
+      "gasolina": 7.49
+    },
+    "VILHENA": {
+      "etanol": 5.35,
+      "gasolina": 7.39
+    }
+  },
+  "RORAIMA": {
+    "BOA VISTA": {
+      "etanol": 5.39,
+      "gasolina": 7.57
+    }
+  },
+  "SANTA CATARINA": {
+    "ARARANGUA": {
+      "etanol": 4.54,
+      "gasolina": 6.41
+    },
+    "BLUMENAU": {
+      "etanol": 4.26,
+      "gasolina": 6.58
+    },
+    "BRUSQUE": {
+      "etanol": 4.16,
+      "gasolina": 6.28
+    },
+    "CACADOR": {
+      "etanol": 4.85,
+      "gasolina": 6.49
+    },
+    "CHAPECO": {
+      "etanol": 4.89,
+      "gasolina": 6.47
+    },
+    "CONCORDIA": {
+      "etanol": 5.11,
+      "gasolina": 6.59
+    },
+    "CRICIUMA": {
+      "etanol": 4.58,
+      "gasolina": 6.38
+    },
+    "FLORIANOPOLIS": {
+      "etanol": 4.36,
+      "gasolina": 6.54
+    },
+    "ITAJAI": {
+      "etanol": 4.22,
+      "gasolina": 6.54
+    },
+    "JOINVILLE": {
+      "etanol": 4.16,
+      "gasolina": 6.28
+    },
+    "LAGUNA": {
+      "etanol": 4.42,
+      "gasolina": 6.43
+    },
+    "SAO JOSE": {
+      "etanol": 4.4,
+      "gasolina": 6.38
+    },
+    "TUBARAO": {
+      "etanol": 4.58,
+      "gasolina": 6.1
+    },
+    "VIDEIRA": {
+      "etanol": 4.99,
+      "gasolina": 6.54
+    },
+    "XANXERE": {
+      "etanol": 4.76,
+      "gasolina": 6.24
+    }
+  },
+  "SAO PAULO": {
+    "ADAMANTINA": {
+      "etanol": 3.5,
+      "gasolina": 6.46
+    },
+    "AMERICANA": {
+      "etanol": 3.76,
+      "gasolina": 6.4
+    },
+    "ARACATUBA": {
+      "etanol": 3.33,
+      "gasolina": 6.24
+    },
+    "ARARAQUARA": {
+      "etanol": 3.51,
+      "gasolina": 6.14
+    },
+    "ARARAS": {
+      "etanol": 3.6,
+      "gasolina": 6.33
+    },
+    "ASSIS": {
+      "etanol": 3.69,
+      "gasolina": 6.62
+    },
+    "ATIBAIA": {
+      "etanol": 4.37,
+      "gasolina": 6.83
+    },
+    "BARRETOS": {
+      "etanol": 3.57,
+      "gasolina": 6.43
+    },
+    "BARUERI": {
+      "etanol": 4.16,
+      "gasolina": 6.7
+    },
+    "BAURU": {
+      "etanol": 3.45,
+      "gasolina": 6.28
+    },
+    "BEBEDOURO": {
+      "etanol": 3.51,
+      "gasolina": 6.37
+    },
+    "BIRIGUI": {
+      "etanol": 3.45,
+      "gasolina": 6.46
+    },
+    "BRAGANCA PAULISTA": {
+      "etanol": 4.19,
+      "gasolina": 6.36
+    },
+    "CACAPAVA": {
+      "etanol": 4.22,
+      "gasolina": 6.41
+    },
+    "CAMPINAS": {
+      "etanol": 3.68,
+      "gasolina": 6.31
+    },
+    "CARAGUATATUBA": {
+      "etanol": 4.3,
+      "gasolina": 6.77
+    },
+    "CARAPICUIBA": {
+      "etanol": 3.74,
+      "gasolina": 6.36
+    },
+    "COSMOPOLIS": {
+      "etanol": 3.86,
+      "gasolina": 6.21
+    },
+    "COTIA": {
+      "etanol": 3.77,
+      "gasolina": 6.22
+    },
+    "CRUZEIRO": {
+      "etanol": 3.73,
+      "gasolina": 6.31
+    },
+    "CUBATAO": {
+      "etanol": 4.45,
+      "gasolina": 6.83
+    },
+    "DIADEMA": {
+      "etanol": 3.77,
+      "gasolina": 6.28
+    },
+    "EMBU DAS ARTES": {
+      "etanol": 3.88,
+      "gasolina": 6.49
+    },
+    "FRANCA": {
+      "etanol": 3.14,
+      "gasolina": 6.58
+    },
+    "GARCA": {
+      "etanol": 3.51,
+      "gasolina": 6.3
+    },
+    "GUARUJA": {
+      "etanol": 4.26,
+      "gasolina": 6.75
+    },
+    "GUARULHOS": {
+      "etanol": 3.66,
+      "gasolina": 6.3
+    },
+    "HORTOLANDIA": {
+      "etanol": 3.65,
+      "gasolina": 6.22
+    },
+    "IBITINGA": {
+      "etanol": 3.73,
+      "gasolina": 6.43
+    },
+    "INDAIATUBA": {
+      "etanol": 3.67,
+      "gasolina": 6.32
+    },
+    "ITANHAEM": {
+      "etanol": 4.04,
+      "gasolina": 6.61
+    },
+    "ITAPECERICA DA SERRA": {
+      "etanol": 3.94,
+      "gasolina": 6.33
+    },
+    "ITAPIRA": {
+      "etanol": 3.78,
+      "gasolina": 6.51
+    },
+    "ITAPOLIS": {
+      "etanol": 3.71,
+      "gasolina": 6.51
+    },
+    "ITAQUAQUECETUBA": {
+      "etanol": 3.95,
+      "gasolina": 6.4
+    },
+    "ITATIBA": {
+      "etanol": 3.67,
+      "gasolina": 6.26
+    },
+    "ITU": {
+      "etanol": 3.63,
+      "gasolina": 6.32
+    },
+    "JABOTICABAL": {
+      "etanol": 3.63,
+      "gasolina": 6.7
+    },
+    "JACAREI": {
+      "etanol": 3.64,
+      "gasolina": 6.06
+    },
+    "JALES": {
+      "etanol": 3.6,
+      "gasolina": 6.44
+    },
+    "JAU": {
+      "etanol": 3.55,
+      "gasolina": 6.47
+    },
+    "JUNDIAI": {
+      "etanol": 3.87,
+      "gasolina": 6.43
+    },
+    "LEME": {
+      "etanol": 4.0,
+      "gasolina": 6.37
+    },
+    "LIMEIRA": {
+      "etanol": 3.64,
+      "gasolina": 6.28
+    },
+    "LINS": {
+      "etanol": 3.44,
+      "gasolina": 6.54
+    },
+    "MARILIA": {
+      "etanol": 3.38,
+      "gasolina": 6.17
+    },
+    "MATAO": {
+      "etanol": 3.78,
+      "gasolina": 6.39
+    },
+    "MAUA": {
+      "etanol": 3.66,
+      "gasolina": 6.2
+    },
+    "MOCOCA": {
+      "etanol": 4.09,
+      "gasolina": 6.74
+    },
+    "MOGI DAS CRUZES": {
+      "etanol": 3.74,
+      "gasolina": 6.39
+    },
+    "MOGI GUACU": {
+      "etanol": 3.78,
+      "gasolina": 6.4
+    },
+    "MOGI MIRIM": {
+      "etanol": 3.65,
+      "gasolina": 6.2
+    },
+    "MONTE ALTO": {
+      "etanol": 3.69,
+      "gasolina": 6.62
+    },
+    "OLIMPIA": {
+      "etanol": 3.58,
+      "gasolina": 6.45
+    },
+    "OSASCO": {
+      "etanol": 3.75,
+      "gasolina": 6.26
+    },
+    "OURINHOS": {
+      "etanol": 3.59,
+      "gasolina": 6.46
+    },
+    "PARAGUACU PAULISTA": {
+      "etanol": 3.37,
+      "gasolina": 6.17
+    },
+    "PAULINIA": {
+      "etanol": 3.56,
+      "gasolina": 6.11
+    },
+    "PIRACICABA": {
+      "etanol": 3.57,
+      "gasolina": 6.16
+    },
+    "PIRASSUNUNGA": {
+      "etanol": 3.64,
+      "gasolina": 6.33
+    },
+    "POA": {
+      "etanol": 3.91,
+      "gasolina": 6.65
+    },
+    "PORTO FERREIRA": {
+      "etanol": 3.93,
+      "gasolina": 6.71
+    },
+    "PRAIA GRANDE": {
+      "etanol": 4.14,
+      "gasolina": 6.6
+    },
+    "PRESIDENTE PRUDENTE": {
+      "etanol": 3.2,
+      "gasolina": 6.42
+    },
+    "RIBEIRAO PIRES": {
+      "etanol": 3.83,
+      "gasolina": 6.33
+    },
+    "RIBEIRAO PRETO": {
+      "etanol": 3.75,
+      "gasolina": 6.63
+    },
+    "RIO CLARO": {
+      "etanol": 3.59,
+      "gasolina": 6.1
+    },
+    "SALTO": {
+      "etanol": 3.66,
+      "gasolina": 6.31
+    },
+    "SANTO ANDRE": {
+      "etanol": 3.82,
+      "gasolina": 6.35
+    },
+    "SANTOS": {
+      "etanol": 4.03,
+      "gasolina": 6.49
+    },
+    "SAO BERNARDO DO CAMPO": {
+      "etanol": 3.94,
+      "gasolina": 6.55
+    },
+    "SAO CAETANO DO SUL": {
+      "etanol": 3.83,
+      "gasolina": 6.35
+    },
+    "SAO CARLOS": {
+      "etanol": 3.6,
+      "gasolina": 6.32
+    },
+    "SAO JOAO DA BOA VISTA": {
+      "etanol": 3.77,
+      "gasolina": 6.36
+    },
+    "SAO JOSE DOS CAMPOS": {
+      "etanol": 3.67,
+      "gasolina": 6.07
+    },
+    "SAO PAULO": {
+      "etanol": 3.75,
+      "gasolina": 6.31
+    },
+    "SAO VICENTE": {
+      "etanol": 3.9,
+      "gasolina": 6.45
+    },
+    "SERTAOZINHO": {
+      "etanol": 3.76,
+      "gasolina": 6.58
+    },
+    "SOROCABA": {
+      "etanol": 3.55,
+      "gasolina": 6.29
+    },
+    "SUMARE": {
+      "etanol": 3.65,
+      "gasolina": 6.29
+    },
+    "SUZANO": {
+      "etanol": 3.61,
+      "gasolina": 6.21
+    },
+    "TABOAO DA SERRA": {
+      "etanol": 3.81,
+      "gasolina": 6.27
+    },
+    "TATUI": {
+      "etanol": 3.87,
+      "gasolina": 6.41
+    },
+    "TAUBATE": {
+      "etanol": 3.52,
+      "gasolina": 5.91
+    },
+    "TUPA": {
+      "etanol": 3.48,
+      "gasolina": 6.53
+    },
+    "UBATUBA": {
+      "etanol": 4.3,
+      "gasolina": 6.69
+    },
+    "VALINHOS": {
+      "etanol": 3.62,
+      "gasolina": 6.26
+    },
+    "VINHEDO": {
+      "etanol": 3.83,
+      "gasolina": 6.3
+    },
+    "VOTORANTIM": {
+      "etanol": 3.58,
+      "gasolina": 6.33
+    },
+    "VOTUPORANGA": {
+      "etanol": 3.4,
+      "gasolina": 6.4
+    }
+  },
+  "SERGIPE": {
+    "ARACAJU": {
+      "etanol": 5.34,
+      "gasolina": 7.03
+    },
+    "ITABAIANA": {
+      "etanol": 5.5,
+      "gasolina": 6.99
+    },
+    "LAGARTO": {
+      "etanol": 5.33,
+      "gasolina": 6.99
+    },
+    "NOSSA SENHORA DO SOCORRO": {
+      "etanol": 5.34,
+      "gasolina": 7.05
+    }
+  },
+  "TOCANTINS": {
+    "ARAGUAINA": {
+      "etanol": 4.8,
+      "gasolina": 6.79
+    },
+    "GURUPI": {
+      "etanol": 4.99,
+      "gasolina": 7.09
+    },
+    "PALMAS": {
+      "etanol": 5.03,
+      "gasolina": 7.01
+    },
+    "PARAISO DO TOCANTINS": {
+      "etanol": 4.99,
+      "gasolina": 6.89
+    },
+    "PORTO NACIONAL": {
+      "etanol": 4.88,
+      "gasolina": 6.76
     }
   }
 }

@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Clonar repositório
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -24,26 +22,25 @@ jobs:
       
       - name: Instalar dependências
         run: |
-          pip install pandas requests
+          pip install --upgrade pip
+          pip install pandas requests openpyxl
       
       - name: Executar script
-        run: |
-          python script.py
+        run: python script.py
       
-      - name: Verificar mudanças
-        id: verificar
+      - name: Configurar Git
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add precos.json
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Push das alterações
+        run: |
+          git add precos.json || true
           if git diff --staged --quiet; then
-            echo "mudou=false" >> $GITHUB_OUTPUT
+            echo "Nenhuma mudança para commitar"
           else
-            echo "mudou=true" >> $GITHUB_OUTPUT
+            git commit -m "Atualização automática dos preços"
+            git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
           fi
-      
-      - name: Commit e push
-        if: steps.verificar.outputs.mudou == 'true'
-        run: |
-          git commit -m "Atualização automática dos preços - $(date -u +'%Y-%m-%d')"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

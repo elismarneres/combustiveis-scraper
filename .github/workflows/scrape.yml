@@ -10,36 +10,36 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
+    
     steps:
       - name: Clonar repositório
         uses: actions/checkout@v4
-
+      
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-
+      
       - name: Instalar dependências
         run: |
           pip install --upgrade pip
           pip install pandas requests openpyxl
-
+      
       - name: Executar script
         run: python script.py
-
+      
       - name: Configurar Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
+      
       - name: Push das alterações
         run: |
-          git add precos/ || true
+          git add precos.json || true
           if git diff --staged --quiet; then
             echo "Nenhuma mudança para commitar"
           else
-            git commit -m "Atualização automática dos preços por estado"
+            git commit -m "Atualização automática dos preços"
             git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
           fi
         env:

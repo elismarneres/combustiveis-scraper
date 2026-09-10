@@ -3,7 +3,7 @@ import json
 import requests
 from io import BytesIO
 import sys
-import re
+import os
 
 print("🚀 Iniciando script...")
 
@@ -27,7 +27,7 @@ except Exception as e:
     sys.exit(1)
 
 # ============================================
-# 2. LEITURA DO EXCEL (encontra o cabeçalho)
+# 2. LEITURA DO EXCEL
 # ============================================
 try:
     df = None
@@ -64,7 +64,10 @@ col_valor = None
 col_cnpj = None
 col_razao = None
 col_endereco = None
+col_numero = None
+col_complemento = None
 col_bairro = None
+col_cep = None
 col_bandeira = None
 col_data = None
 
@@ -86,8 +89,14 @@ for col in df.columns:
         col_razao = col
     elif 'ENDEREÇO' in col_upper or 'ENDERECO' in col_upper:
         col_endereco = col
+    elif 'NÚMERO' in col_upper or 'NUMERO' in col_upper:
+        col_numero = col
+    elif 'COMPLEMENTO' in col_upper:
+        col_complemento = col
     elif 'BAIRRO' in col_upper:
         col_bairro = col
+    elif 'CEP' in col_upper:
+        col_cep = col
     elif 'BANDEIRA' in col_upper:
         col_bandeira = col
     elif 'DATA' in col_upper and 'COLETA' in col_upper:
@@ -101,28 +110,29 @@ if not all([col_estado, col_municipio, col_produto, col_valor]):
     sys.exit(1)
 
 print(f"🔍 Colunas identificadas:")
-print(f"   Estado:    {col_estado}")
-print(f"   Município: {col_municipio}")
-print(f"   Produto:   {col_produto}")
-print(f"   Valor:     {col_valor}")
-print(f"   CNPJ:      {col_cnpj}")
-print(f"   Razão:     {col_razao}")
-print(f"   Endereço:  {col_endereco}")
-print(f"   Bairro:    {col_bairro}")
-print(f"   Bandeira:  {col_bandeira}")
-print(f"   Data:      {col_data}")
+print(f"   Estado:      {col_estado}")
+print(f"   Município:   {col_municipio}")
+print(f"   Produto:     {col_produto}")
+print(f"   Valor:       {col_valor}")
+print(f"   CNPJ:        {col_cnpj}")
+print(f"   Razão:       {col_razao}")
+print(f"   Endereço:    {col_endereco}")
+print(f"   Número:      {col_numero}")
+print(f"   Complemento: {col_complemento}")
+print(f"   Bairro:      {col_bairro}")
+print(f"   CEP:         {col_cep}")
+print(f"   Bandeira:    {col_bandeira}")
+print(f"   Data:        {col_data}")
 
 # ============================================
-# 4. PROCESSA POR POSTO (SEM AGRUPAR)
+# 4. PROCESSA POR POSTO
 # ============================================
 print("📊 Processando por POSTO...")
 
-# Converte valor para número
 df[col_valor] = df[col_valor].astype(str).str.replace(',', '.').astype(float)
 df = df[df[col_valor] > 0].copy()
 
 
-# Normaliza nome do produto
 def normalizar_produto(produto):
     produto = str(produto).upper()
     if 'GASOLINA' in produto:
@@ -148,70 +158,101 @@ def normalizar_produto(produto):
 
 df['PRODUTO_NORM'] = df[col_produto].apply(normalizar_produto)
 
+
+def limpar(valor):
+    """Remove 'nan' e espaços extras"""
+    if pd.isna(valor):
+        return ''
+    texto = str(valor).strip()
+    if texto.lower() == 'nan':
+        return ''
+    return texto
+
+
 # ============================================
-# 5. ESTRUTURA DO JSON POR POSTO
+# 5. AGRUPA POR ESTADO
 # ============================================
-resultado = {}
+resultado_por_estado = {}
 
 for _, row in df.iterrows():
-    estado = str(row[col_estado]).strip().upper()
-    municipio = str(row[col_municipio]).strip().upper()
+    estado = limpar(row[col_estado]).upper()
+    if not estado or len(estado) != 2:
+        continue
+
+    municipio = limpar(row[col_municipio]).upper()
     produto = row['PRODUTO_NORM']
     valor = round(float(row[col_valor]), 2)
 
-    cnpj = str(row[col_cnpj]).strip() if col_cnpj else ''
-    razao = str(row[col_razao]).strip() if col_razao else ''
-    endereco = str(row[col_endereco]).strip() if col_endereco else ''
-    bairro = str(row[col_bairro]).strip() if col_bairro else ''
-    bandeira = str(row[col_bandeira]).strip() if col_bandeira else ''
-    data = str(row[col_data]).strip() if col_data else ''
+    cnpj = limpar(row[col_cnpj]) if col_cnpj else ''
+    razao = limpar(row[col_razao]) if col_razao else ''
+    endereco = limpar(row[col_endereco]) if col_endereco else ''
+    numero = limpar(row[col_numero]) if col_numero else ''
+    complemento = limpar(row[col_complemento]) if col_complemento else ''
+    bairro = limpar(row[col_bairro]) if col_bairro else ''
+    cep = limpar(row[col_cep]) if col_cep else ''
+    bandeira = limpar(row[col_bandeira]) if col_bandeira else ''
+    data = limpar(row[col_data]) if col_data else ''
 
-    chave_posto = cnpj if cnpj else f"{razao}_{endereco}"
+    # ✅ ENDEREÇO COMPLETO
+    endereco_completo = endereco
+    if numero:
+        endereco_completo += f', {numero}'
+    if complemento:
+        endereco_completo += f' - {complemento}'
+    if bairro:
+        endereco_completo += f' - {bairro}'
 
-    if estado not in resultado:
-        resultado[estado] = {}
-    if municipio not in resultado[estado]:
-        resultado[estado][municipio] = {}
-    if chave_posto not in resultado[estado][municipio]:
-        resultado[estado][municipio][chave_posto] = {
+    chave_posto = cnpj if cnpj else f"{razao}_{endereco}_{numero}"
+
+    # Inicializa estrutura por estado
+    if estado not in resultado_por_estado:
+        resultado_por_estado[estado] = {}
+    if municipio not in resultado_por_estado[estado]:
+        resultado_por_estado[estado][municipio] = {}
+    if chave_posto not in resultado_por_estado[estado][municipio]:
+        resultado_por_estado[estado][municipio][chave_posto] = {
             'cnpj': cnpj,
             'nome': razao,
-            'endereco': endereco,
+            'endereco': endereco_completo,       # ✅ completo
+            'rua': endereco,
+            'numero': numero,
+            'complemento': complemento,
             'bairro': bairro,
+            'cep': cep,
             'bandeira': bandeira,
             'data_coleta': data,
             'precos': {}
         }
 
-    resultado[estado][municipio][chave_posto]['precos'][produto] = valor
+    resultado_por_estado[estado][municipio][chave_posto]['precos'][produto] = valor
 
 # ============================================
-# 6. ESTATÍSTICAS
+# 6. SALVA UM ARQUIVO POR ESTADO
 # ============================================
-print(f"\n📊 Estatísticas:")
-print(f"   Estados: {len(resultado)}")
-total_municipios = sum(len(c) for c in resultado.values())
-print(f"   Municípios: {total_municipios}")
-total_postos = sum(sum(len(p) for p in c.values()) for c in resultado.values())
-print(f"   Postos: {total_postos}")
+os.makedirs('precos', exist_ok=True)
+
+print(f"\n💾 Salvando arquivos por estado...")
+
+for estado, dados in resultado_por_estado.items():
+    nome_arquivo = f'precos/precos_{estado}.json'
+    with open(nome_arquivo, 'w', encoding='utf-8') as f:
+        json.dump(dados, f, ensure_ascii=False, indent=2)
+
+    total_municipios = len(dados)
+    total_postos = sum(len(c) for c in dados.values())
+    print(f"   ✅ {estado}: {total_municipios} municípios, {total_postos} postos")
 
 # ============================================
-# 7. SALVA O JSON
+# 7. ESTATÍSTICAS FINAIS
 # ============================================
-with open('precos.json', 'w', encoding='utf-8') as f:
-    json.dump(resultado, f, ensure_ascii=False, indent=2)
+print(f"\n📊 Resumo Geral:")
+print(f"   Estados: {len(resultado_por_estado)}")
+total_municipios = sum(len(c) for c in resultado_por_estado.values())
+print(f"   Municípios totais: {total_municipios}")
+total_postos = sum(
+    sum(len(p) for p in c.values())
+    for c in resultado_por_estado.values()
+)
+print(f"   Postos totais: {total_postos}")
 
-print(f"\n✅ precos.json gerado com sucesso!")
-
-# Mostra exemplos
-print("\n📋 Exemplos (primeiros 2 estados):")
-for estado in list(resultado.keys())[:2]:
-    print(f"\n  {estado}:")
-    cidades = list(resultado[estado].keys())[:2]
-    for cidade in cidades:
-        print(f"    {cidade}:")
-        postos = list(resultado[estado][cidade].items())[:2]
-        for cnpj, dados in postos:
-            print(f"      - {dados['nome']} ({cnpj})")
-            for prod, preco in dados['precos'].items():
-                print(f"          {prod}: R$ {preco}")
+print(f"\n✅ Todos os arquivos gerados com sucesso!")

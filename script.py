@@ -1,278 +1,64 @@
 import pandas as pd
-import json
 import requests
 from io import BytesIO
-import sys
-import re
-from datetime import date, timedelta
+import json
 
-print("🚀 Iniciando script...")
+url = 'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arquivos-lpc/2026/revendas_lpc_2026-09-06_2026-09-12.xlsx'
+headers = {'User-Agent': 'Mozilla/5.0'}
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-}
+print("📥 Baixando...")
+r = requests.get(url, headers=headers, timeout=120)
+print(f"   xlsx: {len(r.content) / 1024 / 1024:.2f} MB")
 
-
-# ============================================================
-# 1) DESCOBRE O LINK MAIS RECENTE DA ANP
-# ============================================================
-def descobrir_url_mais_recente():
-    """
-    Acessa a página estática da ANP com as últimas semanas pesquisadas
-    e retorna a URL do arquivo .xlsx mais recente.
-    """
-    pagina = (
-        'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/'
-        'precos/levantamento-de-precos-de-combustiveis-ultimas-semanas-pesquisadas'
-    )
-
-    print(f"🔎 Buscando arquivos em: {pagina}")
+print("📖 Lendo Excel...")
+df = None
+for skip in range(5, 15):
     try:
-        resp = requests.get(pagina, headers=headers, timeout=60)
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"⚠️  Erro ao acessar página da ANP: {e}")
-        return None
+        t = pd.read_excel(BytesIO(r.content), header=skip)
+        cols = [str(c).upper() for c in t.columns]
+        if any('MUNICIPIO' in c or 'MUNICÍPIO' in c for c in cols):
+            df = t
+            print(f"   cabeçalho na linha {skip}")
+            break
+    except:
+        continue
 
-    # Regex para pegar links do tipo revendas_lpc_AAAA-MM-DD_AAAA-MM-DD.xlsx
-    padrao = re.compile(
-        r'href="([^"]*revendas_lpc_(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})\.xlsx)"',
-        re.IGNORECASE,
-    )
+print(f"📊 Total de linhas na planilha: {len(df)}")
+print(f"📋 Colunas: {list(df.columns)}")
 
-    encontrados = []
-    for match in padrao.finditer(resp.text):
-        href = match.group(1)
-        data_fim = match.group(3)
+col_produto = next(c for c in df.columns if 'PRODUTO' in c.upper())
+col_estado = next(c for c in df.columns if 'ESTADO' in c.upper() or 'UF' in c.upper())
+col_municipio = next(c for c in df.columns if 'MUNICIPIO' in c.upper() or 'MUNICÍPIO' in c.upper())
 
-        if href.startswith('/'):
-            href = 'https://www.gov.br' + href
-        elif not href.startswith('http'):
-            href = (
-                'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/'
-                'precos/arquivos-lpc/' + href
-            )
+df[col_produto] = df[col_produto].astype(str).str.upper()
+df_filtrado = df[
+    df[col_produto].str.contains('ETANOL', na=False) |
+    df[col_produto].str.contains('GASOLINA', na=False)
+]
 
-        encontrados.append((data_fim, href))
+print(f"\n📊 Após filtro (etanol + gasolina): {len(df_filtrado)} linhas")
+print(f"📊 Municípios únicos: {df_filtrado.groupby([col_estado, col_municipio]).ngroups}")
 
-    if not encontrados:
-        print("⚠️  Nenhum arquivo .xlsx encontrado via scraping.")
-        return None
+col_cnpj = next((c for c in df.columns if 'CNPJ' in c.upper()), None)
+col_end = next((c for c in df.columns if 'ENDEREÇO' in c.upper()), None)
 
-    encontrados.sort(key=lambda x: x[0], reverse=True)
-    data_fim, url = encontrados[0]
+if col_cnpj and col_end:
+    postos_unicos = df_filtrado.groupby([col_cnpj, col_end]).ngroups
+    print(f"📊 Postos únicos (CNPJ + endereço): {postos_unicos}")
 
-    print(f"✅ Arquivo mais recente (via scraping): {url}")
-    print(f"📅 Semana final: {data_fim}")
-    return url
+print("\n📏 Estimando tamanho do JSON...")
+amostra = df_filtrado.head(1000).to_dict(orient='records')
+amostra_json = json.dumps(amostra, ensure_ascii=False)
+tamanho_amostra = len(amostra_json)
+tamanho_estimado = (tamanho_amostra / 1000) * len(df_filtrado)
 
+print(f"   Amostra (1000 registros): {tamanho_amostra / 1024:.1f} KB")
+print(f"   Estimativa total: {tamanho_estimado / 1024 / 1024:.2f} MB")
 
-def url_ultima_semana(tentativas=6):
-    """
-    Fallback: constrói a URL da última semana da ANP (domingo a sábado)
-    e testa até `tentativas` semanas para trás.
-    """
-    hoje = date.today()
-    # Descobre o sábado mais recente
-    dias_desde_sabado = (hoje.weekday() - 5) % 7
-    sabado = hoje - timedelta(days=dias_desde_sabado)
+print(f"\n📊 Breakdown por produto:")
+for prod, count in df_filtrado[col_produto].value_counts().items():
+    print(f"   {prod}: {count} linhas")
 
-    for i in range(tentativas):
-        sab = sabado - timedelta(days=7 * i)
-        dom = sab - timedelta(days=6)
-        ano = dom.year
-        nome = f"revendas_lpc_{dom:%Y-%m-%d}_{sab:%Y-%m-%d}.xlsx"
-        url = (
-            f"https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/"
-            f"precos/arquivos-lpc/{ano}/{nome}"
-        )
-        print(f"🔎 Testando: {url}")
-        try:
-            r = requests.head(url, headers=headers, timeout=15, allow_redirects=True)
-            if r.status_code == 200:
-                print(f"✅ URL encontrada por data: {url}")
-                return url
-        except Exception as e:
-            print(f"   ⚠️  {e}")
-            continue
-
-    return None
-
-
-# Tenta primeiro por scraping, depois por data
-url = descobrir_url_mais_recente()
-
-if not url:
-    print("⚠️  Scraping falhou, tentando por data...")
-    url = url_ultima_semana()
-
-if not url:
-    print("❌ Não foi possível descobrir a URL. Abortando.")
-    sys.exit(1)
-
-
-# ============================================================
-# 2) DOWNLOAD
-# ============================================================
-print(f"📥 Baixando: {url}")
-
-try:
-    response = requests.get(url, timeout=120, headers=headers)
-    response.raise_for_status()
-    print(f"✅ Download concluído! Tamanho: {len(response.content)} bytes")
-except Exception as e:
-    print(f"❌ Erro no download: {e}")
-    sys.exit(1)
-
-
-# ============================================================
-# 3) LÊ O EXCEL
-# ============================================================
-try:
-    df = None
-    for skip in range(5, 15):
-        try:
-            df_temp = pd.read_excel(BytesIO(response.content), header=skip)
-            cols = [str(c).strip().upper() for c in df_temp.columns]
-            if any('MUNICIPIO' in c or 'MUNICÍPIO' in c for c in cols) and any('PRODUTO' in c for c in cols):
-                df = df_temp
-                print(f"✅ Encontrado cabeçalho na linha {skip}")
-                break
-        except Exception:
-            continue
-
-    if df is None:
-        print("❌ Não foi possível encontrar o cabeçalho")
-        sys.exit(1)
-
-    print(f"📋 Colunas: {list(df.columns)}")
-except Exception as e:
-    print(f"❌ Erro ao ler Excel: {e}")
-    sys.exit(1)
-
-
-# ============================================================
-# 4) LIMPEZA E IDENTIFICAÇÃO DE COLUNAS
-# ============================================================
-df = df.dropna(how='all')
-df.columns = [str(c).strip() for c in df.columns]
-
-col_estado = None
-col_municipio = None
-col_produto = None
-col_valor = None
-
-for col in df.columns:
-    col_upper = col.upper().strip()
-    if 'ESTADO' in col_upper or 'SIGLA' in col_upper or 'UF' in col_upper:
-        col_estado = col
-    elif 'MUNICIPIO' in col_upper or 'MUNICÍPIO' in col_upper or 'CIDADE' in col_upper:
-        col_municipio = col
-    elif 'PRODUTO' in col_upper:
-        col_produto = col
-    elif 'VALOR' in col_upper and 'VENDA' in col_upper:
-        col_valor = col
-    elif 'PREÇO' in col_upper or 'PRECO' in col_upper:
-        col_valor = col
-
-if not all([col_estado, col_municipio, col_produto, col_valor]):
-    print("❌ Colunas necessárias não encontradas!")
-    print("📋 Colunas disponíveis:")
-    for col in df.columns:
-        print(f"  - {col}")
-    sys.exit(1)
-
-print(f"🔍 Usando colunas: {col_estado}, {col_municipio}, {col_produto}, {col_valor}")
-
-
-# ============================================================
-# 5) PROCESSA TODOS OS COMBUSTÍVEIS
-# ============================================================
-print("📊 Processando TODOS os combustíveis...")
-
-df[col_valor] = df[col_valor].astype(str).str.replace(',', '.').astype(float)
-
-precos_media = df.groupby(
-    [col_estado, col_municipio, col_produto]
-)[col_valor].mean().reset_index()
-
-print(f"📊 Total de combinações (UF + Cidade + Produto): {len(precos_media)}")
-
-resultado = {}
-for _, row in precos_media.iterrows():
-    estado = str(row[col_estado]).strip().upper()
-    municipio = str(row[col_municipio]).strip().upper()
-    produto = str(row[col_produto]).strip().upper()
-    valor = round(float(row[col_valor]), 2)
-
-    if estado not in resultado:
-        resultado[estado] = {}
-    if municipio not in resultado[estado]:
-        resultado[estado][municipio] = {}
-
-    chave = produto
-    if 'GASOLINA' in produto:
-        if 'COMUM' in produto:
-            chave = 'GASOLINA_COMUM'
-        elif 'ADITIVADA' in produto:
-            chave = 'GASOLINA_ADITIVADA'
-        else:
-            chave = 'GASOLINA'
-    elif 'ETANOL' in produto:
-        chave = 'ETANOL'
-    elif 'DIESEL' in produto:
-        if 'S10' in produto:
-            chave = 'DIESEL_S10'
-        elif 'COMUM' in produto:
-            chave = 'DIESEL_COMUM'
-        else:
-            chave = 'DIESEL'
-    elif 'GNV' in produto:
-        chave = 'GNV'
-    elif 'GLP' in produto or 'GÁS' in produto:
-        chave = 'GLP'
-    elif 'QUEROSENE' in produto:
-        chave = 'QUEROSENE'
-    else:
-        chave = produto
-
-    resultado[estado][municipio][chave] = valor
-
-
-# ============================================================
-# 6) ESTATÍSTICAS
-# ============================================================
-print(f"\n📊 Estatísticas dos combustíveis:")
-
-combustiveis_contagem = {}
-for estado in resultado:
-    for municipio in resultado[estado]:
-        for produto in resultado[estado][municipio]:
-            combustiveis_contagem[produto] = combustiveis_contagem.get(produto, 0) + 1
-
-for produto, count in sorted(combustiveis_contagem.items()):
-    print(f"  - {produto}: {count} municípios")
-
-print(f"\n📊 Total de estados: {len(resultado)}")
-total_municipios = sum(len(c) for c in resultado.values())
-print(f"📊 Total de municípios: {total_municipios}")
-total_precos = sum(sum(len(p) for p in c.values()) for c in resultado.values())
-print(f"📊 Total de preços registrados: {total_precos}")
-
-
-# ============================================================
-# 7) SALVA O JSON
-# ============================================================
-with open('precos.json', 'w', encoding='utf-8') as f:
-    json.dump(resultado, f, ensure_ascii=False, indent=2)
-
-print(f"\n✅ precos.json gerado com sucesso!")
-
-print("\n📋 Exemplos de preços (primeiros 2 estados):")
-for estado in list(resultado.keys())[:2]:
-    print(f"\n  {estado}:")
-    cidades = list(resultado[estado].keys())[:2]
-    for cidade in cidades:
-        print(f"    {cidade}:")
-        for produto, preco in resultado[estado][cidade].items():
-            print(f"      - {produto}: R$ {preco}")
+print(f"\n📊 Top 5 estados por volume:")
+for uf, count in df_filtrado[col_estado].value_counts().head(5).items():
+    print(f"   {uf}: {count} linhas")

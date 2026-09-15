@@ -4,7 +4,7 @@ import requests
 from io import BytesIO
 import sys
 import re
-from datetime import datetime
+from datetime import date, timedelta
 
 print("🚀 Iniciando script...")
 
@@ -18,20 +18,23 @@ headers = {
 # ============================================================
 def descobrir_url_mais_recente():
     """
-    Acessa a página da ANP e retorna a URL do arquivo .xlsx
-    de revendas_lpc mais recente.
+    Acessa a página estática da ANP com as últimas semanas pesquisadas
+    e retorna a URL do arquivo .xlsx mais recente.
     """
     pagina = (
         'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/'
-        'precos/arquivos-lpc'
+        'precos/levantamento-de-precos-de-combustiveis-ultimas-semanas-pesquisadas'
     )
 
     print(f"🔎 Buscando arquivos em: {pagina}")
-    resp = requests.get(pagina, headers=headers, timeout=60)
-    resp.raise_for_status()
+    try:
+        resp = requests.get(pagina, headers=headers, timeout=60)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"⚠️  Erro ao acessar página da ANP: {e}")
+        return None
 
-    # Procura todos os links .xlsx de revendas_lpc
-    # Padrão: revendas_lpc_AAAA-MM-DD_AAAA-MM-DD.xlsx
+    # Regex para pegar links do tipo revendas_lpc_AAAA-MM-DD_AAAA-MM-DD.xlsx
     padrao = re.compile(
         r'href="([^"]*revendas_lpc_(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})\.xlsx)"',
         re.IGNORECASE,
@@ -40,30 +43,68 @@ def descobrir_url_mais_recente():
     encontrados = []
     for match in padrao.finditer(resp.text):
         href = match.group(1)
-        data_fim = match.group(3)  # usa a data final da semana pra ordenar
+        data_fim = match.group(3)
 
-        # Se for link relativo, completa
         if href.startswith('/'):
             href = 'https://www.gov.br' + href
         elif not href.startswith('http'):
-            href = 'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arquivos-lpc/' + href
+            href = (
+                'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/'
+                'precos/arquivos-lpc/' + href
+            )
 
         encontrados.append((data_fim, href))
 
     if not encontrados:
-        print("❌ Nenhum arquivo .xlsx encontrado na página.")
+        print("⚠️  Nenhum arquivo .xlsx encontrado via scraping.")
         return None
 
-    # Ordena pela data final (mais recente primeiro)
     encontrados.sort(key=lambda x: x[0], reverse=True)
     data_fim, url = encontrados[0]
 
-    print(f"✅ Arquivo mais recente: {url}")
+    print(f"✅ Arquivo mais recente (via scraping): {url}")
     print(f"📅 Semana final: {data_fim}")
     return url
 
 
+def url_ultima_semana(tentativas=6):
+    """
+    Fallback: constrói a URL da última semana da ANP (domingo a sábado)
+    e testa até `tentativas` semanas para trás.
+    """
+    hoje = date.today()
+    # Descobre o sábado mais recente
+    dias_desde_sabado = (hoje.weekday() - 5) % 7
+    sabado = hoje - timedelta(days=dias_desde_sabado)
+
+    for i in range(tentativas):
+        sab = sabado - timedelta(days=7 * i)
+        dom = sab - timedelta(days=6)
+        ano = dom.year
+        nome = f"revendas_lpc_{dom:%Y-%m-%d}_{sab:%Y-%m-%d}.xlsx"
+        url = (
+            f"https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/"
+            f"precos/arquivos-lpc/{ano}/{nome}"
+        )
+        print(f"🔎 Testando: {url}")
+        try:
+            r = requests.head(url, headers=headers, timeout=15, allow_redirects=True)
+            if r.status_code == 200:
+                print(f"✅ URL encontrada por data: {url}")
+                return url
+        except Exception as e:
+            print(f"   ⚠️  {e}")
+            continue
+
+    return None
+
+
+# Tenta primeiro por scraping, depois por data
 url = descobrir_url_mais_recente()
+
+if not url:
+    print("⚠️  Scraping falhou, tentando por data...")
+    url = url_ultima_semana()
 
 if not url:
     print("❌ Não foi possível descobrir a URL. Abortando.")
@@ -76,7 +117,7 @@ if not url:
 print(f"📥 Baixando: {url}")
 
 try:
-    response = requests.get(url, timeout=60, headers=headers)
+    response = requests.get(url, timeout=120, headers=headers)
     response.raise_for_status()
     print(f"✅ Download concluído! Tamanho: {len(response.content)} bytes")
 except Exception as e:

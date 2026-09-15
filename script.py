@@ -5,6 +5,7 @@ from io import BytesIO
 import sys
 import re
 import os
+import time
 
 print("🚀 Iniciando script...")
 
@@ -281,6 +282,75 @@ print(f"📊 Total de postos únicos: {len(postos_dict)}")
 
 
 # ============================================================
+# 5.4) BUSCA COORDENADAS NA API DE REVENDEDORES DA ANP
+# ============================================================
+print("\n📊 Buscando coordenadas na API da ANP...")
+
+# 1. Descobre todos os municípios+UF únicos
+municipios_uf = set()
+for (uf, municipio, *_), posto in postos_dict.items():
+    municipios_uf.add((uf, municipio))
+
+print(f"   {len(municipios_uf)} municípios para consultar")
+
+# 2. Consulta a API por município
+coords_por_cnpj = {}
+
+for i, (uf, municipio) in enumerate(municipios_uf):
+    try:
+        resp = requests.get(
+            'https://revendedoresapi.anp.gov.br/v1/combustivel',
+            params={'uf': uf, 'municipio': municipio},
+            headers=headers,
+            timeout=60
+        )
+
+        if resp.status_code == 200:
+            dados = resp.json()
+            lista = dados.get('data', [])
+
+            for item in lista:
+                cnpj = str(item.get('cnpj', '')).strip()
+                lat = item.get('latitude')
+                lon = item.get('longitude')
+
+                if cnpj and lat and lon:
+                    try:
+                        coords_por_cnpj[cnpj] = (float(lat), float(lon))
+                    except (ValueError, TypeError):
+                        pass
+
+        # Rate limit: 1 segundo entre requisições
+        time.sleep(1)
+
+        if (i + 1) % 50 == 0:
+            print(f"   {i+1}/{len(municipios_uf)} consultados...")
+
+    except Exception as e:
+        print(f"   ⚠️  Erro em {uf}/{municipio}: {e}")
+        continue
+
+print(f"✅ Coordenadas obtidas para {len(coords_por_cnpj)} postos")
+
+
+# ============================================================
+# 5.5) ADICIONA LAT/LON AOS POSTOS
+# ============================================================
+print("📊 Adicionando coordenadas aos postos...")
+
+adicionados = 0
+for posto in postos_dict.values():
+    cnpj = str(posto.get('cnpj', '')).strip()
+    if cnpj in coords_por_cnpj:
+        lat, lon = coords_por_cnpj[cnpj]
+        posto['lat'] = lat
+        posto['lon'] = lon
+        adicionados += 1
+
+print(f"✅ {adicionados} postos receberam coordenadas")
+
+
+# ============================================================
 # 5.3) MONTA ESTRUTURA FINAL {UF: {MUNICIPIO: {medias, postos}}}
 # ============================================================
 resultado = {}
@@ -352,4 +422,8 @@ if dados_cidade['postos']:
     p = dados_cidade['postos'][0]
     print(f"  Primeiro posto: {p['fantasia'] or p['razao']}")
     print(f"    {p['endereco']}")
+    if 'lat' in p and 'lon' in p:
+        print(f"    Coordenadas: {p['lat']}, {p['lon']}")
+    else:
+        print(f"    Coordenadas: (sem coordenada)")
     print(f"    Preços: {p['precos']}")

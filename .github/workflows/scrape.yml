@@ -1,3 +1,76 @@
+import pandas as pd
+import requests
+from io import BytesIO
+import json
+
+url = 'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arquivos-lpc/2026/revendas_lpc_2026-09-06_2026-09-12.xlsx'
+headers = {'User-Agent': 'Mozilla/5.0'}
+
+print("📥 Baixando...")
+r = requests.get(url, headers=headers, timeout=120)
+print(f"   xlsx: {len(r.content) / 1024 / 1024:.2f} MB")
+
+print("📖 Lendo Excel...")
+df = None
+for skip in range(5, 15):
+    try:
+        t = pd.read_excel(BytesIO(r.content), header=skip)
+        cols = [str(c).upper() for c in t.columns]
+        if any('MUNICIPIO' in c or 'MUNICÍPIO' in c for c in cols):
+            df = t
+            print(f"   cabeçalho na linha {skip}")
+            break
+    except:
+        continue
+
+print(f"📊 Total de linhas na planilha: {len(df)}")
+print(f"📋 Colunas: {list(df.columns)}")
+
+# Identifica colunas
+col_produto = next(c for c in df.columns if 'PRODUTO' in c.upper())
+col_estado = next(c for c in df.columns if 'ESTADO' in c.upper() or 'UF' in c.upper())
+col_municipio = next(c for c in df.columns if 'MUNICIPIO' in c.upper() or 'MUNICÍPIO' in c.upper())
+col_valor = next(c for c in df.columns if 'PREÇO' in c.upper() or 'PRECO' in c.upper())
+
+# Filtra etanol e gasolina
+df[col_produto] = df[col_produto].astype(str).str.upper()
+df_filtrado = df[
+    df[col_produto].str.contains('ETANOL', na=False) |
+    df[col_produto].str.contains('GASOLINA', na=False)
+]
+
+print(f"\n📊 Após filtro (etanol + gasolina): {len(df_filtrado)} linhas")
+print(f"📊 Municípios únicos: {df_filtrado.groupby([col_estado, col_municipio]).ngroups}")
+
+# Conta postos únicos (CNPJ + endereço)
+col_cnpj = next((c for c in df.columns if 'CNPJ' in c.upper()), None)
+col_end = next((c for c in df.columns if 'ENDEREÇO' in c.upper()), None)
+
+if col_cnpj and col_end:
+    postos_unicos = df_filtrado.groupby([col_cnpj, col_end]).ngroups
+    print(f"📊 Postos únicos (CNPJ + endereço): {postos_unicos}")
+
+# Estima tamanho do JSON
+print("\n📏 Estimando tamanho do JSON...")
+
+# Monta uma amostra do que seria o JSON final
+amostra = df_filtrado.head(1000).to_dict(orient='records')
+amostra_json = json.dumps(amostra, ensure_ascii=False)
+tamanho_amostra = len(amostra_json)
+tamanho_estimado = (tamanho_amostra / 1000) * len(df_filtrado)
+
+print(f"   Amostra (1000 registros): {tamanho_amostra / 1024:.1f} KB")
+print(f"   Estimativa total: {tamanho_estimado / 1024 / 1024:.2f} MB")
+
+# Breakdown por produto
+print(f"\n📊 Breakdown por produto:")
+for prod, count in df_filtrado[col_produto].value_counts().items():
+    print(f"   {prod}: {count} linhas")
+
+# Breakdown por estado (top 5)
+print(f"\n📊 Top 5 estados por volume:")
+for uf, count in df_filtrado[col_estado].value_counts().head(5).items():
+    print(f"   {uf}: {count} linhas")
 name: Atualizar Preços ANP
 
 on:

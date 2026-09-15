@@ -1,319 +1,313 @@
 {
   "ACRE": {
     "CRUZEIRO DO SUL": {
-      "DIESEL_S10": 9.25,
+      "DIESEL_S10": 9.26,
       "DIESEL": 8.75,
-      "ETANOL": 6.39,
-      "GASOLINA_ADITIVADA": 8.57,
+      "ETANOL": 6.49,
+      "GASOLINA_ADITIVADA": 8.54,
       "GASOLINA_COMUM": 8.46,
       "GLP": 130.0
     },
     "RIO BRANCO": {
-      "DIESEL_S10": 8.03,
-      "DIESEL": 7.73,
-      "ETANOL": 5.0,
+      "DIESEL_S10": 8.02,
+      "DIESEL": 7.72,
+      "ETANOL": 4.89,
       "GASOLINA_ADITIVADA": 7.36,
-      "GASOLINA_COMUM": 7.28,
-      "GLP": 124.32
+      "GASOLINA_COMUM": 7.27,
+      "GLP": 123.86
     }
   },
   "ALAGOAS": {
-    "ARAPIRACA": {
-      "DIESEL_S10": 7.04,
-      "DIESEL": 7.29,
-      "ETANOL": 5.0,
-      "GASOLINA_ADITIVADA": 6.83,
-      "GASOLINA_COMUM": 6.72,
-      "GLP": 105.38,
-      "GNV": 3.99
-    },
     "DELMIRO GOUVEIA": {
-      "DIESEL_S10": 7.91,
-      "DIESEL": 7.79,
+      "DIESEL_S10": 7.96,
+      "DIESEL": 7.85,
       "ETANOL": 5.42,
       "GASOLINA_ADITIVADA": 7.83,
       "GASOLINA_COMUM": 7.61,
-      "GLP": 108.25
+      "GLP": 108.75
     },
     "MACEIO": {
-      "DIESEL_S10": 6.92,
-      "ETANOL": 4.99,
-      "GASOLINA_ADITIVADA": 6.95,
-      "GASOLINA_COMUM": 6.67,
-      "GLP": 104.42,
+      "DIESEL_S10": 6.72,
+      "ETANOL": 4.96,
+      "GASOLINA_ADITIVADA": 6.91,
+      "GASOLINA_COMUM": 6.6,
+      "GLP": 103.5,
       "GNV": 4.39
     },
     "PALMEIRA DOS INDIOS": {
-      "DIESEL_S10": 7.24,
+      "DIESEL_S10": 7.11,
       "DIESEL": 7.25,
       "ETANOL": 4.9,
       "GASOLINA_ADITIVADA": 6.87,
       "GASOLINA_COMUM": 6.68,
-      "GLP": 111.67,
+      "GLP": 101.67,
       "GNV": 4.94
     },
     "RIO LARGO": {
-      "DIESEL_S10": 6.83,
+      "DIESEL_S10": 6.82,
       "DIESEL": 6.69,
       "ETANOL": 5.0,
-      "GASOLINA_ADITIVADA": 6.75,
+      "GASOLINA_ADITIVADA": 6.8,
       "GASOLINA_COMUM": 6.65,
-      "GLP": 110.43,
+      "GLP": 107.57,
       "GNV": 4.39
     }
   },
   "AMAPA": {
     "MACAPA": {
-      "DIESEL_S10": 7.16,
-      "ETANOL": 5.81,
-      "GASOLINA_ADITIVADA": 6.89,
-      "GASOLINA_COMUM": 6.57,
-      "GLP": 126.08
+      "GLP": 127.0
     },
     "SANTANA": {
-      "DIESEL_S10": 7.21,
+      "DIESEL_S10": 7.22,
       "GASOLINA_ADITIVADA": 6.8,
-      "GASOLINA_COMUM": 6.68,
-      "GLP": 133.33
+      "GASOLINA_COMUM": 6.7,
+      "GLP": 136.33
     }
   },
   "AMAZONAS": {
     "MANACAPURU": {
       "DIESEL_S10": 7.25,
       "DIESEL": 6.99,
-      "ETANOL": 4.79,
-      "GASOLINA_ADITIVADA": 6.92,
-      "GASOLINA_COMUM": 6.79,
+      "ETANOL": 4.96,
+      "GASOLINA_ADITIVADA": 7.04,
+      "GASOLINA_COMUM": 6.96,
       "GLP": 133.0
     },
     "MANAUS": {
-      "DIESEL_S10": 7.18,
-      "DIESEL": 7.14,
-      "ETANOL": 5.07,
-      "GASOLINA_ADITIVADA": 7.3,
-      "GASOLINA_COMUM": 7.21,
-      "GLP": 128.77,
+      "DIESEL_S10": 7.28,
+      "DIESEL": 7.26,
+      "ETANOL": 5.28,
+      "GASOLINA_ADITIVADA": 7.41,
+      "GASOLINA_COMUM": 7.29,
+      "GLP": 128.76,
       "GNV": 4.99
     },
     "PARINTINS": {
       "DIESEL_S10": 8.49,
       "GASOLINA_ADITIVADA": 8.99,
       "GASOLINA_COMUM": 8.99,
-      "GLP": 120.0
+      "GLP": 122.29
     }
   },
   "BAHIA": {
     "ALAGOINHAS": {
-      "DIESEL_S10": 6.95,
-      "DIESEL": 6.48,
-      "ETANOL": 4.1,
-      "GASOLINA_ADITIVADA": 6.35,
-      "GASOLINA_COMUM": 6.27,
+      "DIESEL_S10": 7.19,
+      "DIESEL": 6.66,
+      "ETANOL": 4.11,
+      "GASOLINA_ADITIVADA": 6.36,
+      "GASOLINA_COMUM": 6.28,
       "GLP": 114.84,
-      "GNV": 4.34
+      "GNV": 4.69
     },
     "BARREIRAS": {
-      "DIESEL_S10": 7.3,
-      "DIESEL": 7.17,
-      "ETANOL": 4.06,
-      "GASOLINA_ADITIVADA": 6.84,
-      "GASOLINA_COMUM": 6.79,
+      "DIESEL_S10": 7.32,
+      "DIESEL": 7.2,
+      "ETANOL": 4.16,
+      "GASOLINA_ADITIVADA": 6.86,
+      "GASOLINA_COMUM": 6.8,
       "GLP": 135.0
     },
     "BRUMADO": {
-      "DIESEL_S10": 7.5,
-      "DIESEL": 7.09,
-      "ETANOL": 4.26,
+      "DIESEL_S10": 7.7,
+      "DIESEL": 7.16,
+      "ETANOL": 4.64,
       "GASOLINA_ADITIVADA": 7.37,
-      "GASOLINA_COMUM": 7.28,
+      "GASOLINA_COMUM": 7.26,
       "GLP": 114.5
     },
     "CAETITE": {
-      "DIESEL_S10": 7.69,
-      "DIESEL": 7.39,
+      "DIESEL_S10": 7.99,
+      "DIESEL": 7.49,
       "ETANOL": 4.69,
       "GASOLINA_ADITIVADA": 7.07,
       "GASOLINA_COMUM": 6.99,
-      "GLP": 104.29
+      "GLP": 103.57
     },
     "EUNAPOLIS": {
-      "DIESEL_S10": 7.75,
-      "DIESEL": 6.88,
-      "ETANOL": 4.95,
-      "GASOLINA_ADITIVADA": 7.08,
-      "GASOLINA_COMUM": 6.97,
-      "GLP": 109.57
+      "DIESEL_S10": 7.91,
+      "DIESEL": 7.1,
+      "ETANOL": 4.96,
+      "GASOLINA_ADITIVADA": 7.23,
+      "GASOLINA_COMUM": 7.11,
+      "GLP": 112.86
     },
     "FEIRA DE SANTANA": {
-      "DIESEL_S10": 7.15,
-      "DIESEL": 6.78,
-      "ETANOL": 4.39,
-      "GASOLINA_ADITIVADA": 6.6,
-      "GASOLINA_COMUM": 6.37,
+      "DIESEL_S10": 7.23,
+      "DIESEL": 7.01,
+      "ETANOL": 4.38,
+      "GASOLINA_ADITIVADA": 6.56,
+      "GASOLINA_COMUM": 6.4,
       "GLP": 100.0,
-      "GNV": 4.69
+      "GNV": 4.79
     },
     "GUANAMBI": {
-      "DIESEL_S10": 7.34,
-      "DIESEL": 6.77,
-      "ETANOL": 4.25,
-      "GASOLINA_ADITIVADA": 6.6,
-      "GASOLINA_COMUM": 6.45,
-      "GLP": 109.38
+      "DIESEL_S10": 7.48,
+      "DIESEL": 6.84,
+      "ETANOL": 4.26,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.49,
+      "GLP": 108.12
     },
     "ILHEUS": {
-      "DIESEL_S10": 7.72,
-      "DIESEL": 7.56,
-      "ETANOL": 4.51,
-      "GASOLINA_ADITIVADA": 6.78,
-      "GASOLINA_COMUM": 6.72,
-      "GLP": 139.86,
+      "DIESEL_S10": 7.85,
+      "DIESEL": 7.7,
+      "ETANOL": 4.6,
+      "GASOLINA_ADITIVADA": 6.87,
+      "GASOLINA_COMUM": 6.78,
+      "GLP": 139.14,
       "GNV": 5.43
+    },
+    "IPIRA": {
+      "DIESEL_S10": 7.88,
+      "DIESEL": 7.44,
+      "ETANOL": 4.41,
+      "GASOLINA_ADITIVADA": 6.51,
+      "GASOLINA_COMUM": 6.36,
+      "GLP": 115.0
     },
     "IRECE": {
       "DIESEL_S10": 7.71,
       "DIESEL": 7.45,
-      "ETANOL": 4.62,
-      "GASOLINA_ADITIVADA": 6.94,
-      "GASOLINA_COMUM": 6.85,
+      "ETANOL": 4.61,
+      "GASOLINA_ADITIVADA": 6.91,
+      "GASOLINA_COMUM": 6.77,
       "GLP": 120.0
     },
     "ITABUNA": {
-      "DIESEL_S10": 7.16,
-      "DIESEL": 6.64,
+      "DIESEL_S10": 7.43,
+      "DIESEL": 7.07,
       "ETANOL": 4.52,
       "GASOLINA_ADITIVADA": 6.73,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 114.4,
+      "GASOLINA_COMUM": 6.68,
+      "GLP": 111.0,
       "GNV": 5.69
     },
     "ITAMARAJU": {
-      "DIESEL_S10": 6.77,
-      "DIESEL": 6.42,
-      "ETANOL": 4.75,
-      "GASOLINA_ADITIVADA": 7.16,
+      "DIESEL_S10": 6.76,
+      "DIESEL": 6.5,
+      "ETANOL": 4.74,
+      "GASOLINA_ADITIVADA": 7.13,
       "GASOLINA_COMUM": 6.99,
-      "GLP": 107.0
+      "GLP": 106.43
     },
     "JACOBINA": {
-      "DIESEL_S10": 7.47,
-      "DIESEL": 6.97,
-      "ETANOL": 4.62,
-      "GASOLINA_ADITIVADA": 6.89,
-      "GASOLINA_COMUM": 6.88,
-      "GLP": 138.0
+      "DIESEL_S10": 7.48,
+      "DIESEL": 6.96,
+      "ETANOL": 4.6,
+      "GASOLINA_ADITIVADA": 6.88,
+      "GASOLINA_COMUM": 6.87,
+      "GLP": 140.0
     },
     "JAGUAQUARA": {
-      "DIESEL_S10": 7.35,
-      "DIESEL": 6.99,
-      "ETANOL": 4.78,
+      "DIESEL_S10": 7.42,
+      "DIESEL": 7.02,
+      "ETANOL": 4.7,
       "GASOLINA_ADITIVADA": 6.89,
-      "GASOLINA_COMUM": 6.68,
+      "GASOLINA_COMUM": 6.67,
       "GLP": 110.0
     },
     "JEQUIE": {
-      "DIESEL_S10": 7.7,
-      "DIESEL": 7.27,
-      "ETANOL": 4.44,
-      "GASOLINA_ADITIVADA": 6.9,
-      "GASOLINA_COMUM": 6.7,
+      "DIESEL_S10": 7.84,
+      "DIESEL": 7.39,
+      "ETANOL": 4.42,
+      "GASOLINA_ADITIVADA": 6.85,
+      "GASOLINA_COMUM": 6.6,
       "GLP": 105.71
     },
     "JUAZEIRO": {
-      "DIESEL_S10": 6.88,
-      "DIESEL": 6.61,
-      "ETANOL": 5.21,
+      "DIESEL_S10": 6.93,
+      "DIESEL": 6.67,
+      "ETANOL": 5.17,
       "GASOLINA_ADITIVADA": 7.49,
-      "GASOLINA_COMUM": 7.23,
+      "GASOLINA_COMUM": 7.18,
       "GLP": 110.0
     },
     "LIVRAMENTO DE NOSSA SENHORA": {
-      "DIESEL_S10": 7.7,
-      "DIESEL": 7.32,
-      "ETANOL": 4.78,
-      "GASOLINA_ADITIVADA": 7.05,
-      "GASOLINA_COMUM": 7.16,
-      "GLP": 115.0
+      "DIESEL_S10": 7.97,
+      "DIESEL": 7.57,
+      "ETANOL": 5.19,
+      "GASOLINA_ADITIVADA": 7.8,
+      "GASOLINA_COMUM": 7.8,
+      "GLP": 116.25
     },
     "PAULO AFONSO": {
-      "DIESEL_S10": 6.93,
-      "DIESEL": 6.91,
-      "ETANOL": 4.71,
-      "GASOLINA_ADITIVADA": 6.71,
-      "GASOLINA_COMUM": 6.59,
-      "GLP": 110.43
+      "DIESEL_S10": 6.91,
+      "DIESEL": 6.86,
+      "ETANOL": 4.66,
+      "GASOLINA_ADITIVADA": 6.69,
+      "GASOLINA_COMUM": 6.57,
+      "GLP": 112.2
     },
     "POCOES": {
-      "DIESEL_S10": 6.83,
-      "DIESEL": 6.46,
-      "ETANOL": 4.61,
-      "GASOLINA_ADITIVADA": 6.67,
-      "GASOLINA_COMUM": 6.56,
-      "GLP": 104.0
+      "DIESEL_S10": 7.1,
+      "DIESEL": 6.63,
+      "ETANOL": 4.48,
+      "GASOLINA_ADITIVADA": 6.63,
+      "GASOLINA_COMUM": 6.61,
+      "GLP": 107.14
     },
     "PORTO SEGURO": {
-      "DIESEL_S10": 7.83,
-      "DIESEL": 7.78,
+      "DIESEL_S10": 7.95,
+      "DIESEL": 8.05,
       "ETANOL": 4.88,
-      "GASOLINA_ADITIVADA": 7.0,
-      "GASOLINA_COMUM": 6.86,
-      "GLP": 125.0
+      "GASOLINA_ADITIVADA": 7.12,
+      "GASOLINA_COMUM": 6.97
     },
     "SALVADOR": {
-      "DIESEL_S10": 7.28,
-      "DIESEL": 6.99,
-      "ETANOL": 4.3,
-      "GASOLINA_ADITIVADA": 6.58,
-      "GASOLINA_COMUM": 6.37,
-      "GLP": 117.93,
-      "GNV": 4.58
+      "DIESEL_S10": 7.46,
+      "ETANOL": 4.49,
+      "GASOLINA_ADITIVADA": 6.68,
+      "GASOLINA_COMUM": 6.51,
+      "GLP": 119.22,
+      "GNV": 4.63
     },
     "SANTO ANTONIO DE JESUS": {
-      "DIESEL_S10": 7.29,
-      "DIESEL": 6.86,
+      "DIESEL_S10": 7.35,
+      "DIESEL": 6.83,
       "ETANOL": 4.99,
-      "GASOLINA_ADITIVADA": 6.99,
-      "GASOLINA_COMUM": 6.99
+      "GASOLINA_ADITIVADA": 7.02,
+      "GASOLINA_COMUM": 6.99,
+      "GLP": 121.8
     },
     "SENHOR DO BONFIM": {
-      "DIESEL_S10": 7.49,
-      "DIESEL": 7.17,
-      "ETANOL": 4.77,
-      "GASOLINA_ADITIVADA": 6.96,
-      "GASOLINA_COMUM": 6.88,
+      "DIESEL_S10": 7.59,
+      "DIESEL": 7.22,
+      "ETANOL": 4.75,
+      "GASOLINA_ADITIVADA": 6.99,
+      "GASOLINA_COMUM": 6.9,
       "GLP": 123.33
     },
     "SERRINHA": {
-      "DIESEL_S10": 7.01,
-      "DIESEL": 6.46,
-      "ETANOL": 4.47,
-      "GASOLINA_ADITIVADA": 6.82,
-      "GASOLINA_COMUM": 6.77,
+      "DIESEL_S10": 7.21,
+      "DIESEL": 6.57,
+      "ETANOL": 4.42,
+      "GASOLINA_ADITIVADA": 6.81,
+      "GASOLINA_COMUM": 6.78,
       "GLP": 127.86
     },
     "TEIXEIRA DE FREITAS": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.79,
-      "ETANOL": 4.57,
-      "GASOLINA_ADITIVADA": 7.19,
-      "GASOLINA_COMUM": 7.03,
-      "GLP": 94.75
+      "DIESEL_S10": 7.16,
+      "DIESEL": 7.03,
+      "ETANOL": 4.76,
+      "GASOLINA_ADITIVADA": 7.29,
+      "GASOLINA_COMUM": 7.14,
+      "GLP": 95.0
     },
     "VALENCA": {
-      "DIESEL_S10": 6.96,
-      "DIESEL": 6.84,
-      "ETANOL": 5.04,
-      "GASOLINA_ADITIVADA": 7.04,
-      "GASOLINA_COMUM": 7.0,
+      "DIESEL_S10": 7.26,
+      "DIESEL": 7.02,
+      "ETANOL": 5.05,
+      "GASOLINA_ADITIVADA": 7.06,
+      "GASOLINA_COMUM": 7.01,
       "GLP": 121.67
     },
     "VITORIA DA CONQUISTA": {
-      "DIESEL_S10": 7.28,
-      "DIESEL": 6.69,
-      "ETANOL": 4.16,
-      "GASOLINA_ADITIVADA": 6.51,
-      "GASOLINA_COMUM": 6.46,
-      "GLP": 117.44,
+      "DIESEL_S10": 7.41,
+      "DIESEL": 7.08,
+      "ETANOL": 4.98,
+      "GASOLINA_ADITIVADA": 7.26,
+      "GASOLINA_COMUM": 7.19,
+      "GLP": 118.22,
       "GNV": 6.49
     }
   },
@@ -323,57 +317,57 @@
       "ETANOL": 5.34,
       "GASOLINA_ADITIVADA": 6.94,
       "GASOLINA_COMUM": 6.89,
-      "GLP": 114.0
+      "GLP": 110.0
     },
     "CAUCAIA": {
-      "DIESEL_S10": 6.86,
-      "ETANOL": 4.89,
+      "DIESEL_S10": 6.8,
+      "ETANOL": 4.88,
       "GASOLINA_ADITIVADA": 7.11,
-      "GASOLINA_COMUM": 6.98,
-      "GLP": 112.1
+      "GASOLINA_COMUM": 6.93,
+      "GLP": 109.4
     },
     "CRATEUS": {
-      "DIESEL_S10": 7.04,
-      "DIESEL": 6.29,
-      "ETANOL": 5.94,
-      "GASOLINA_ADITIVADA": 6.71,
-      "GASOLINA_COMUM": 6.68,
-      "GLP": 122.5
+      "DIESEL_S10": 7.11,
+      "DIESEL": 6.75,
+      "ETANOL": 5.8,
+      "GASOLINA_ADITIVADA": 6.79,
+      "GASOLINA_COMUM": 6.73,
+      "GLP": 123.75
     },
     "FORTALEZA": {
-      "DIESEL_S10": 6.96,
+      "DIESEL_S10": 6.92,
       "ETANOL": 4.97,
-      "GASOLINA_ADITIVADA": 7.12,
+      "GASOLINA_ADITIVADA": 7.13,
       "GASOLINA_COMUM": 6.98,
-      "GLP": 112.95,
+      "GLP": 112.13,
       "GNV": 5.55
     },
     "ICO": {
-      "DIESEL_S10": 7.68,
-      "DIESEL": 7.46,
+      "DIESEL_S10": 7.7,
+      "DIESEL": 7.54,
       "ETANOL": 5.67,
-      "GASOLINA_ADITIVADA": 7.19,
+      "GASOLINA_ADITIVADA": 7.17,
       "GASOLINA_COMUM": 7.11,
       "GLP": 125.5
     },
     "IGUATU": {
-      "DIESEL_S10": 7.37,
-      "DIESEL": 7.22,
+      "DIESEL_S10": 7.41,
+      "DIESEL": 7.32,
       "ETANOL": 5.09,
       "GASOLINA_ADITIVADA": 7.34,
-      "GASOLINA_COMUM": 7.27,
-      "GLP": 122.43
+      "GASOLINA_COMUM": 7.29,
+      "GLP": 123.85
     },
     "ITAPIPOCA": {
       "DIESEL_S10": 7.66,
       "ETANOL": 5.74,
       "GASOLINA_ADITIVADA": 7.52,
       "GASOLINA_COMUM": 7.49,
-      "GLP": 119.14
+      "GLP": 128.57
     },
     "JUAZEIRO DO NORTE": {
-      "DIESEL_S10": 7.11,
-      "DIESEL": 6.7,
+      "DIESEL_S10": 7.13,
+      "DIESEL": 6.73,
       "ETANOL": 5.21,
       "GASOLINA_ADITIVADA": 7.05,
       "GASOLINA_COMUM": 6.93,
@@ -381,476 +375,436 @@
     },
     "LIMOEIRO DO NORTE": {
       "DIESEL_S10": 7.22,
-      "DIESEL": 7.29,
+      "DIESEL": 7.36,
       "ETANOL": 5.44,
-      "GASOLINA_ADITIVADA": 6.94,
-      "GASOLINA_COMUM": 6.91,
+      "GASOLINA_ADITIVADA": 6.93,
+      "GASOLINA_COMUM": 6.9,
       "GLP": 123.33
     },
     "QUIXADA": {
-      "DIESEL_S10": 6.99,
-      "ETANOL": 5.05,
-      "GASOLINA_ADITIVADA": 6.82,
+      "DIESEL_S10": 7.09,
+      "ETANOL": 5.01,
+      "GASOLINA_ADITIVADA": 6.71,
       "GASOLINA_COMUM": 6.66,
       "GLP": 117.14
     },
     "SOBRAL": {
-      "DIESEL_S10": 7.32,
+      "DIESEL_S10": 7.33,
       "ETANOL": 5.37,
-      "GASOLINA_ADITIVADA": 7.25,
+      "GASOLINA_ADITIVADA": 7.28,
       "GASOLINA_COMUM": 7.1,
-      "GLP": 115.33
+      "GLP": 118.0
     }
   },
   "DISTRITO FEDERAL": {
     "BRASILIA": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.91,
-      "ETANOL": 4.29,
-      "GASOLINA_ADITIVADA": 6.75,
-      "GASOLINA_COMUM": 6.63,
-      "GLP": 105.56
+      "DIESEL_S10": 6.97,
+      "DIESEL": 6.93,
+      "ETANOL": 4.38,
+      "GASOLINA_ADITIVADA": 6.83,
+      "GASOLINA_COMUM": 6.69,
+      "GLP": 105.75
     }
   },
   "ESPIRITO SANTO": {
-    "ARACRUZ": {
-      "DIESEL_S10": 7.09,
-      "DIESEL": 6.99,
-      "GASOLINA_ADITIVADA": 6.99,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 106.33
-    },
     "CACHOEIRO DE ITAPEMIRIM": {
-      "DIESEL_S10": 7.09,
-      "DIESEL": 6.99,
-      "GASOLINA_COMUM": 7.19,
-      "GLP": 105.0
+      "DIESEL_S10": 6.73,
+      "DIESEL": 6.59,
+      "ETANOL": 4.79,
+      "GASOLINA_ADITIVADA": 7.34,
+      "GASOLINA_COMUM": 7.12,
+      "GLP": 102.14,
+      "GNV": 4.59
     },
     "CARIACICA": {
-      "DIESEL_S10": 6.8,
-      "DIESEL": 6.66,
-      "ETANOL": 4.48,
-      "GASOLINA_ADITIVADA": 6.48,
-      "GASOLINA_COMUM": 6.36,
-      "GLP": 103.33,
-      "GNV": 4.28
+      "DIESEL_S10": 6.79,
+      "DIESEL": 6.6,
+      "ETANOL": 4.46,
+      "GASOLINA_ADITIVADA": 6.45,
+      "GASOLINA_COMUM": 6.33,
+      "GLP": 101.0,
+      "GNV": 4.36
     },
     "COLATINA": {
-      "DIESEL_S10": 6.83,
-      "DIESEL": 6.72,
-      "ETANOL": 4.69,
-      "GASOLINA_ADITIVADA": 6.78,
-      "GASOLINA_COMUM": 6.68,
+      "DIESEL_S10": 6.79,
+      "DIESEL": 6.71,
+      "ETANOL": 4.86,
+      "GASOLINA_ADITIVADA": 6.8,
+      "GASOLINA_COMUM": 6.69,
       "GLP": 107.28,
       "GNV": 4.79
     },
-    "LINHARES": {
-      "DIESEL": 6.59,
-      "GASOLINA_ADITIVADA": 6.69,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 115.0
+    "GUARAPARI": {
+      "DIESEL_S10": 7.16,
+      "DIESEL": 7.39,
+      "ETANOL": 5.26,
+      "GASOLINA_ADITIVADA": 7.02,
+      "GASOLINA_COMUM": 6.82,
+      "GLP": 112.42
     },
     "SAO MATEUS": {
-      "DIESEL_S10": 6.95,
+      "DIESEL_S10": 6.92,
       "DIESEL": 6.69,
-      "ETANOL": 4.86,
-      "GASOLINA_ADITIVADA": 6.86,
-      "GASOLINA_COMUM": 6.64,
-      "GLP": 119.99,
-      "GNV": 4.98
+      "ETANOL": 4.55,
+      "GASOLINA_ADITIVADA": 6.89,
+      "GASOLINA_COMUM": 6.63
     },
     "SERRA": {
-      "DIESEL_S10": 6.73,
+      "DIESEL_S10": 6.74,
       "DIESEL": 6.65,
-      "ETANOL": 4.65,
-      "GASOLINA_ADITIVADA": 6.53,
-      "GASOLINA_COMUM": 6.35,
-      "GLP": 100.3,
+      "ETANOL": 4.56,
+      "GASOLINA_ADITIVADA": 6.51,
+      "GASOLINA_COMUM": 6.31,
+      "GLP": 99.92,
       "GNV": 4.49
     },
     "VILA VELHA": {
-      "DIESEL_S10": 6.73,
-      "DIESEL": 6.66,
-      "ETANOL": 4.41,
-      "GASOLINA_ADITIVADA": 6.56,
+      "DIESEL_S10": 6.79,
+      "DIESEL": 6.59,
+      "ETANOL": 4.5,
+      "GASOLINA_ADITIVADA": 6.57,
       "GASOLINA_COMUM": 6.29,
-      "GLP": 102.92,
+      "GLP": 103.46,
       "GNV": 4.49
     },
     "VITORIA": {
       "DIESEL_S10": 6.86,
-      "ETANOL": 4.51,
-      "GASOLINA_ADITIVADA": 6.46,
+      "ETANOL": 4.5,
+      "GASOLINA_ADITIVADA": 6.44,
       "GASOLINA_COMUM": 6.29,
-      "GLP": 101.67
+      "GLP": 103.67
     }
   },
   "GOIAS": {
     "AGUAS LINDAS DE GOIAS": {
       "DIESEL_S10": 6.88,
-      "DIESEL": 6.59,
-      "ETANOL": 4.29,
-      "GASOLINA_ADITIVADA": 6.65,
-      "GASOLINA_COMUM": 6.59,
+      "DIESEL": 6.61,
+      "ETANOL": 4.4,
+      "GASOLINA_ADITIVADA": 6.77,
+      "GASOLINA_COMUM": 6.69,
       "GLP": 107.15
     },
     "ANAPOLIS": {
-      "DIESEL_S10": 6.62,
-      "DIESEL": 5.96,
-      "ETANOL": 4.08,
-      "GASOLINA_ADITIVADA": 6.81,
-      "GASOLINA_COMUM": 6.68,
-      "GLP": 114.41
+      "DIESEL_S10": 6.74,
+      "DIESEL": 6.17,
+      "ETANOL": 4.4,
+      "GASOLINA_ADITIVADA": 6.86,
+      "GASOLINA_COMUM": 6.76,
+      "GLP": 114.71
     },
     "APARECIDA DE GOIANIA": {
-      "DIESEL_S10": 6.55,
-      "DIESEL": 6.09,
-      "ETANOL": 4.06,
-      "GASOLINA_ADITIVADA": 6.53,
-      "GASOLINA_COMUM": 6.53,
-      "GLP": 111.05
+      "DIESEL_S10": 6.7,
+      "DIESEL": 6.22,
+      "ETANOL": 4.53,
+      "GASOLINA_ADITIVADA": 6.93,
+      "GASOLINA_COMUM": 6.8,
+      "GLP": 110.26
     },
     "CALDAS NOVAS": {
-      "DIESEL_S10": 6.64,
-      "DIESEL": 6.28,
-      "ETANOL": 3.73,
-      "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.64,
-      "GLP": 115.1
+      "DIESEL_S10": 6.68,
+      "DIESEL": 6.4,
+      "ETANOL": 4.01,
+      "GASOLINA_ADITIVADA": 6.73,
+      "GASOLINA_COMUM": 6.7,
+      "GLP": 115.7
     },
     "CATALAO": {
-      "DIESEL_S10": 6.94,
-      "DIESEL": 6.57,
-      "ETANOL": 3.89,
-      "GASOLINA_ADITIVADA": 6.61,
-      "GASOLINA_COMUM": 6.43,
-      "GLP": 114.0
+      "DIESEL_S10": 7.04,
+      "DIESEL": 6.6,
+      "ETANOL": 3.97,
+      "GASOLINA_ADITIVADA": 6.63,
+      "GASOLINA_COMUM": 6.47,
+      "GLP": 114.71
     },
     "FORMOSA": {
-      "DIESEL_S10": 6.58,
-      "DIESEL": 5.98,
-      "ETANOL": 3.53,
-      "GASOLINA_ADITIVADA": 5.76,
-      "GASOLINA_COMUM": 5.74,
-      "GLP": 113.29
+      "DIESEL_S10": 6.91,
+      "DIESEL": 6.26,
+      "ETANOL": 3.93,
+      "GASOLINA_ADITIVADA": 5.82,
+      "GASOLINA_COMUM": 5.79,
+      "GLP": 113.0
     },
     "GOIANIA": {
-      "DIESEL_S10": 6.68,
-      "DIESEL": 6.27,
-      "ETANOL": 3.88,
-      "GASOLINA_ADITIVADA": 6.81,
-      "GASOLINA_COMUM": 6.48,
-      "GLP": 115.26
+      "DIESEL_S10": 6.73,
+      "DIESEL": 6.29,
+      "ETANOL": 4.47,
+      "GASOLINA_ADITIVADA": 7.07,
+      "GASOLINA_COMUM": 6.77,
+      "GLP": 114.74
     },
     "ITUMBIARA": {
-      "DIESEL_S10": 6.35,
-      "DIESEL": 5.84,
-      "ETANOL": 3.82,
-      "GASOLINA_ADITIVADA": 6.69,
-      "GASOLINA_COMUM": 6.36,
+      "DIESEL_S10": 6.68,
+      "DIESEL": 6.12,
+      "ETANOL": 3.88,
+      "GASOLINA_ADITIVADA": 6.65,
+      "GASOLINA_COMUM": 6.47,
       "GLP": 119.29
     },
     "LUZIANIA": {
-      "DIESEL_S10": 6.39,
-      "DIESEL": 6.09,
-      "ETANOL": 3.89,
-      "GASOLINA_ADITIVADA": 6.26,
-      "GASOLINA_COMUM": 6.17,
-      "GLP": 104.75
+      "DIESEL_S10": 6.67,
+      "DIESEL": 6.48,
+      "ETANOL": 4.44,
+      "GASOLINA_ADITIVADA": 6.88,
+      "GASOLINA_COMUM": 6.72,
+      "GLP": 104.62
     },
     "MINEIROS": {
-      "DIESEL_S10": 6.85,
-      "DIESEL": 6.3,
-      "ETANOL": 3.98,
-      "GASOLINA_ADITIVADA": 6.67,
-      "GASOLINA_COMUM": 6.55,
+      "DIESEL_S10": 6.73,
+      "DIESEL": 6.28,
+      "ETANOL": 3.99,
+      "GASOLINA_ADITIVADA": 6.71,
+      "GASOLINA_COMUM": 6.56,
       "GLP": 138.0
     },
     "PORANGATU": {
-      "DIESEL_S10": 6.71,
-      "DIESEL": 6.2,
+      "DIESEL_S10": 6.82,
+      "DIESEL": 6.23,
       "ETANOL": 3.92,
-      "GASOLINA_ADITIVADA": 6.79,
+      "GASOLINA_ADITIVADA": 6.64,
       "GASOLINA_COMUM": 6.64,
       "GLP": 120.71
     },
     "RIO VERDE": {
-      "DIESEL_S10": 6.87,
-      "DIESEL": 6.42,
-      "ETANOL": 3.58,
-      "GASOLINA_ADITIVADA": 6.41,
-      "GASOLINA_COMUM": 6.26,
-      "GLP": 123.89
+      "DIESEL_S10": 6.95,
+      "DIESEL": 6.27,
+      "ETANOL": 3.72,
+      "GASOLINA_ADITIVADA": 6.46,
+      "GASOLINA_COMUM": 6.35,
+      "GLP": 129.44
     },
     "TRINDADE": {
-      "DIESEL_S10": 6.57,
-      "DIESEL": 6.0,
-      "ETANOL": 3.99,
-      "GASOLINA_ADITIVADA": 7.05,
-      "GASOLINA_COMUM": 6.7,
-      "GLP": 103.5
+      "DIESEL_S10": 6.53,
+      "DIESEL": 5.91,
+      "ETANOL": 4.54,
+      "GASOLINA_ADITIVADA": 7.01,
+      "GASOLINA_COMUM": 6.84,
+      "GLP": 102.43
     },
     "VALPARAISO DE GOIAS": {
       "DIESEL_S10": 6.77,
-      "DIESEL": 6.29,
-      "ETANOL": 3.96,
-      "GASOLINA_ADITIVADA": 6.49,
-      "GASOLINA_COMUM": 6.25,
-      "GLP": 108.48
+      "DIESEL": 6.51,
+      "ETANOL": 4.39,
+      "GASOLINA_ADITIVADA": 6.86,
+      "GASOLINA_COMUM": 6.71,
+      "GLP": 108.65
     }
   },
   "MARANHAO": {
     "ACAILANDIA": {
-      "DIESEL_S10": 6.75,
-      "DIESEL": 6.38,
+      "DIESEL_S10": 6.8,
+      "DIESEL": 6.42,
       "ETANOL": 5.03,
       "GASOLINA_ADITIVADA": 6.93,
       "GASOLINA_COMUM": 6.79,
-      "GLP": 128.0
+      "GLP": 122.0
     },
     "BACABAL": {
-      "DIESEL_S10": 6.79,
-      "DIESEL": 6.64,
-      "GASOLINA_ADITIVADA": 6.58,
-      "GASOLINA_COMUM": 6.47,
+      "DIESEL_S10": 6.8,
+      "DIESEL": 6.76,
+      "GASOLINA_ADITIVADA": 6.54,
+      "GASOLINA_COMUM": 6.45,
       "GLP": 127.14
     },
     "BALSAS": {
-      "DIESEL_S10": 7.13,
-      "DIESEL": 7.01,
-      "ETANOL": 5.58,
-      "GASOLINA_ADITIVADA": 7.24,
-      "GASOLINA_COMUM": 7.19,
-      "GLP": 130.0
+      "DIESEL_S10": 7.2,
+      "DIESEL": 7.15,
+      "ETANOL": 5.37,
+      "GASOLINA_ADITIVADA": 7.19,
+      "GASOLINA_COMUM": 7.15,
+      "GLP": 130.83
     },
     "BARRA DO CORDA": {
-      "DIESEL_S10": 6.86,
-      "DIESEL": 6.7,
+      "DIESEL_S10": 6.89,
+      "DIESEL": 6.75,
       "ETANOL": 5.55,
       "GASOLINA_ADITIVADA": 6.89,
-      "GASOLINA_COMUM": 6.73,
+      "GASOLINA_COMUM": 6.71,
       "GLP": 125.0
     },
     "CODO": {
-      "DIESEL_S10": 7.36,
-      "DIESEL": 7.19,
-      "ETANOL": 5.57,
+      "DIESEL_S10": 7.39,
+      "DIESEL": 7.28,
+      "ETANOL": 5.5,
       "GASOLINA_ADITIVADA": 7.34,
-      "GASOLINA_COMUM": 7.31,
+      "GASOLINA_COMUM": 7.3,
       "GLP": 118.86
     },
     "IMPERATRIZ": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 6.68,
+      "DIESEL_S10": 6.89,
+      "DIESEL": 6.67,
       "ETANOL": 5.24,
-      "GASOLINA_ADITIVADA": 6.72,
-      "GASOLINA_COMUM": 6.46,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.45,
       "GLP": 118.64
     },
     "PINHEIRO": {
-      "DIESEL_S10": 7.59,
-      "DIESEL": 7.26,
-      "ETANOL": 5.72,
-      "GASOLINA_ADITIVADA": 7.19,
-      "GASOLINA_COMUM": 7.12,
-      "GLP": 135.82
-    },
-    "PRESIDENTE DUTRA": {
-      "DIESEL_S10": 6.79,
-      "DIESEL": 6.7,
-      "ETANOL": 5.43,
-      "GASOLINA_ADITIVADA": 6.84,
-      "GASOLINA_COMUM": 6.82,
-      "GLP": 119.5
+      "DIESEL_S10": 7.5,
+      "DIESEL": 7.16,
+      "ETANOL": 5.59,
+      "GASOLINA_ADITIVADA": 7.13,
+      "GASOLINA_COMUM": 7.06,
+      "GLP": 134.99
     },
     "SAO JOSE DE RIBAMAR": {
-      "DIESEL_S10": 6.98,
-      "ETANOL": 4.94,
-      "GASOLINA_ADITIVADA": 6.57,
-      "GASOLINA_COMUM": 6.44,
-      "GLP": 128.43
+      "DIESEL_S10": 7.02,
+      "ETANOL": 4.99,
+      "GASOLINA_ADITIVADA": 6.54,
+      "GASOLINA_COMUM": 6.43,
+      "GLP": 125.0
     },
     "SAO LUIS": {
-      "DIESEL_S10": 6.99,
-      "DIESEL": 6.42,
-      "ETANOL": 4.9,
-      "GASOLINA_ADITIVADA": 6.69,
-      "GASOLINA_COMUM": 6.53,
-      "GLP": 129.51
+      "DIESEL_S10": 7.05,
+      "DIESEL": 6.72,
+      "ETANOL": 4.94,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.5,
+      "GLP": 127.7
     }
   },
   "MATO GROSSO": {
     "ALTA FLORESTA": {
-      "DIESEL_S10": 7.77,
-      "DIESEL": 7.13,
-      "ETANOL": 3.74,
-      "GASOLINA_ADITIVADA": 7.28,
-      "GASOLINA_COMUM": 7.09,
-      "GLP": 141.14
+      "DIESEL_S10": 7.81,
+      "DIESEL": 7.19,
+      "ETANOL": 3.88,
+      "GASOLINA_ADITIVADA": 7.34,
+      "GASOLINA_COMUM": 7.1,
+      "GLP": 129.71
     },
     "CACERES": {
-      "DIESEL_S10": 6.87,
-      "DIESEL": 6.66,
-      "ETANOL": 3.75,
-      "GASOLINA_ADITIVADA": 6.64,
-      "GASOLINA_COMUM": 6.55,
+      "DIESEL_S10": 6.99,
+      "DIESEL": 6.74,
+      "ETANOL": 3.85,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.57,
       "GLP": 125.4
     },
-    "CUIABA": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.53,
-      "ETANOL": 3.98,
-      "GASOLINA_ADITIVADA": 7.13,
-      "GASOLINA_COMUM": 6.98,
-      "GLP": 124.96,
-      "GNV": 3.99
-    },
     "RONDONOPOLIS": {
-      "DIESEL_S10": 6.89,
-      "DIESEL": 6.64,
-      "ETANOL": 3.74,
-      "GASOLINA_ADITIVADA": 6.72,
-      "GASOLINA_COMUM": 6.6,
+      "DIESEL_S10": 7.0,
+      "DIESEL": 6.75,
+      "ETANOL": 3.83,
+      "GASOLINA_ADITIVADA": 6.75,
+      "GASOLINA_COMUM": 6.63,
       "GLP": 136.71
     },
     "SINOP": {
-      "DIESEL_S10": 7.3,
-      "DIESEL": 6.75,
-      "ETANOL": 3.57,
-      "GASOLINA_ADITIVADA": 6.81,
-      "GASOLINA_COMUM": 6.6,
-      "GLP": 142.27
+      "DIESEL_S10": 7.19,
+      "DIESEL": 6.68,
+      "ETANOL": 3.75,
+      "GASOLINA_ADITIVADA": 6.84,
+      "GASOLINA_COMUM": 6.53,
+      "GLP": 141.18
     },
     "SORRISO": {
-      "DIESEL_S10": 7.24,
-      "DIESEL": 6.74,
-      "ETANOL": 3.74,
-      "GASOLINA_ADITIVADA": 7.1,
-      "GASOLINA_COMUM": 6.87,
-      "GLP": 140.33
-    },
-    "VARZEA GRANDE": {
-      "DIESEL_S10": 6.85,
-      "DIESEL": 6.67,
-      "ETANOL": 3.93,
-      "GASOLINA_ADITIVADA": 7.11,
-      "GASOLINA_COMUM": 6.9,
-      "GLP": 118.75,
-      "GNV": 3.99
+      "DIESEL_S10": 7.55,
+      "DIESEL": 6.83,
+      "ETANOL": 3.94,
+      "GASOLINA_ADITIVADA": 7.12,
+      "GASOLINA_COMUM": 6.91,
+      "GLP": 135.55
     }
   },
   "MATO GROSSO DO SUL": {
     "CAMPO GRANDE": {
-      "DIESEL_S10": 6.79,
+      "DIESEL_S10": 6.86,
       "DIESEL": 6.39,
-      "ETANOL": 3.81,
-      "GASOLINA_ADITIVADA": 6.49,
+      "ETANOL": 3.82,
+      "GASOLINA_ADITIVADA": 6.47,
       "GASOLINA_COMUM": 6.26,
-      "GLP": 114.78,
+      "GLP": 114.06,
       "GNV": 4.59
     },
     "CORUMBA": {
-      "DIESEL_S10": 7.69,
-      "DIESEL": 7.48,
+      "DIESEL_S10": 7.89,
+      "DIESEL": 7.54,
       "ETANOL": 4.91,
-      "GASOLINA_ADITIVADA": 7.17,
+      "GASOLINA_ADITIVADA": 7.19,
       "GASOLINA_COMUM": 7.1,
-      "GLP": 132.5
+      "GLP": 130.83
     },
     "DOURADOS": {
-      "DIESEL_S10": 6.83,
-      "DIESEL": 6.36,
+      "DIESEL_S10": 6.96,
+      "DIESEL": 6.4,
       "ETANOL": 4.18,
       "GASOLINA_ADITIVADA": 6.82,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 121.0
+      "GASOLINA_COMUM": 6.68,
+      "GLP": 121.5
     },
     "PONTA PORA": {
-      "DIESEL_S10": 7.28,
-      "DIESEL": 6.76,
-      "ETANOL": 3.93,
-      "GASOLINA_ADITIVADA": 6.8,
-      "GASOLINA_COMUM": 6.73,
-      "GLP": 123.25
+      "DIESEL_S10": 7.26,
+      "DIESEL": 6.7,
+      "ETANOL": 3.9,
+      "GASOLINA_ADITIVADA": 6.79,
+      "GASOLINA_COMUM": 6.71,
+      "GLP": 126.15
     },
     "TRES LAGOAS": {
-      "DIESEL_S10": 6.94,
-      "DIESEL": 6.68,
-      "ETANOL": 3.76,
-      "GASOLINA_ADITIVADA": 6.85,
-      "GASOLINA_COMUM": 6.47,
-      "GLP": 129.29
+      "DIESEL_S10": 7.02,
+      "DIESEL": 6.75,
+      "ETANOL": 3.84,
+      "GASOLINA_ADITIVADA": 6.95,
+      "GASOLINA_COMUM": 6.48,
+      "GLP": 130.71
     }
   },
   "MINAS GERAIS": {
     "ALFENAS": {
-      "DIESEL_S10": 6.99,
+      "DIESEL_S10": 7.06,
       "DIESEL": 6.42,
-      "ETANOL": 4.06,
+      "ETANOL": 4.1,
       "GASOLINA_ADITIVADA": 6.63,
-      "GASOLINA_COMUM": 6.45,
-      "GLP": 108.57
-    },
-    "ARAGUARI": {
-      "DIESEL_S10": 6.5,
-      "DIESEL": 6.05,
-      "ETANOL": 3.97,
-      "GASOLINA_ADITIVADA": 5.97,
-      "GASOLINA_COMUM": 6.13,
-      "GLP": 105.14
+      "GASOLINA_COMUM": 6.42,
+      "GLP": 107.5
     },
     "ARAXA": {
-      "DIESEL_S10": 6.58,
-      "DIESEL": 6.1,
+      "DIESEL_S10": 6.59,
+      "DIESEL": 6.13,
       "ETANOL": 4.19,
-      "GASOLINA_ADITIVADA": 6.5,
-      "GASOLINA_COMUM": 6.34,
-      "GLP": 109.0
+      "GASOLINA_ADITIVADA": 6.48,
+      "GASOLINA_COMUM": 6.33,
+      "GLP": 114.29
     },
     "BARBACENA": {
-      "DIESEL_S10": 6.79,
-      "DIESEL": 6.39,
-      "ETANOL": 4.2,
-      "GASOLINA_ADITIVADA": 6.96,
+      "ETANOL": 4.19,
+      "GASOLINA_ADITIVADA": 6.99,
       "GASOLINA_COMUM": 6.59,
       "GLP": 100.0,
       "GNV": 5.39
     },
     "BELO HORIZONTE": {
-      "DIESEL_S10": 6.73,
-      "DIESEL": 6.26,
-      "ETANOL": 4.07,
-      "GASOLINA_ADITIVADA": 6.64,
-      "GASOLINA_COMUM": 6.36,
-      "GLP": 111.36,
-      "GNV": 5.28
+      "DIESEL_S10": 6.76,
+      "DIESEL": 6.29,
+      "ETANOL": 4.21,
+      "GASOLINA_ADITIVADA": 6.65,
+      "GASOLINA_COMUM": 6.35,
+      "GLP": 112.95,
+      "GNV": 5.42
     },
     "BETIM": {
-      "DIESEL_S10": 6.55,
-      "DIESEL": 6.11,
-      "ETANOL": 4.0,
-      "GASOLINA_ADITIVADA": 6.25,
+      "DIESEL_S10": 6.57,
+      "DIESEL": 6.12,
+      "ETANOL": 4.14,
+      "GASOLINA_ADITIVADA": 6.26,
       "GASOLINA_COMUM": 6.21,
-      "GLP": 114.62
+      "GLP": 114.92
     },
     "BOM DESPACHO": {
-      "DIESEL_S10": 6.72,
+      "DIESEL_S10": 6.76,
       "DIESEL": 6.3,
-      "ETANOL": 3.95,
-      "GASOLINA_ADITIVADA": 6.27,
-      "GASOLINA_COMUM": 6.15,
-      "GLP": 102.13
+      "ETANOL": 4.01,
+      "GASOLINA_ADITIVADA": 6.3,
+      "GASOLINA_COMUM": 6.16,
+      "GLP": 103.7
     },
     "CAMPO BELO": {
-      "DIESEL_S10": 7.02,
-      "DIESEL": 6.66,
-      "ETANOL": 4.01,
+      "DIESEL_S10": 7.12,
+      "DIESEL": 6.49,
+      "ETANOL": 4.11,
       "GASOLINA_ADITIVADA": 5.99,
-      "GASOLINA_COMUM": 6.1,
-      "GLP": 116.43
+      "GASOLINA_COMUM": 6.12,
+      "GLP": 115.0
     },
     "CARATINGA": {
-      "DIESEL_S10": 6.92,
+      "DIESEL_S10": 6.94,
       "DIESEL": 6.46,
       "ETANOL": 4.15,
       "GASOLINA_ADITIVADA": 6.52,
@@ -858,108 +812,124 @@
       "GLP": 121.14
     },
     "CONGONHAS": {
-      "DIESEL_S10": 6.6,
-      "DIESEL": 6.15,
+      "DIESEL_S10": 6.63,
+      "DIESEL": 6.21,
       "ETANOL": 4.1,
       "GASOLINA_ADITIVADA": 6.69,
       "GASOLINA_COMUM": 6.34,
-      "GLP": 109.67
+      "GLP": 108.0
+    },
+    "CONSELHEIRO LAFAIETE": {
+      "DIESEL_S10": 6.98,
+      "DIESEL": 6.42,
+      "ETANOL": 3.99,
+      "GASOLINA_ADITIVADA": 6.68,
+      "GASOLINA_COMUM": 6.55,
+      "GLP": 99.71
     },
     "CONTAGEM": {
-      "DIESEL_S10": 6.5,
-      "DIESEL": 6.04,
-      "ETANOL": 3.99,
-      "GASOLINA_ADITIVADA": 6.52,
+      "DIESEL_S10": 6.57,
+      "DIESEL": 6.09,
+      "ETANOL": 4.18,
+      "GASOLINA_ADITIVADA": 6.51,
       "GASOLINA_COMUM": 6.27,
-      "GLP": 117.12,
+      "GLP": 117.43,
       "GNV": 4.94
     },
     "CORONEL FABRICIANO": {
-      "DIESEL_S10": 6.61,
+      "DIESEL_S10": 6.64,
       "DIESEL": 6.11,
-      "ETANOL": 4.03,
-      "GASOLINA_ADITIVADA": 6.63,
-      "GASOLINA_COMUM": 6.28,
-      "GLP": 122.86
+      "ETANOL": 4.15,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.29,
+      "GLP": 125.0
     },
     "CURVELO": {
-      "DIESEL_S10": 6.78,
-      "DIESEL": 6.45,
-      "ETANOL": 4.0,
-      "GASOLINA_ADITIVADA": 6.53,
-      "GASOLINA_COMUM": 6.39,
-      "GLP": 106.29
+      "DIESEL_S10": 6.86,
+      "DIESEL": 6.5,
+      "ETANOL": 4.05,
+      "GASOLINA_ADITIVADA": 6.57,
+      "GASOLINA_COMUM": 6.4,
+      "GLP": 105.57
     },
     "DIVINOPOLIS": {
-      "DIESEL_S10": 6.63,
-      "DIESEL": 6.24,
-      "ETANOL": 3.94,
-      "GASOLINA_ADITIVADA": 6.08,
-      "GASOLINA_COMUM": 6.03,
-      "GLP": 103.8
+      "DIESEL_S10": 6.69,
+      "DIESEL": 6.59,
+      "ETANOL": 3.95,
+      "GASOLINA_ADITIVADA": 6.21,
+      "GASOLINA_COMUM": 6.01,
+      "GLP": 106.33
     },
     "FORMIGA": {
-      "DIESEL_S10": 6.86,
-      "DIESEL": 6.49,
-      "ETANOL": 3.99,
+      "DIESEL_S10": 6.7,
+      "DIESEL": 6.66,
+      "ETANOL": 4.0,
       "GASOLINA_ADITIVADA": 6.27,
       "GASOLINA_COMUM": 6.17,
-      "GLP": 118.14
+      "GLP": 117.14
     },
     "FRUTAL": {
-      "DIESEL_S10": 6.62,
-      "DIESEL": 6.11,
-      "ETANOL": 3.72,
+      "DIESEL_S10": 6.83,
+      "DIESEL": 6.15,
+      "ETANOL": 3.73,
       "GASOLINA_ADITIVADA": 6.15,
       "GASOLINA_COMUM": 6.16,
-      "GLP": 100.5
+      "GLP": 97.66
     },
     "GOVERNADOR VALADARES": {
-      "DIESEL_S10": 6.77,
-      "DIESEL": 6.42,
-      "ETANOL": 3.95,
-      "GASOLINA_ADITIVADA": 6.37,
-      "GASOLINA_COMUM": 6.03,
-      "GLP": 123.57
+      "DIESEL_S10": 6.86,
+      "DIESEL": 6.45,
+      "ETANOL": 3.94,
+      "GASOLINA_ADITIVADA": 6.35,
+      "GASOLINA_COMUM": 6.06,
+      "GLP": 123.0
     },
     "GUAXUPE": {
-      "DIESEL_S10": 6.63,
-      "DIESEL": 6.31,
-      "ETANOL": 4.0,
+      "DIESEL_S10": 6.8,
+      "DIESEL": 6.27,
+      "ETANOL": 4.01,
       "GASOLINA_ADITIVADA": 6.45,
       "GASOLINA_COMUM": 6.3,
       "GLP": 102.5
     },
+    "IPATINGA": {
+      "DIESEL_S10": 6.68,
+      "DIESEL": 6.15,
+      "ETANOL": 4.21,
+      "GASOLINA_ADITIVADA": 6.62,
+      "GASOLINA_COMUM": 6.33,
+      "GLP": 120.5
+    },
     "ITAJUBA": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 6.76,
+      "DIESEL_S10": 7.15,
+      "DIESEL": 6.8,
       "ETANOL": 4.15,
-      "GASOLINA_ADITIVADA": 6.61,
-      "GASOLINA_COMUM": 6.43,
-      "GLP": 103.0
+      "GASOLINA_ADITIVADA": 6.62,
+      "GASOLINA_COMUM": 6.45,
+      "GLP": 103.28
     },
     "ITAUNA": {
-      "DIESEL_S10": 6.63,
-      "DIESEL": 6.36,
-      "ETANOL": 3.84,
-      "GASOLINA_ADITIVADA": 6.42,
-      "GASOLINA_COMUM": 6.08,
-      "GLP": 123.57
+      "DIESEL_S10": 6.67,
+      "DIESEL": 6.42,
+      "ETANOL": 3.97,
+      "GASOLINA_ADITIVADA": 6.5,
+      "GASOLINA_COMUM": 6.09,
+      "GLP": 125.71
     },
     "ITUIUTABA": {
-      "DIESEL_S10": 6.65,
+      "DIESEL_S10": 6.67,
       "DIESEL": 6.12,
-      "ETANOL": 3.79,
-      "GASOLINA_ADITIVADA": 6.17,
-      "GASOLINA_COMUM": 6.1,
-      "GLP": 105.0
+      "ETANOL": 3.81,
+      "GASOLINA_ADITIVADA": 6.14,
+      "GASOLINA_COMUM": 6.09,
+      "GLP": 103.57
     },
     "JANAUBA": {
-      "DIESEL_S10": 7.22,
-      "DIESEL": 6.88,
-      "ETANOL": 3.93,
-      "GASOLINA_ADITIVADA": 6.76,
-      "GASOLINA_COMUM": 6.25,
+      "DIESEL_S10": 7.27,
+      "DIESEL": 6.91,
+      "ETANOL": 4.21,
+      "GASOLINA_ADITIVADA": 6.73,
+      "GASOLINA_COMUM": 6.34,
       "GLP": 124.57
     },
     "JANUARIA": {
@@ -971,35 +941,35 @@
       "GLP": 134.57
     },
     "JOAO MONLEVADE": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.36,
-      "ETANOL": 4.24,
-      "GASOLINA_ADITIVADA": 6.48,
-      "GASOLINA_COMUM": 6.36,
+      "DIESEL_S10": 6.86,
+      "DIESEL": 6.37,
+      "ETANOL": 4.29,
+      "GASOLINA_ADITIVADA": 6.49,
+      "GASOLINA_COMUM": 6.38,
       "GLP": 110.71
     },
     "JOAO PINHEIRO": {
       "DIESEL_S10": 6.43,
       "DIESEL": 5.93,
-      "ETANOL": 4.08,
+      "ETANOL": 4.04,
       "GASOLINA_ADITIVADA": 6.41,
       "GASOLINA_COMUM": 6.26,
-      "GLP": 111.29
+      "GLP": 110.57
     },
     "JUIZ DE FORA": {
-      "DIESEL_S10": 6.91,
-      "DIESEL": 6.6,
-      "ETANOL": 4.49,
-      "GASOLINA_ADITIVADA": 6.84,
+      "DIESEL_S10": 6.93,
+      "DIESEL": 6.71,
+      "ETANOL": 4.47,
+      "GASOLINA_ADITIVADA": 6.83,
       "GASOLINA_COMUM": 6.61,
       "GLP": 100.33
     },
     "LAVRAS": {
-      "DIESEL_S10": 6.82,
-      "ETANOL": 3.99,
-      "GASOLINA_ADITIVADA": 6.47,
+      "DIESEL_S10": 6.87,
+      "ETANOL": 4.05,
+      "GASOLINA_ADITIVADA": 6.48,
       "GASOLINA_COMUM": 6.27,
-      "GLP": 114.81
+      "GLP": 113.78
     },
     "LEOPOLDINA": {
       "DIESEL_S10": 6.65,
@@ -1010,84 +980,76 @@
       "GLP": 108.86
     },
     "MONTE CARMELO": {
-      "DIESEL_S10": 6.63,
-      "DIESEL": 5.88,
-      "ETANOL": 3.83,
+      "DIESEL_S10": 6.8,
+      "DIESEL": 6.22,
+      "ETANOL": 3.84,
       "GASOLINA_ADITIVADA": 6.32,
-      "GASOLINA_COMUM": 6.1,
-      "GLP": 107.17
+      "GASOLINA_COMUM": 6.09,
+      "GLP": 108.0
     },
     "MONTES CLAROS": {
-      "DIESEL_S10": 6.71,
-      "DIESEL": 6.35,
-      "ETANOL": 3.94,
-      "GASOLINA_ADITIVADA": 6.2,
-      "GASOLINA_COMUM": 5.98,
-      "GLP": 117.26
-    },
-    "OLIVEIRA": {
-      "DIESEL_S10": 6.81,
-      "DIESEL": 6.55,
+      "DIESEL_S10": 6.76,
+      "DIESEL": 6.42,
       "ETANOL": 4.03,
-      "GASOLINA_ADITIVADA": 6.45,
-      "GASOLINA_COMUM": 6.26,
-      "GLP": 113.6
+      "GASOLINA_ADITIVADA": 6.18,
+      "GASOLINA_COMUM": 6.0,
+      "GLP": 117.91
     },
-    "OURO PRETO": {
-      "DIESEL_S10": 7.08,
-      "DIESEL": 6.82,
-      "ETANOL": 4.29,
-      "GASOLINA_ADITIVADA": 6.39,
-      "GASOLINA_COMUM": 6.29,
-      "GLP": 107.72
+    "MURIAE": {
+      "DIESEL_S10": 6.6,
+      "DIESEL": 6.5,
+      "ETANOL": 4.59,
+      "GASOLINA_ADITIVADA": 6.78,
+      "GASOLINA_COMUM": 6.65,
+      "GLP": 106.67
     },
     "PARA DE MINAS": {
-      "DIESEL_S10": 6.63,
+      "DIESEL_S10": 6.71,
       "DIESEL": 6.26,
       "ETANOL": 3.99,
       "GASOLINA_ADITIVADA": 6.72,
       "GASOLINA_COMUM": 6.34,
-      "GLP": 106.0
+      "GLP": 106.71
     },
     "PARACATU": {
       "DIESEL_S10": 6.77,
-      "DIESEL": 6.32,
-      "ETANOL": 3.83,
-      "GASOLINA_ADITIVADA": 6.4,
-      "GASOLINA_COMUM": 6.25,
-      "GLP": 119.29
+      "DIESEL": 6.31,
+      "ETANOL": 3.82,
+      "GASOLINA_ADITIVADA": 6.39,
+      "GASOLINA_COMUM": 6.24,
+      "GLP": 117.86
     },
     "PASSOS": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.32,
-      "ETANOL": 3.93,
-      "GASOLINA_ADITIVADA": 6.19,
-      "GASOLINA_COMUM": 6.03,
+      "DIESEL_S10": 6.93,
+      "DIESEL": 6.37,
+      "ETANOL": 4.04,
+      "GASOLINA_ADITIVADA": 6.46,
+      "GASOLINA_COMUM": 6.21,
       "GLP": 111.43
     },
     "PATROCINIO": {
-      "DIESEL_S10": 7.02,
-      "DIESEL": 6.63,
-      "ETANOL": 4.3,
-      "GASOLINA_ADITIVADA": 6.58,
-      "GASOLINA_COMUM": 6.52,
-      "GLP": 112.71
+      "DIESEL_S10": 7.01,
+      "DIESEL": 6.66,
+      "ETANOL": 4.33,
+      "GASOLINA_ADITIVADA": 6.65,
+      "GASOLINA_COMUM": 6.55,
+      "GLP": 112.0
     },
     "POCOS DE CALDAS": {
-      "DIESEL_S10": 7.18,
-      "DIESEL": 6.79,
-      "ETANOL": 4.06,
-      "GASOLINA_ADITIVADA": 6.68,
+      "DIESEL_S10": 7.17,
+      "DIESEL": 6.69,
+      "ETANOL": 4.11,
+      "GASOLINA_ADITIVADA": 6.78,
       "GASOLINA_COMUM": 6.54,
-      "GLP": 123.71
+      "GLP": 123.43
     },
     "SABARA": {
       "DIESEL_S10": 6.84,
-      "DIESEL": 6.09,
-      "ETANOL": 4.14,
-      "GASOLINA_ADITIVADA": 6.49,
-      "GASOLINA_COMUM": 6.22,
-      "GLP": 123.33,
+      "DIESEL": 5.99,
+      "ETANOL": 4.21,
+      "GASOLINA_ADITIVADA": 6.5,
+      "GASOLINA_COMUM": 6.27,
+      "GLP": 122.5,
       "GNV": 5.69
     },
     "SAO JOAO DEL REI": {
@@ -1099,27 +1061,27 @@
       "GLP": 110.0
     },
     "SAO SEBASTIAO DO PARAISO": {
-      "DIESEL_S10": 6.79,
+      "DIESEL_S10": 6.84,
       "DIESEL": 6.47,
       "ETANOL": 4.1,
-      "GASOLINA_ADITIVADA": 6.34,
-      "GASOLINA_COMUM": 6.29,
-      "GLP": 110.62
+      "GASOLINA_ADITIVADA": 6.36,
+      "GASOLINA_COMUM": 6.28,
+      "GLP": 109.37
     },
     "SETE LAGOAS": {
-      "DIESEL_S10": 6.61,
-      "DIESEL": 6.2,
-      "ETANOL": 3.75,
+      "DIESEL_S10": 6.56,
+      "DIESEL": 5.98,
+      "ETANOL": 3.81,
       "GASOLINA_ADITIVADA": 6.02,
       "GASOLINA_COMUM": 5.92,
       "GLP": 106.12,
       "GNV": 5.19
     },
     "TEOFILO OTONI": {
-      "DIESEL_S10": 6.72,
-      "DIESEL": 6.36,
-      "ETANOL": 3.84,
-      "GASOLINA_ADITIVADA": 6.11,
+      "DIESEL_S10": 6.89,
+      "DIESEL": 6.43,
+      "ETANOL": 3.88,
+      "GASOLINA_ADITIVADA": 6.17,
       "GASOLINA_COMUM": 5.98,
       "GLP": 126.0,
       "GNV": 5.45
@@ -1127,68 +1089,63 @@
     "TIMOTEO": {
       "DIESEL_S10": 6.6,
       "DIESEL": 6.1,
-      "ETANOL": 4.03,
+      "ETANOL": 4.21,
       "GASOLINA_ADITIVADA": 6.42,
       "GASOLINA_COMUM": 6.26,
-      "GLP": 119.17
+      "GLP": 114.0
     },
     "TRES CORACOES": {
-      "DIESEL_S10": 7.14,
-      "DIESEL": 6.84,
-      "ETANOL": 4.44,
-      "GASOLINA_ADITIVADA": 6.89,
-      "GASOLINA_COMUM": 6.71,
+      "DIESEL_S10": 7.24,
+      "DIESEL": 6.96,
+      "ETANOL": 4.27,
+      "GASOLINA_ADITIVADA": 6.81,
+      "GASOLINA_COMUM": 6.68,
       "GLP": 100.0
     },
-    "UBA": {
-      "DIESEL_S10": 6.99,
-      "ETANOL": 4.44,
-      "GASOLINA_ADITIVADA": 6.59,
-      "GASOLINA_COMUM": 6.43
-    },
     "UBERABA": {
-      "DIESEL_S10": 6.67,
-      "DIESEL": 6.19,
-      "ETANOL": 4.2,
-      "GASOLINA_ADITIVADA": 6.78,
-      "GASOLINA_COMUM": 6.4
+      "DIESEL_S10": 6.69,
+      "DIESEL": 6.21,
+      "ETANOL": 4.14,
+      "GASOLINA_ADITIVADA": 6.86,
+      "GASOLINA_COMUM": 6.25,
+      "GLP": 105.43
     },
     "UBERLANDIA": {
-      "DIESEL_S10": 6.57,
-      "DIESEL": 6.15,
-      "ETANOL": 4.01,
-      "GASOLINA_ADITIVADA": 6.77,
-      "GASOLINA_COMUM": 6.5,
-      "GLP": 103.12
+      "DIESEL_S10": 6.79,
+      "DIESEL": 6.3,
+      "ETANOL": 3.98,
+      "GASOLINA_ADITIVADA": 6.76,
+      "GASOLINA_COMUM": 6.55,
+      "GLP": 104.12
     },
     "UNAI": {
-      "DIESEL_S10": 6.39,
-      "DIESEL": 5.99,
-      "ETANOL": 3.81,
-      "GASOLINA_ADITIVADA": 6.39,
-      "GASOLINA_COMUM": 6.09,
+      "DIESEL_S10": 6.79,
+      "DIESEL": 6.52,
+      "ETANOL": 3.99,
+      "GASOLINA_ADITIVADA": 6.45,
+      "GASOLINA_COMUM": 6.35,
       "GLP": 123.33
     },
     "VARGINHA": {
-      "DIESEL_S10": 6.81,
+      "DIESEL_S10": 6.76,
       "DIESEL": 6.74,
-      "ETANOL": 3.88,
-      "GASOLINA_ADITIVADA": 6.47,
-      "GASOLINA_COMUM": 6.13,
+      "ETANOL": 3.89,
+      "GASOLINA_ADITIVADA": 6.43,
+      "GASOLINA_COMUM": 6.1,
       "GLP": 105.57
     },
     "VICOSA": {
-      "DIESEL_S10": 7.13,
+      "DIESEL_S10": 7.17,
       "DIESEL": 6.99,
       "ETANOL": 4.27,
       "GASOLINA_ADITIVADA": 6.88,
       "GASOLINA_COMUM": 6.63,
-      "GLP": 117.86
+      "GLP": 116.43
     }
   },
   "PARA": {
     "ABAETETUBA": {
-      "DIESEL_S10": 7.13,
+      "DIESEL_S10": 7.07,
       "DIESEL": 7.63,
       "GASOLINA_ADITIVADA": 7.08,
       "GASOLINA_COMUM": 6.89,
@@ -1196,14 +1153,14 @@
     },
     "ALENQUER": {
       "DIESEL_S10": 7.25,
-      "DIESEL": 7.07,
+      "DIESEL": 7.19,
       "ETANOL": 4.99,
       "GASOLINA_ADITIVADA": 7.16,
-      "GASOLINA_COMUM": 6.98,
-      "GLP": 120.0
+      "GASOLINA_COMUM": 7.04,
+      "GLP": 113.0
     },
     "ALTAMIRA": {
-      "DIESEL_S10": 7.95,
+      "DIESEL_S10": 8.02,
       "DIESEL": 7.7,
       "ETANOL": 5.56,
       "GASOLINA_ADITIVADA": 7.28,
@@ -1211,58 +1168,66 @@
       "GLP": 130.43
     },
     "ANANINDEUA": {
-      "DIESEL_S10": 6.64,
-      "ETANOL": 4.21,
-      "GASOLINA_ADITIVADA": 6.31,
+      "DIESEL_S10": 6.9,
+      "ETANOL": 4.12,
+      "GASOLINA_ADITIVADA": 6.46,
       "GASOLINA_COMUM": 6.19,
-      "GLP": 107.46
+      "GLP": 108.69
     },
     "BELEM": {
-      "DIESEL_S10": 7.07,
-      "ETANOL": 4.42,
-      "GASOLINA_ADITIVADA": 7.02,
-      "GASOLINA_COMUM": 6.54,
-      "GLP": 120.94
+      "DIESEL_S10": 7.26,
+      "ETANOL": 4.56,
+      "GASOLINA_ADITIVADA": 7.03,
+      "GASOLINA_COMUM": 6.64,
+      "GLP": 119.84
     },
     "BRAGANCA": {
-      "DIESEL_S10": 7.5,
-      "DIESEL": 7.43,
-      "ETANOL": 5.2,
-      "GASOLINA_ADITIVADA": 7.08,
-      "GASOLINA_COMUM": 7.01,
-      "GLP": 111.0
+      "DIESEL_S10": 7.47,
+      "DIESEL": 7.4,
+      "ETANOL": 4.76,
+      "GASOLINA_ADITIVADA": 6.85,
+      "GASOLINA_COMUM": 6.86,
+      "GLP": 112.5
     },
     "CASTANHAL": {
-      "DIESEL_S10": 6.91,
-      "DIESEL": 6.66,
-      "ETANOL": 4.85,
-      "GASOLINA_ADITIVADA": 6.66,
+      "DIESEL_S10": 6.94,
+      "DIESEL": 6.6,
+      "ETANOL": 4.75,
+      "GASOLINA_ADITIVADA": 6.65,
       "GASOLINA_COMUM": 6.52,
-      "GLP": 115.0
+      "GLP": 114.38
     },
     "CONCEICAO DO ARAGUAIA": {
       "DIESEL_S10": 7.4,
       "DIESEL": 7.08,
       "ETANOL": 5.62,
-      "GASOLINA_ADITIVADA": 7.03,
+      "GASOLINA_ADITIVADA": 7.06,
       "GASOLINA_COMUM": 7.02,
       "GLP": 110.0
     },
     "MARABA": {
-      "DIESEL_S10": 7.1,
-      "DIESEL": 6.78,
-      "ETANOL": 5.04,
-      "GASOLINA_ADITIVADA": 6.84,
-      "GASOLINA_COMUM": 6.7,
-      "GLP": 125.0
+      "DIESEL_S10": 7.11,
+      "DIESEL": 6.79,
+      "ETANOL": 4.94,
+      "GASOLINA_ADITIVADA": 6.87,
+      "GASOLINA_COMUM": 6.74,
+      "GLP": 124.38
     },
     "PARAGOMINAS": {
-      "DIESEL_S10": 7.07,
-      "DIESEL": 6.56,
+      "DIESEL_S10": 7.09,
+      "DIESEL": 6.69,
       "ETANOL": 5.02,
       "GASOLINA_ADITIVADA": 7.18,
       "GASOLINA_COMUM": 7.02,
-      "GLP": 135.71
+      "GLP": 137.14
+    },
+    "PARAUAPEBAS": {
+      "DIESEL_S10": 7.62,
+      "DIESEL": 7.39,
+      "ETANOL": 5.12,
+      "GASOLINA_ADITIVADA": 7.31,
+      "GASOLINA_COMUM": 7.01,
+      "GLP": 135.0
     }
   },
   "PARAIBA": {
@@ -1276,403 +1241,421 @@
       "GNV": 4.94
     },
     "CABEDELO": {
-      "DIESEL_S10": 7.01,
+      "DIESEL_S10": 7.04,
       "DIESEL": 6.82,
-      "ETANOL": 4.79,
+      "ETANOL": 4.77,
       "GASOLINA_ADITIVADA": 6.53,
       "GASOLINA_COMUM": 6.43,
-      "GLP": 114.43,
+      "GLP": 112.71,
       "GNV": 4.99
     },
     "CAMPINA GRANDE": {
       "DIESEL_S10": 6.94,
-      "DIESEL": 6.64,
-      "ETANOL": 4.74,
-      "GASOLINA_ADITIVADA": 6.68,
-      "GASOLINA_COMUM": 6.52,
-      "GLP": 105.22,
+      "DIESEL": 6.62,
+      "ETANOL": 4.75,
+      "GASOLINA_ADITIVADA": 6.76,
+      "GASOLINA_COMUM": 6.56,
+      "GLP": 106.33,
       "GNV": 5.67
     },
     "JOAO PESSOA": {
       "DIESEL_S10": 6.88,
-      "DIESEL": 6.62,
-      "ETANOL": 4.57,
-      "GASOLINA_ADITIVADA": 6.67,
-      "GASOLINA_COMUM": 6.35,
-      "GLP": 106.72,
+      "DIESEL": 6.54,
+      "ETANOL": 4.56,
+      "GASOLINA_ADITIVADA": 6.68,
+      "GASOLINA_COMUM": 6.34,
+      "GLP": 106.57,
       "GNV": 4.99
     },
     "PATOS": {
-      "DIESEL_S10": 7.22,
+      "DIESEL_S10": 7.09,
       "DIESEL": 6.84,
-      "ETANOL": 5.03,
-      "GASOLINA_ADITIVADA": 6.73,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 116.5,
+      "ETANOL": 4.98,
+      "GASOLINA_ADITIVADA": 6.68,
+      "GASOLINA_COMUM": 6.66,
+      "GLP": 116.0,
       "GNV": 6.15
     },
     "SOUSA": {
-      "DIESEL_S10": 7.08,
-      "DIESEL": 6.89,
+      "DIESEL_S10": 7.25,
+      "DIESEL": 6.96,
       "ETANOL": 5.28,
-      "GASOLINA_ADITIVADA": 6.88,
-      "GASOLINA_COMUM": 6.76,
+      "GASOLINA_ADITIVADA": 6.92,
+      "GASOLINA_COMUM": 6.79,
       "GLP": 115.0
     }
   },
   "PARANA": {
     "APUCARANA": {
-      "DIESEL_S10": 6.9,
-      "DIESEL": 6.71,
+      "DIESEL_S10": 7.21,
+      "DIESEL": 6.81,
       "ETANOL": 4.09,
       "GASOLINA_ADITIVADA": 6.69,
       "GASOLINA_COMUM": 6.51,
-      "GLP": 109.99
+      "GLP": 111.99
     },
     "ARAPONGAS": {
-      "DIESEL_S10": 6.98,
-      "DIESEL": 6.09,
-      "ETANOL": 3.62,
-      "GASOLINA_ADITIVADA": 6.44,
-      "GASOLINA_COMUM": 6.25,
+      "DIESEL_S10": 7.27,
+      "DIESEL": 6.47,
+      "ETANOL": 3.97,
+      "GASOLINA_ADITIVADA": 6.7,
+      "GASOLINA_COMUM": 6.51,
       "GLP": 107.84
     },
     "CAMBE": {
-      "DIESEL_S10": 7.28,
-      "DIESEL": 6.34,
-      "ETANOL": 3.76,
-      "GASOLINA_ADITIVADA": 6.97,
-      "GASOLINA_COMUM": 6.62,
+      "DIESEL_S10": 7.44,
+      "DIESEL": 6.41,
+      "ETANOL": 3.78,
+      "GASOLINA_ADITIVADA": 6.69,
+      "GASOLINA_COMUM": 6.55,
       "GLP": 122.86
     },
+    "CAMPO LARGO": {
+      "DIESEL": 5.99,
+      "ETANOL": 3.99,
+      "GASOLINA_COMUM": 6.19
+    },
     "CAMPO MOURAO": {
-      "DIESEL_S10": 6.8,
-      "DIESEL": 5.87,
-      "ETANOL": 3.6,
-      "GASOLINA_ADITIVADA": 6.33,
-      "GASOLINA_COMUM": 6.2,
-      "GLP": 125.71
+      "ETANOL": 3.69,
+      "GASOLINA_ADITIVADA": 6.32,
+      "GASOLINA_COMUM": 6.19,
+      "GLP": 128.33
     },
     "CASCAVEL": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.12,
-      "ETANOL": 3.95,
-      "GASOLINA_ADITIVADA": 6.71,
-      "GASOLINA_COMUM": 6.48,
-      "GLP": 114.32
+      "DIESEL_S10": 7.07,
+      "DIESEL": 6.33,
+      "ETANOL": 3.99,
+      "GASOLINA_ADITIVADA": 6.72,
+      "GASOLINA_COMUM": 6.49,
+      "GLP": 114.99
     },
     "CASTRO": {
-      "DIESEL_S10": 7.01,
-      "DIESEL": 6.24,
-      "ETANOL": 4.75,
+      "DIESEL_S10": 7.11,
+      "DIESEL": 6.26,
+      "ETANOL": 4.8,
       "GASOLINA_ADITIVADA": 7.15,
-      "GASOLINA_COMUM": 6.98,
+      "GASOLINA_COMUM": 6.97,
       "GLP": 122.13
     },
     "CIANORTE": {
       "DIESEL_S10": 6.74,
-      "DIESEL": 6.09,
-      "ETANOL": 3.61,
-      "GASOLINA_ADITIVADA": 6.57,
-      "GASOLINA_COMUM": 6.52,
-      "GLP": 121.4
+      "DIESEL": 6.17,
+      "ETANOL": 3.63,
+      "GASOLINA_ADITIVADA": 6.48,
+      "GASOLINA_COMUM": 6.46,
+      "GLP": 122.11
+    },
+    "COLOMBO": {
+      "DIESEL_S10": 6.83,
+      "DIESEL": 6.17,
+      "ETANOL": 4.57,
+      "GASOLINA_ADITIVADA": 7.03,
+      "GASOLINA_COMUM": 6.79,
+      "GLP": 105.89,
+      "GNV": 4.79
     },
     "CORNELIO PROCOPIO": {
-      "DIESEL_S10": 7.26,
-      "DIESEL": 6.64,
-      "ETANOL": 4.02,
-      "GASOLINA_ADITIVADA": 6.88,
-      "GASOLINA_COMUM": 6.66,
-      "GLP": 122.5
+      "DIESEL_S10": 7.39,
+      "DIESEL": 6.67,
+      "ETANOL": 3.96,
+      "GASOLINA_ADITIVADA": 6.84,
+      "GASOLINA_COMUM": 6.6,
+      "GLP": 125.83
     },
     "CURITIBA": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 5.92,
-      "ETANOL": 4.65,
-      "GASOLINA_ADITIVADA": 7.03,
-      "GASOLINA_COMUM": 6.83,
-      "GLP": 108.59,
-      "GNV": 4.99
+      "DIESEL_S10": 7.13,
+      "ETANOL": 4.63,
+      "GASOLINA_ADITIVADA": 7.0,
+      "GASOLINA_COMUM": 6.81,
+      "GLP": 111.09
     },
     "FOZ DO IGUACU": {
-      "DIESEL_S10": 7.13,
+      "DIESEL_S10": 7.25,
       "DIESEL": 6.65,
-      "ETANOL": 3.72,
-      "GASOLINA_ADITIVADA": 6.58,
-      "GASOLINA_COMUM": 6.44,
-      "GLP": 109.33
+      "ETANOL": 3.77,
+      "GASOLINA_ADITIVADA": 6.6,
+      "GASOLINA_COMUM": 6.46,
+      "GLP": 108.45
     },
     "FRANCISCO BELTRAO": {
-      "DIESEL_S10": 6.8,
-      "DIESEL": 6.06,
-      "ETANOL": 4.02,
-      "GASOLINA_ADITIVADA": 6.55,
+      "DIESEL_S10": 6.81,
+      "DIESEL": 6.14,
+      "ETANOL": 3.99,
+      "GASOLINA_ADITIVADA": 6.42,
       "GASOLINA_COMUM": 6.33,
-      "GLP": 123.8
+      "GLP": 127.5
     },
     "GUARAPUAVA": {
-      "DIESEL_S10": 6.7,
-      "DIESEL": 6.04,
-      "ETANOL": 3.65,
-      "GASOLINA_ADITIVADA": 6.09,
-      "GASOLINA_COMUM": 5.93,
-      "GLP": 114.0
+      "DIESEL_S10": 6.94,
+      "DIESEL": 6.07,
+      "ETANOL": 3.7,
+      "GASOLINA_ADITIVADA": 6.18,
+      "GASOLINA_COMUM": 6.05,
+      "GLP": 114.78
     },
     "LONDRINA": {
-      "DIESEL_S10": 7.04,
-      "DIESEL": 6.28,
-      "ETANOL": 3.64,
-      "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.39,
-      "GLP": 116.14
+      "DIESEL_S10": 7.09,
+      "DIESEL": 6.32,
+      "ETANOL": 3.68,
+      "GASOLINA_ADITIVADA": 6.68,
+      "GASOLINA_COMUM": 6.41,
+      "GLP": 116.53
     },
     "MARINGA": {
-      "DIESEL_S10": 6.78,
-      "DIESEL": 6.19,
-      "ETANOL": 3.94,
-      "GASOLINA_ADITIVADA": 7.11,
-      "GASOLINA_COMUM": 6.97,
-      "GLP": 116.08
+      "DIESEL_S10": 6.9,
+      "DIESEL": 6.28,
+      "ETANOL": 3.96,
+      "GASOLINA_ADITIVADA": 7.05,
+      "GASOLINA_COMUM": 6.91,
+      "GLP": 113.8
     },
     "PARANAGUA": {
-      "DIESEL_S10": 6.97,
-      "DIESEL": 6.15,
-      "ETANOL": 4.22,
-      "GASOLINA_ADITIVADA": 6.97,
-      "GASOLINA_COMUM": 6.5,
-      "GLP": 105.0
+      "DIESEL_S10": 7.2,
+      "DIESEL": 6.26,
+      "ETANOL": 4.24,
+      "GASOLINA_ADITIVADA": 6.94,
+      "GASOLINA_COMUM": 6.49,
+      "GLP": 106.25
     },
     "PARANAVAI": {
-      "DIESEL_S10": 6.88,
-      "DIESEL": 6.33,
-      "ETANOL": 3.57,
-      "GASOLINA_ADITIVADA": 6.59,
-      "GASOLINA_COMUM": 6.57,
-      "GLP": 104.22
+      "DIESEL_S10": 7.33,
+      "DIESEL": 6.58,
+      "ETANOL": 3.73,
+      "GASOLINA_ADITIVADA": 6.52,
+      "GASOLINA_COMUM": 6.55,
+      "GLP": 104.13
     },
     "PATO BRANCO": {
-      "DIESEL_S10": 7.02,
-      "DIESEL": 6.47,
+      "DIESEL_S10": 7.07,
+      "DIESEL": 6.57,
       "ETANOL": 4.1,
       "GASOLINA_ADITIVADA": 6.73,
       "GASOLINA_COMUM": 6.56,
-      "GLP": 128.65
+      "GLP": 130.32
     },
     "PONTA GROSSA": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.24,
-      "ETANOL": 3.96,
-      "GASOLINA_ADITIVADA": 6.59,
-      "GASOLINA_COMUM": 6.33,
-      "GLP": 115.95,
+      "DIESEL_S10": 7.01,
+      "DIESEL": 6.3,
+      "ETANOL": 3.93,
+      "GASOLINA_ADITIVADA": 6.51,
+      "GASOLINA_COMUM": 6.27,
+      "GLP": 116.95,
       "GNV": 4.99
     },
+    "SANTO ANTONIO DA PLATINA": {
+      "DIESEL_S10": 6.74,
+      "DIESEL": 5.74,
+      "ETANOL": 4.0,
+      "GASOLINA_ADITIVADA": 6.68,
+      "GASOLINA_COMUM": 6.25,
+      "GLP": 122.0
+    },
     "TOLEDO": {
-      "DIESEL_S10": 6.75,
-      "DIESEL": 6.19,
-      "ETANOL": 3.84,
-      "GASOLINA_ADITIVADA": 6.53,
+      "DIESEL_S10": 6.84,
+      "DIESEL": 6.38,
+      "ETANOL": 3.89,
+      "GASOLINA_ADITIVADA": 6.55,
       "GASOLINA_COMUM": 6.46,
-      "GLP": 104.98
+      "GLP": 107.49
     },
     "UMUARAMA": {
-      "DIESEL_S10": 6.64,
-      "DIESEL": 5.99,
-      "ETANOL": 3.93,
+      "DIESEL_S10": 7.14,
+      "DIESEL": 6.23,
+      "ETANOL": 3.98,
       "GASOLINA_ADITIVADA": 6.72,
       "GASOLINA_COMUM": 6.56,
-      "GLP": 120.54
+      "GLP": 118.56
     },
     "UNIAO DA VITORIA": {
-      "DIESEL_S10": 7.15,
-      "DIESEL": 6.54,
+      "DIESEL_S10": 7.0,
+      "DIESEL": 6.55,
       "ETANOL": 4.62,
-      "GASOLINA_ADITIVADA": 6.89,
+      "GASOLINA_ADITIVADA": 6.88,
       "GASOLINA_COMUM": 6.8,
       "GLP": 114.43
     }
   },
   "PERNAMBUCO": {
     "ARARIPINA": {
-      "DIESEL_S10": 6.67,
-      "ETANOL": 5.11,
-      "GASOLINA_ADITIVADA": 7.55,
-      "GASOLINA_COMUM": 7.56,
+      "DIESEL_S10": 6.76,
+      "ETANOL": 4.99,
+      "GASOLINA_ADITIVADA": 7.2,
+      "GASOLINA_COMUM": 7.19,
       "GLP": 110.0
     },
     "ARCOVERDE": {
-      "DIESEL_S10": 6.65,
-      "ETANOL": 5.2,
+      "DIESEL_S10": 6.75,
+      "ETANOL": 5.18,
       "GASOLINA_ADITIVADA": 6.88,
       "GASOLINA_COMUM": 6.79,
-      "GLP": 97.67
+      "GLP": 98.6
     },
     "BELO JARDIM": {
-      "DIESEL_S10": 6.47,
-      "DIESEL": 6.49,
+      "DIESEL_S10": 6.64,
       "ETANOL": 4.81,
-      "GASOLINA_ADITIVADA": 6.59,
-      "GASOLINA_COMUM": 6.47,
+      "GASOLINA_ADITIVADA": 6.57,
+      "GASOLINA_COMUM": 6.46,
       "GLP": 98.0,
       "GNV": 4.79
     },
     "CABO DE SANTO AGOSTINHO": {
-      "DIESEL_S10": 6.32,
-      "ETANOL": 4.92,
-      "GASOLINA_COMUM": 6.74,
-      "GLP": 92.14,
+      "DIESEL_S10": 6.73,
+      "ETANOL": 4.86,
+      "GASOLINA_ADITIVADA": 6.91,
+      "GASOLINA_COMUM": 6.75,
+      "GLP": 96.14,
       "GNV": 4.79
     },
     "CARUARU": {
-      "DIESEL_S10": 6.61,
+      "DIESEL_S10": 6.64,
+      "DIESEL": 6.87,
       "ETANOL": 4.88,
       "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.6,
-      "GLP": 96.5,
+      "GASOLINA_COMUM": 6.62,
+      "GLP": 96.8,
       "GNV": 4.79
     },
     "GARANHUNS": {
-      "DIESEL_S10": 6.49,
+      "DIESEL_S10": 6.65,
       "ETANOL": 4.71,
       "GASOLINA_ADITIVADA": 6.64,
       "GASOLINA_COMUM": 6.46,
       "GLP": 115.0
     },
-    "GOIANA": {
-      "DIESEL_S10": 6.61,
-      "DIESEL": 6.69,
-      "ETANOL": 4.86,
-      "GASOLINA_ADITIVADA": 6.93,
-      "GASOLINA_COMUM": 6.73,
-      "GLP": 92.0,
-      "GNV": 4.76
-    },
     "IGARASSU": {
-      "DIESEL_S10": 6.52,
-      "ETANOL": 4.97,
-      "GASOLINA_ADITIVADA": 6.93,
-      "GASOLINA_COMUM": 6.76,
+      "DIESEL_S10": 6.7,
+      "ETANOL": 4.8,
+      "GASOLINA_ADITIVADA": 6.89,
+      "GASOLINA_COMUM": 6.7,
       "GLP": 106.43,
       "GNV": 4.79
     },
     "JABOATAO DOS GUARARAPES": {
-      "DIESEL_S10": 6.7,
-      "ETANOL": 4.89,
-      "GASOLINA_ADITIVADA": 6.93,
-      "GASOLINA_COMUM": 6.75,
-      "GLP": 103.89,
+      "DIESEL_S10": 6.75,
+      "ETANOL": 4.84,
+      "GASOLINA_ADITIVADA": 6.9,
+      "GASOLINA_COMUM": 6.71,
+      "GLP": 105.55,
       "GNV": 4.79
     },
     "LAJEDO": {
-      "DIESEL_S10": 6.44,
-      "DIESEL": 6.55,
-      "ETANOL": 5.02,
-      "GASOLINA_ADITIVADA": 6.48,
-      "GASOLINA_COMUM": 6.46,
-      "GLP": 101.25
+      "DIESEL_S10": 6.83,
+      "DIESEL": 6.75,
+      "ETANOL": 5.03,
+      "GASOLINA_ADITIVADA": 6.52,
+      "GASOLINA_COMUM": 6.47,
+      "GLP": 100.0
     },
     "OLINDA": {
-      "DIESEL_S10": 6.86,
-      "ETANOL": 4.92,
-      "GASOLINA_ADITIVADA": 6.84,
-      "GASOLINA_COMUM": 6.74,
-      "GLP": 101.0,
+      "DIESEL_S10": 6.93,
+      "ETANOL": 4.8,
+      "GASOLINA_ADITIVADA": 6.81,
+      "GASOLINA_COMUM": 6.71,
+      "GLP": 99.9,
       "GNV": 4.79
     },
     "PAULISTA": {
-      "DIESEL_S10": 6.6,
-      "ETANOL": 4.95,
-      "GASOLINA_ADITIVADA": 6.91,
-      "GASOLINA_COMUM": 6.75,
-      "GLP": 104.0,
+      "DIESEL_S10": 6.7,
+      "ETANOL": 4.84,
+      "GASOLINA_ADITIVADA": 6.86,
+      "GASOLINA_COMUM": 6.71,
+      "GLP": 103.89,
       "GNV": 4.79
     },
     "PETROLINA": {
-      "DIESEL_S10": 7.08,
-      "DIESEL": 7.01,
+      "DIESEL_S10": 7.07,
+      "DIESEL": 7.0,
       "ETANOL": 5.36,
       "GASOLINA_ADITIVADA": 7.38,
       "GASOLINA_COMUM": 7.34,
-      "GLP": 116.33
+      "GLP": 116.67
     },
     "RECIFE": {
-      "DIESEL_S10": 6.66,
-      "ETANOL": 4.95,
+      "DIESEL_S10": 6.67,
+      "ETANOL": 4.88,
       "GASOLINA_ADITIVADA": 6.93,
-      "GASOLINA_COMUM": 6.75,
+      "GASOLINA_COMUM": 6.73,
       "GLP": 101.8,
       "GNV": 4.79
     },
     "SALGUEIRO": {
-      "DIESEL_S10": 6.68,
+      "DIESEL_S10": 6.79,
       "ETANOL": 5.58,
-      "GASOLINA_ADITIVADA": 7.05,
+      "GASOLINA_ADITIVADA": 7.06,
       "GASOLINA_COMUM": 6.99,
-      "GLP": 116.0
+      "GLP": 116.25
+    },
+    "SANTA CRUZ DO CAPIBARIBE": {
+      "DIESEL_S10": 6.93,
+      "ETANOL": 5.07,
+      "GASOLINA_ADITIVADA": 6.69,
+      "GASOLINA_COMUM": 6.56,
+      "GLP": 105.0
     },
     "SERRA TALHADA": {
-      "DIESEL_S10": 6.71,
-      "ETANOL": 5.28,
-      "GASOLINA_ADITIVADA": 6.52,
-      "GASOLINA_COMUM": 6.63,
-      "GLP": 120.83
+      "DIESEL_S10": 7.02,
+      "ETANOL": 5.25,
+      "GASOLINA_ADITIVADA": 6.67,
+      "GASOLINA_COMUM": 6.73,
+      "GLP": 121.67
     },
     "VITORIA DE SANTO ANTAO": {
-      "DIESEL_S10": 6.34,
-      "ETANOL": 4.87,
-      "GASOLINA_ADITIVADA": 6.63,
-      "GASOLINA_COMUM": 6.47,
+      "DIESEL_S10": 6.63,
+      "ETANOL": 4.83,
+      "GASOLINA_ADITIVADA": 6.62,
+      "GASOLINA_COMUM": 6.48,
       "GLP": 96.28,
       "GNV": 4.79
     }
   },
   "PIAUI": {
     "PARNAIBA": {
-      "DIESEL_S10": 6.96,
-      "DIESEL": 6.44,
-      "ETANOL": 4.73,
-      "GASOLINA_ADITIVADA": 6.69,
-      "GASOLINA_COMUM": 6.72,
+      "DIESEL_S10": 7.14,
+      "DIESEL": 6.7,
+      "ETANOL": 4.66,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.71,
       "GLP": 120.71
     },
     "PICOS": {
-      "DIESEL_S10": 7.03,
-      "DIESEL": 6.77,
-      "ETANOL": 5.16,
-      "GASOLINA_ADITIVADA": 6.8,
+      "DIESEL_S10": 7.09,
+      "DIESEL": 6.81,
+      "ETANOL": 5.18,
+      "GASOLINA_ADITIVADA": 6.85,
       "GASOLINA_COMUM": 6.66,
-      "GLP": 110.86
+      "GLP": 113.0
     },
     "PIRIPIRI": {
-      "DIESEL_S10": 7.34,
-      "DIESEL": 6.92,
+      "DIESEL_S10": 7.42,
+      "DIESEL": 7.02,
       "ETANOL": 4.97,
       "GASOLINA_ADITIVADA": 6.9,
-      "GASOLINA_COMUM": 6.71,
-      "GLP": 120.42
+      "GASOLINA_COMUM": 6.67,
+      "GLP": 119.85
     },
     "TERESINA": {
-      "DIESEL_S10": 7.2,
-      "DIESEL": 6.83,
+      "DIESEL_S10": 7.38,
+      "DIESEL": 7.06,
       "ETANOL": 4.81,
-      "GASOLINA_ADITIVADA": 7.03,
+      "GASOLINA_ADITIVADA": 7.04,
       "GASOLINA_COMUM": 6.83,
-      "GLP": 110.43
+      "GLP": 110.68
     }
   },
   "RIO DE JANEIRO": {
     "ANGRA DOS REIS": {
-      "DIESEL_S10": 7.92,
-      "DIESEL": 7.53,
-      "ETANOL": 5.56,
-      "GASOLINA_ADITIVADA": 7.28,
+      "DIESEL_S10": 7.83,
+      "DIESEL": 7.38,
+      "ETANOL": 5.62,
+      "GASOLINA_ADITIVADA": 7.27,
       "GASOLINA_COMUM": 7.12,
-      "GLP": 132.57
+      "GLP": 132.57,
+      "GNV": 5.89
     },
     "ARARUAMA": {
-      "DIESEL_S10": 7.36,
+      "DIESEL_S10": 7.42,
       "DIESEL": 6.91,
-      "ETANOL": 4.93,
+      "ETANOL": 4.99,
       "GASOLINA_ADITIVADA": 7.03,
       "GASOLINA_COMUM": 6.93,
       "GLP": 98.57,
@@ -1680,209 +1663,206 @@
     },
     "BARRA DO PIRAI": {
       "DIESEL_S10": 7.38,
-      "DIESEL": 7.61,
-      "ETANOL": 5.01,
-      "GASOLINA_ADITIVADA": 7.07,
+      "DIESEL": 7.62,
+      "ETANOL": 5.08,
+      "GASOLINA_ADITIVADA": 7.06,
       "GASOLINA_COMUM": 6.93,
-      "GLP": 103.25,
-      "GNV": 4.95
+      "GLP": 101.67,
+      "GNV": 4.97
     },
     "BARRA MANSA": {
-      "DIESEL_S10": 7.08,
-      "DIESEL": 6.84,
-      "ETANOL": 4.69,
-      "GASOLINA_ADITIVADA": 6.75,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 105.26,
-      "GNV": 4.49
+      "DIESEL_S10": 7.15,
+      "DIESEL": 7.22,
+      "ETANOL": 4.68,
+      "GASOLINA_ADITIVADA": 6.8,
+      "GASOLINA_COMUM": 6.74,
+      "GLP": 105.12,
+      "GNV": 4.56
     },
     "BELFORD ROXO": {
-      "DIESEL_S10": 7.07,
-      "DIESEL": 7.09,
-      "ETANOL": 4.69,
-      "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.48,
-      "GLP": 96.66,
-      "GNV": 4.54
+      "DIESEL_S10": 7.08,
+      "DIESEL": 7.24,
+      "ETANOL": 4.65,
+      "GASOLINA_ADITIVADA": 6.74,
+      "GASOLINA_COMUM": 6.5,
+      "GLP": 98.33,
+      "GNV": 4.5
     },
     "CABO FRIO": {
       "DIESEL_S10": 7.28,
       "DIESEL": 7.42,
-      "ETANOL": 5.04,
+      "ETANOL": 5.03,
       "GASOLINA_ADITIVADA": 7.11,
-      "GASOLINA_COMUM": 6.89,
-      "GLP": 94.99,
+      "GASOLINA_COMUM": 6.88,
+      "GLP": 96.66,
       "GNV": 4.87
     },
     "CAMPOS DOS GOYTACAZES": {
-      "GLP": 101.66
-    },
-    "DUQUE DE CAXIAS": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.59,
-      "ETANOL": 4.49,
-      "GASOLINA_ADITIVADA": 6.58,
-      "GASOLINA_COMUM": 6.46,
-      "GLP": 101.85,
-      "GNV": 4.38
+      "DIESEL_S10": 6.89,
+      "DIESEL": 6.84,
+      "ETANOL": 4.8,
+      "GASOLINA_ADITIVADA": 6.82,
+      "GASOLINA_COMUM": 6.69,
+      "GLP": 102.33,
+      "GNV": 5.39
     },
     "ITABORAI": {
-      "DIESEL_S10": 7.08,
-      "DIESEL": 6.95,
-      "ETANOL": 4.77,
-      "GASOLINA_ADITIVADA": 6.65,
-      "GASOLINA_COMUM": 6.51,
-      "GLP": 114.99,
-      "GNV": 4.48
+      "DIESEL_S10": 7.06,
+      "DIESEL": 6.72,
+      "ETANOL": 4.78,
+      "GASOLINA_ADITIVADA": 6.72,
+      "GASOLINA_COMUM": 6.61,
+      "GLP": 112.09,
+      "GNV": 4.49
     },
     "ITAPERUNA": {
-      "DIESEL_S10": 7.34,
-      "DIESEL": 6.97,
-      "ETANOL": 4.67,
-      "GASOLINA_ADITIVADA": 6.82,
-      "GASOLINA_COMUM": 6.75,
-      "GLP": 120.71,
+      "DIESEL_S10": 7.49,
+      "DIESEL": 7.01,
+      "ETANOL": 4.66,
+      "GASOLINA_ADITIVADA": 6.84,
+      "GASOLINA_COMUM": 6.77,
+      "GLP": 120.83,
       "GNV": 6.49
     },
     "MACAE": {
       "DIESEL_S10": 7.7,
-      "DIESEL": 7.55,
-      "ETANOL": 5.24,
-      "GASOLINA_ADITIVADA": 7.0,
-      "GASOLINA_COMUM": 6.78,
-      "GLP": 148.14,
+      "DIESEL": 7.53,
+      "ETANOL": 5.26,
+      "GASOLINA_ADITIVADA": 7.03,
+      "GASOLINA_COMUM": 6.81,
+      "GLP": 147.43,
       "GNV": 4.83
     },
     "MARICA": {
       "DIESEL_S10": 7.36,
       "DIESEL": 6.85,
-      "ETANOL": 4.67,
+      "ETANOL": 4.71,
       "GASOLINA_ADITIVADA": 6.73,
-      "GASOLINA_COMUM": 6.66,
-      "GLP": 97.71,
+      "GASOLINA_COMUM": 6.67,
+      "GLP": 96.28,
       "GNV": 4.99
     },
     "NILOPOLIS": {
       "DIESEL_S10": 6.99,
-      "ETANOL": 4.62,
+      "ETANOL": 4.58,
       "GASOLINA_ADITIVADA": 6.57,
       "GASOLINA_COMUM": 6.44,
-      "GLP": 115.14,
+      "GLP": 118.57,
       "GNV": 4.69
     },
     "NITEROI": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.94,
-      "ETANOL": 4.55,
-      "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.56,
-      "GLP": 93.98,
-      "GNV": 4.3
+      "DIESEL_S10": 6.96,
+      "DIESEL": 6.89,
+      "ETANOL": 4.62,
+      "GASOLINA_ADITIVADA": 6.62,
+      "GASOLINA_COMUM": 6.52,
+      "GLP": 91.0,
+      "GNV": 4.39
     },
     "NOVA FRIBURGO": {
-      "DIESEL_S10": 7.35,
-      "DIESEL": 7.23,
-      "ETANOL": 4.62,
-      "GASOLINA_ADITIVADA": 7.06,
-      "GASOLINA_COMUM": 6.86,
-      "GLP": 109.28
+      "DIESEL_S10": 7.49,
+      "DIESEL": 7.17,
+      "ETANOL": 4.71,
+      "GASOLINA_ADITIVADA": 7.17,
+      "GASOLINA_COMUM": 6.97,
+      "GLP": 114.28
+    },
+    "NOVA IGUACU": {
+      "DIESEL_S10": 6.81,
+      "DIESEL": 6.69,
+      "ETANOL": 4.52,
+      "GASOLINA_ADITIVADA": 6.49,
+      "GASOLINA_COMUM": 6.36,
+      "GNV": 4.49
     },
     "PETROPOLIS": {
-      "DIESEL_S10": 7.14,
-      "DIESEL": 6.78,
-      "ETANOL": 5.33,
-      "GASOLINA_ADITIVADA": 7.19,
-      "GASOLINA_COMUM": 7.12,
-      "GLP": 104.43,
-      "GNV": 5.19
+      "DIESEL_S10": 6.93,
+      "DIESEL": 6.74,
+      "ETANOL": 5.44,
+      "GASOLINA_ADITIVADA": 7.26,
+      "GASOLINA_COMUM": 7.16,
+      "GLP": 105.14,
+      "GNV": 5.17
     },
     "RESENDE": {
-      "DIESEL_S10": 6.86,
-      "DIESEL": 5.94,
-      "ETANOL": 4.38,
-      "GASOLINA_ADITIVADA": 6.58,
+      "DIESEL_S10": 6.85,
+      "DIESEL": 6.0,
+      "ETANOL": 4.37,
+      "GASOLINA_ADITIVADA": 6.62,
       "GASOLINA_COMUM": 6.42,
-      "GLP": 126.0,
+      "GLP": 124.33,
       "GNV": 4.14
     },
     "RIO BONITO": {
-      "DIESEL_S10": 7.14,
-      "DIESEL": 6.58,
-      "ETANOL": 4.87,
-      "GASOLINA_ADITIVADA": 6.94,
-      "GASOLINA_COMUM": 6.75,
-      "GLP": 95.0
+      "DIESEL_S10": 6.99,
+      "DIESEL": 7.09,
+      "ETANOL": 4.44,
+      "GASOLINA_ADITIVADA": 6.59,
+      "GASOLINA_COMUM": 6.49,
+      "GLP": 95.0,
+      "GNV": 4.99
     },
     "RIO DE JANEIRO": {
-      "DIESEL_S10": 6.95,
-      "DIESEL": 6.91,
-      "ETANOL": 4.69,
-      "GASOLINA_ADITIVADA": 6.8,
-      "GASOLINA_COMUM": 6.53,
-      "GLP": 99.12,
-      "GNV": 4.46
+      "DIESEL_S10": 7.01,
+      "DIESEL": 6.86,
+      "ETANOL": 4.72,
+      "GASOLINA_ADITIVADA": 6.83,
+      "GASOLINA_COMUM": 6.54,
+      "GLP": 98.84,
+      "GNV": 4.44
     },
     "SANTO ANTONIO DE PADUA": {
-      "DIESEL_S10": 7.13,
-      "DIESEL": 6.83,
-      "ETANOL": 4.46,
-      "GASOLINA_ADITIVADA": 6.45,
-      "GASOLINA_COMUM": 6.49,
-      "GLP": 104.5,
+      "DIESEL_S10": 7.16,
+      "DIESEL": 6.82,
+      "ETANOL": 4.47,
+      "GASOLINA_ADITIVADA": 6.44,
+      "GASOLINA_COMUM": 6.43,
+      "GLP": 101.25,
       "GNV": 5.98
     },
     "SAO GONCALO": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 6.96,
-      "ETANOL": 4.69,
-      "GASOLINA_ADITIVADA": 6.72,
-      "GASOLINA_COMUM": 6.57,
-      "GLP": 107.33,
-      "GNV": 4.37
-    },
-    "SAO JOAO DE MERITI": {
-      "DIESEL_S10": 6.86,
-      "DIESEL": 6.76,
-      "ETANOL": 4.6,
-      "GASOLINA_ADITIVADA": 6.6,
-      "GASOLINA_COMUM": 6.4,
-      "GLP": 98.0,
-      "GNV": 4.49
+      "DIESEL_S10": 7.04,
+      "DIESEL": 6.95,
+      "ETANOL": 4.77,
+      "GASOLINA_ADITIVADA": 6.71,
+      "GASOLINA_COMUM": 6.58,
+      "GLP": 107.0,
+      "GNV": 4.39
     },
     "SAQUAREMA": {
-      "DIESEL_S10": 7.27,
-      "DIESEL": 7.07,
-      "ETANOL": 4.93,
-      "GASOLINA_ADITIVADA": 6.96,
-      "GASOLINA_COMUM": 6.88,
-      "GLP": 98.85,
-      "GNV": 5.68
+      "DIESEL_S10": 7.37,
+      "DIESEL": 7.13,
+      "ETANOL": 4.97,
+      "GASOLINA_ADITIVADA": 7.0,
+      "GASOLINA_COMUM": 6.92,
+      "GLP": 99.99,
+      "GNV": 5.71
     },
     "TRES RIOS": {
-      "DIESEL_S10": 6.62,
-      "DIESEL": 6.2,
-      "ETANOL": 4.92,
-      "GASOLINA_ADITIVADA": 6.91,
-      "GASOLINA_COMUM": 6.81,
+      "DIESEL_S10": 6.61,
+      "DIESEL": 6.27,
+      "ETANOL": 4.93,
+      "GASOLINA_ADITIVADA": 6.93,
+      "GASOLINA_COMUM": 6.82,
       "GLP": 101.42,
-      "GNV": 5.94
+      "GNV": 5.96
     },
     "VALENCA": {
-      "DIESEL_S10": 7.24,
-      "DIESEL": 6.81,
+      "DIESEL_S10": 7.19,
+      "DIESEL": 6.79,
       "ETANOL": 4.89,
-      "GASOLINA_ADITIVADA": 6.81,
-      "GASOLINA_COMUM": 6.74,
-      "GLP": 102.5,
+      "GASOLINA_ADITIVADA": 6.8,
+      "GASOLINA_COMUM": 6.73,
+      "GLP": 104.17,
       "GNV": 5.98
     },
     "VOLTA REDONDA": {
-      "DIESEL_S10": 7.27,
-      "DIESEL": 6.94,
-      "ETANOL": 4.96,
-      "GASOLINA_ADITIVADA": 6.99,
-      "GASOLINA_COMUM": 6.94,
-      "GLP": 104.99,
+      "DIESEL_S10": 7.3,
+      "DIESEL": 7.08,
+      "ETANOL": 4.99,
+      "GASOLINA_ADITIVADA": 7.04,
+      "GASOLINA_COMUM": 6.95,
+      "GLP": 101.84,
       "GNV": 4.89
     }
   },
@@ -1890,140 +1870,139 @@
     "CAICO": {
       "DIESEL_S10": 7.62,
       "DIESEL": 7.57,
-      "ETANOL": 6.03,
-      "GASOLINA_ADITIVADA": 6.95,
-      "GASOLINA_COMUM": 6.9,
+      "ETANOL": 5.98,
+      "GASOLINA_ADITIVADA": 7.03,
+      "GASOLINA_COMUM": 7.0,
       "GLP": 117.5
     },
     "MOSSORO": {
-      "DIESEL_S10": 6.91,
-      "DIESEL": 6.75,
-      "ETANOL": 5.06,
-      "GASOLINA_ADITIVADA": 6.83,
-      "GASOLINA_COMUM": 6.65,
-      "GLP": 116.57,
+      "DIESEL_S10": 7.02,
+      "DIESEL": 6.85,
+      "ETANOL": 5.05,
+      "GASOLINA_ADITIVADA": 6.85,
+      "GASOLINA_COMUM": 6.7,
+      "GLP": 118.14,
       "GNV": 5.09
     },
     "NATAL": {
-      "DIESEL_S10": 7.15,
-      "DIESEL": 7.09,
-      "ETANOL": 5.21,
-      "GASOLINA_ADITIVADA": 6.86,
-      "GASOLINA_COMUM": 6.78,
-      "GLP": 114.69,
-      "GNV": 5.16
+      "DIESEL_S10": 7.33,
+      "DIESEL": 7.21,
+      "ETANOL": 5.49,
+      "GASOLINA_ADITIVADA": 7.01,
+      "GASOLINA_COMUM": 6.97,
+      "GLP": 116.44,
+      "GNV": 5.19
     },
     "PARNAMIRIM": {
       "DIESEL_S10": 7.19,
-      "DIESEL": 7.09,
-      "ETANOL": 5.24,
-      "GASOLINA_ADITIVADA": 6.84,
-      "GASOLINA_COMUM": 6.74,
-      "GLP": 107.48
+      "DIESEL": 7.19,
+      "ETANOL": 5.49,
+      "GASOLINA_ADITIVADA": 7.04,
+      "GASOLINA_COMUM": 6.99,
+      "GLP": 109.5
     }
   },
   "RIO GRANDE DO SUL": {
     "ALEGRETE": {
       "DIESEL_S10": 6.89,
-      "DIESEL": 6.59,
+      "DIESEL": 6.49,
       "ETANOL": 4.99,
       "GASOLINA_ADITIVADA": 6.85,
       "GASOLINA_COMUM": 6.69,
-      "GLP": 117.5
+      "GLP": 114.57
     },
     "ALVORADA": {
       "DIESEL_S10": 6.42,
       "DIESEL": 6.17,
       "ETANOL": 4.54,
-      "GASOLINA_ADITIVADA": 6.39,
-      "GASOLINA_COMUM": 6.21,
+      "GASOLINA_ADITIVADA": 6.46,
+      "GASOLINA_COMUM": 6.24,
       "GLP": 112.5
     },
     "BAGE": {
-      "DIESEL_S10": 7.46,
-      "DIESEL": 7.26,
-      "ETANOL": 5.17,
-      "GASOLINA_ADITIVADA": 7.48,
-      "GASOLINA_COMUM": 7.23,
+      "DIESEL_S10": 7.69,
+      "DIESEL": 7.4,
+      "ETANOL": 4.99,
+      "GASOLINA_ADITIVADA": 7.4,
+      "GASOLINA_COMUM": 7.18,
       "GLP": 122.25
     },
     "BENTO GONCALVES": {
-      "DIESEL_S10": 6.55,
-      "DIESEL": 6.19,
+      "DIESEL_S10": 6.73,
+      "DIESEL": 6.35,
       "ETANOL": 4.73,
-      "GASOLINA_ADITIVADA": 6.53,
-      "GASOLINA_COMUM": 6.28,
-      "GLP": 126.13,
+      "GASOLINA_ADITIVADA": 6.52,
+      "GASOLINA_COMUM": 6.27,
+      "GLP": 127.41,
       "GNV": 4.99
     },
     "CACHOEIRA DO SUL": {
-      "DIESEL_S10": 6.48,
-      "DIESEL": 6.08,
+      "DIESEL_S10": 6.58,
+      "DIESEL": 6.2,
       "ETANOL": 4.39,
       "GASOLINA_ADITIVADA": 6.25,
-      "GASOLINA_COMUM": 5.96,
+      "GASOLINA_COMUM": 5.99,
       "GLP": 115.83
     },
     "CACHOEIRINHA": {
-      "DIESEL_S10": 6.21,
-      "DIESEL": 6.09,
+      "DIESEL_S10": 6.35,
+      "DIESEL": 6.52,
       "ETANOL": 4.29,
-      "GASOLINA_ADITIVADA": 6.42,
-      "GASOLINA_COMUM": 6.13,
-      "GLP": 114.33
+      "GASOLINA_ADITIVADA": 6.46,
+      "GASOLINA_COMUM": 6.17,
+      "GLP": 115.14
     },
     "CANOAS": {
-      "DIESEL_S10": 6.09,
-      "DIESEL": 5.96,
-      "ETANOL": 4.01,
-      "GASOLINA_ADITIVADA": 6.0,
-      "GASOLINA_COMUM": 5.92,
-      "GLP": 110.37,
-      "GNV": 5.59
+      "DIESEL_S10": 6.63,
+      "DIESEL": 6.2,
+      "ETANOL": 4.29,
+      "GASOLINA_ADITIVADA": 6.18,
+      "GASOLINA_COMUM": 6.07,
+      "GLP": 109.65
     },
     "CAXIAS DO SUL": {
-      "DIESEL_S10": 6.43,
-      "DIESEL": 6.05,
-      "ETANOL": 4.53,
-      "GASOLINA_ADITIVADA": 6.48,
+      "DIESEL_S10": 6.7,
+      "DIESEL": 6.25,
+      "ETANOL": 4.57,
+      "GASOLINA_ADITIVADA": 6.49,
       "GASOLINA_COMUM": 6.21,
-      "GLP": 121.93
+      "GLP": 121.41,
+      "GNV": 4.79
     },
     "CRUZ ALTA": {
-      "DIESEL_S10": 6.62,
-      "DIESEL": 6.19,
-      "ETANOL": 4.72,
-      "GASOLINA_ADITIVADA": 6.35,
-      "GASOLINA_COMUM": 6.27,
-      "GLP": 96.71
+      "DIESEL_S10": 6.75,
+      "DIESEL": 6.27,
+      "ETANOL": 4.66,
+      "GASOLINA_ADITIVADA": 6.37,
+      "GASOLINA_COMUM": 6.25,
+      "GLP": 95.57
     },
     "ERECHIM": {
-      "DIESEL_S10": 6.59,
-      "DIESEL": 6.34,
-      "ETANOL": 4.89,
-      "GASOLINA_ADITIVADA": 6.54,
-      "GASOLINA_COMUM": 6.27,
-      "GLP": 134.99
+      "DIESEL_S10": 6.78,
+      "DIESEL": 6.46,
+      "ETANOL": 4.99,
+      "GASOLINA_ADITIVADA": 6.56,
+      "GASOLINA_COMUM": 6.24,
+      "GLP": 134.86
     },
     "ESTEIO": {
-      "DIESEL_S10": 6.56,
-      "DIESEL": 6.21,
-      "ETANOL": 4.33,
-      "GASOLINA_ADITIVADA": 6.12,
-      "GASOLINA_COMUM": 5.9,
-      "GLP": 117.43,
-      "GNV": 4.69
+      "DIESEL_S10": 6.86,
+      "DIESEL": 6.39,
+      "ETANOL": 4.54,
+      "GASOLINA_ADITIVADA": 6.14,
+      "GASOLINA_COMUM": 5.88,
+      "GLP": 116.67
     },
     "GRAMADO": {
-      "DIESEL_S10": 7.29,
+      "DIESEL_S10": 6.79,
       "ETANOL": 5.01,
       "GASOLINA_ADITIVADA": 6.94,
       "GASOLINA_COMUM": 6.69,
       "GLP": 132.0
     },
     "GRAVATAI": {
-      "DIESEL_S10": 6.54,
-      "DIESEL": 6.22,
+      "DIESEL_S10": 6.79,
+      "DIESEL": 6.44,
       "ETANOL": 4.09,
       "GASOLINA_ADITIVADA": 6.51,
       "GASOLINA_COMUM": 6.22,
@@ -2031,196 +2010,211 @@
       "GNV": 5.49
     },
     "GUAIBA": {
-      "DIESEL_S10": 6.23,
-      "DIESEL": 6.07,
-      "ETANOL": 4.41,
-      "GASOLINA_ADITIVADA": 6.14,
-      "GASOLINA_COMUM": 6.03,
+      "DIESEL_S10": 6.31,
+      "DIESEL": 6.08,
+      "ETANOL": 4.53,
+      "GASOLINA_ADITIVADA": 6.15,
+      "GASOLINA_COMUM": 6.01,
       "GLP": 104.94
     },
     "IJUI": {
-      "DIESEL_S10": 6.58,
-      "DIESEL": 6.34,
-      "ETANOL": 5.03,
-      "GASOLINA_ADITIVADA": 6.45,
-      "GASOLINA_COMUM": 6.31,
-      "GLP": 116.4
+      "DIESEL_S10": 6.84,
+      "DIESEL": 6.57,
+      "ETANOL": 5.06,
+      "GASOLINA_ADITIVADA": 6.46,
+      "GASOLINA_COMUM": 6.33,
+      "GLP": 116.97
     },
     "LAJEADO": {
-      "DIESEL_S10": 6.2,
-      "DIESEL": 5.94,
-      "ETANOL": 4.81,
-      "GASOLINA_ADITIVADA": 6.28,
-      "GASOLINA_COMUM": 6.07,
-      "GLP": 127.86,
+      "DIESEL_S10": 6.32,
+      "DIESEL": 5.98,
+      "ETANOL": 4.77,
+      "GASOLINA_ADITIVADA": 6.3,
+      "GASOLINA_COMUM": 6.09,
+      "GLP": 129.0,
       "GNV": 5.65
     },
     "NOVO HAMBURGO": {
-      "DIESEL_S10": 6.26,
-      "DIESEL": 5.65,
-      "ETANOL": 4.1,
-      "GASOLINA_ADITIVADA": 6.02,
-      "GASOLINA_COMUM": 5.92,
+      "DIESEL_S10": 6.42,
+      "DIESEL": 5.8,
+      "ETANOL": 4.12,
+      "GASOLINA_ADITIVADA": 5.95,
+      "GASOLINA_COMUM": 5.84,
       "GLP": 103.9
     },
     "OSORIO": {
-      "DIESEL_S10": 6.4,
-      "DIESEL": 5.96,
-      "ETANOL": 4.12,
-      "GASOLINA_ADITIVADA": 6.11,
-      "GASOLINA_COMUM": 5.97,
-      "GLP": 110.98
+      "DIESEL_S10": 6.57,
+      "ETANOL": 4.38,
+      "GASOLINA_ADITIVADA": 6.24,
+      "GASOLINA_COMUM": 5.94,
+      "GLP": 100.0
     },
     "PASSO FUNDO": {
-      "DIESEL_S10": 6.51,
-      "DIESEL": 6.19,
-      "ETANOL": 4.79,
-      "GASOLINA_ADITIVADA": 6.79,
-      "GASOLINA_COMUM": 6.49,
+      "DIESEL": 6.44,
+      "GASOLINA_ADITIVADA": 6.59,
+      "GASOLINA_COMUM": 6.39,
       "GLP": 125.43
     },
     "PELOTAS": {
-      "DIESEL_S10": 6.73,
-      "DIESEL": 6.57,
-      "ETANOL": 4.6,
-      "GASOLINA_ADITIVADA": 6.8,
-      "GASOLINA_COMUM": 6.58,
-      "GLP": 120.73
+      "DIESEL_S10": 6.88,
+      "DIESEL": 6.7,
+      "ETANOL": 4.67,
+      "GASOLINA_ADITIVADA": 6.81,
+      "GASOLINA_COMUM": 6.61,
+      "GLP": 121.59
     },
     "PORTO ALEGRE": {
-      "DIESEL_S10": 6.29,
+      "DIESEL_S10": 6.36,
       "DIESEL": 6.02,
-      "ETANOL": 4.26,
-      "GASOLINA_ADITIVADA": 6.09,
-      "GASOLINA_COMUM": 5.9,
+      "ETANOL": 4.32,
+      "GASOLINA_ADITIVADA": 6.1,
+      "GASOLINA_COMUM": 5.91,
       "GLP": 118.66,
-      "GNV": 5.34
+      "GNV": 5.33
     },
     "SANTA CRUZ DO SUL": {
       "DIESEL_S10": 7.39,
+      "DIESEL": 6.89,
+      "ETANOL": 4.99,
       "GASOLINA_ADITIVADA": 6.69,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 125.0
+      "GASOLINA_COMUM": 6.74,
+      "GLP": 123.33
     },
     "SANTA MARIA": {
-      "DIESEL_S10": 6.86,
-      "DIESEL": 6.67,
-      "ETANOL": 4.9,
-      "GASOLINA_ADITIVADA": 6.56,
-      "GASOLINA_COMUM": 6.21,
-      "GLP": 117.43
+      "DIESEL_S10": 6.78,
+      "DIESEL": 6.65,
+      "ETANOL": 4.78,
+      "GASOLINA_ADITIVADA": 6.47,
+      "GASOLINA_COMUM": 6.18,
+      "GLP": 116.82
     },
     "SANTA ROSA": {
-      "DIESEL_S10": 6.64,
-      "DIESEL": 6.3,
+      "DIESEL_S10": 6.9,
+      "DIESEL": 6.77,
       "ETANOL": 4.99,
-      "GASOLINA_ADITIVADA": 6.74,
-      "GASOLINA_COMUM": 6.6,
-      "GLP": 131.86
+      "GASOLINA_ADITIVADA": 6.78,
+      "GASOLINA_COMUM": 6.61,
+      "GLP": 132.29
     },
     "SANTANA DO LIVRAMENTO": {
-      "DIESEL_S10": 7.03,
+      "DIESEL_S10": 7.0,
       "DIESEL": 6.79,
-      "ETANOL": 5.39,
-      "GASOLINA_ADITIVADA": 7.09,
-      "GASOLINA_COMUM": 6.89,
-      "GLP": 133.57
+      "ETANOL": 5.35,
+      "GASOLINA_ADITIVADA": 7.06,
+      "GASOLINA_COMUM": 6.85,
+      "GLP": 128.57
     },
     "SANTO ANGELO": {
-      "DIESEL_S10": 6.65,
-      "DIESEL": 6.41,
-      "ETANOL": 4.93,
-      "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.56,
-      "GLP": 127.25
+      "DIESEL_S10": 6.71,
+      "DIESEL": 6.44,
+      "ETANOL": 4.92,
+      "GASOLINA_ADITIVADA": 6.59,
+      "GASOLINA_COMUM": 6.57,
+      "GLP": 126.0
+    },
+    "SAO GABRIEL": {
+      "DIESEL_S10": 6.89,
+      "DIESEL": 6.22,
+      "ETANOL": 4.79,
+      "GASOLINA_ADITIVADA": 6.72,
+      "GASOLINA_COMUM": 6.52,
+      "GLP": 118.71
     },
     "SAO LEOPOLDO": {
-      "DIESEL_S10": 6.26,
-      "DIESEL": 5.91,
-      "ETANOL": 4.11,
-      "GASOLINA_ADITIVADA": 6.26,
-      "GASOLINA_COMUM": 6.02,
-      "GLP": 101.86,
+      "DIESEL_S10": 6.28,
+      "DIESEL": 5.89,
+      "ETANOL": 4.2,
+      "GASOLINA_ADITIVADA": 6.24,
+      "GASOLINA_COMUM": 5.99,
+      "GLP": 101.14,
       "GNV": 5.29
     },
     "SAO LUIZ GONZAGA": {
       "DIESEL_S10": 6.68,
       "DIESEL": 6.49,
-      "ETANOL": 4.92,
+      "ETANOL": 4.99,
       "GASOLINA_ADITIVADA": 6.65,
       "GASOLINA_COMUM": 6.49,
-      "GLP": 111.67
+      "GLP": 110.83
     },
     "SAPIRANGA": {
-      "DIESEL_S10": 6.26,
-      "DIESEL": 5.84,
-      "ETANOL": 4.24,
-      "GASOLINA_ADITIVADA": 6.13,
-      "GASOLINA_COMUM": 5.99,
-      "GLP": 109.49
+      "DIESEL_S10": 6.29,
+      "DIESEL": 5.94,
+      "ETANOL": 4.22,
+      "GASOLINA_ADITIVADA": 6.12,
+      "GASOLINA_COMUM": 5.98,
+      "GLP": 109.56
     },
     "SAPUCAIA DO SUL": {
-      "DIESEL_S10": 6.23,
-      "DIESEL": 5.83,
+      "DIESEL_S10": 6.28,
+      "DIESEL": 5.8,
       "ETANOL": 4.05,
-      "GASOLINA_ADITIVADA": 6.16,
-      "GASOLINA_COMUM": 5.93,
-      "GLP": 113.75,
+      "GASOLINA_ADITIVADA": 6.05,
+      "GASOLINA_COMUM": 5.88,
+      "GLP": 115.25,
       "GNV": 5.49
     },
     "TORRES": {
-      "DIESEL_S10": 6.59,
-      "DIESEL": 6.39,
-      "ETANOL": 4.39,
-      "GASOLINA_ADITIVADA": 6.39,
+      "DIESEL_S10": 6.99,
+      "DIESEL": 6.49,
+      "ETANOL": 4.79,
+      "GASOLINA_ADITIVADA": 6.69,
       "GASOLINA_COMUM": 6.39,
-      "GNV": 5.59
+      "GLP": 123.5
     },
     "URUGUAIANA": {
-      "DIESEL_S10": 6.95,
-      "DIESEL": 6.75,
+      "DIESEL_S10": 7.03,
+      "DIESEL": 6.88,
       "ETANOL": 5.29,
-      "GASOLINA_ADITIVADA": 6.67,
-      "GASOLINA_COMUM": 6.48,
-      "GLP": 133.5
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.47,
+      "GLP": 133.0
     },
     "VACARIA": {
-      "DIESEL_S10": 6.52,
-      "DIESEL": 6.17,
-      "ETANOL": 4.71,
-      "GASOLINA_ADITIVADA": 6.5,
-      "GASOLINA_COMUM": 6.28,
+      "DIESEL_S10": 6.78,
+      "DIESEL": 6.45,
+      "ETANOL": 4.68,
+      "GASOLINA_ADITIVADA": 6.61,
+      "GASOLINA_COMUM": 6.33,
       "GLP": 123.14
     },
     "VIAMAO": {
       "DIESEL_S10": 6.59,
       "DIESEL": 6.36,
       "ETANOL": 4.79,
-      "GASOLINA_ADITIVADA": 6.22,
-      "GASOLINA_COMUM": 5.91,
-      "GLP": 114.49,
+      "GASOLINA_ADITIVADA": 6.21,
+      "GASOLINA_COMUM": 5.89,
+      "GLP": 112.73,
       "GNV": 5.29
     }
   },
   "RONDONIA": {
+    "ARIQUEMES": {
+      "DIESEL_S10": 7.52,
+      "DIESEL": 7.37,
+      "ETANOL": 5.36,
+      "GASOLINA_ADITIVADA": 7.73,
+      "GASOLINA_COMUM": 7.45,
+      "GLP": 130.25
+    },
     "CACOAL": {
       "DIESEL_S10": 7.23,
       "DIESEL": 6.99,
-      "ETANOL": 5.36,
-      "GASOLINA_ADITIVADA": 7.28,
+      "ETANOL": 5.33,
+      "GASOLINA_ADITIVADA": 7.29,
       "GASOLINA_COMUM": 7.19,
-      "GLP": 137.57
+      "GLP": 137.43
     },
     "JI-PARANA": {
-      "DIESEL_S10": 7.81,
-      "DIESEL": 7.38,
-      "ETANOL": 5.31,
-      "GASOLINA_ADITIVADA": 7.44,
-      "GASOLINA_COMUM": 7.23,
-      "GLP": 126.2
+      "DIESEL_S10": 7.68,
+      "DIESEL": 7.26,
+      "ETANOL": 5.23,
+      "GASOLINA_ADITIVADA": 7.48,
+      "GASOLINA_COMUM": 7.19,
+      "GLP": 125.7
     },
     "PIMENTA BUENO": {
-      "DIESEL_S10": 7.17,
+      "DIESEL_S10": 7.19,
       "DIESEL": 7.06,
       "ETANOL": 5.49,
       "GASOLINA_ADITIVADA": 7.47,
@@ -2228,19 +2222,19 @@
       "GLP": 148.33
     },
     "PORTO VELHO": {
-      "DIESEL_S10": 7.29,
-      "DIESEL": 7.27,
-      "ETANOL": 5.11,
-      "GASOLINA_ADITIVADA": 7.6,
+      "DIESEL_S10": 7.27,
+      "DIESEL": 7.3,
+      "ETANOL": 5.02,
+      "GASOLINA_ADITIVADA": 7.59,
       "GASOLINA_COMUM": 7.49,
-      "GLP": 123.75
+      "GLP": 123.24
     },
     "VILHENA": {
-      "DIESEL_S10": 7.38,
-      "DIESEL": 7.19,
-      "ETANOL": 5.35,
-      "GASOLINA_ADITIVADA": 7.46,
-      "GASOLINA_COMUM": 7.39,
+      "DIESEL_S10": 7.37,
+      "DIESEL": 7.21,
+      "ETANOL": 5.27,
+      "GASOLINA_ADITIVADA": 7.47,
+      "GASOLINA_COMUM": 7.43,
       "GLP": 127.5
     }
   },
@@ -2251,39 +2245,39 @@
       "ETANOL": 5.39,
       "GASOLINA_ADITIVADA": 7.62,
       "GASOLINA_COMUM": 7.57,
-      "GLP": 141.52
+      "GLP": 143.48
     }
   },
   "SANTA CATARINA": {
     "ARARANGUA": {
-      "DIESEL_S10": 6.64,
-      "DIESEL": 6.41,
-      "ETANOL": 4.54,
+      "DIESEL_S10": 6.56,
+      "DIESEL": 6.42,
+      "ETANOL": 4.59,
       "GASOLINA_ADITIVADA": 6.68,
-      "GASOLINA_COMUM": 6.41,
-      "GLP": 111.25,
+      "GASOLINA_COMUM": 6.42,
+      "GLP": 111.19,
       "GNV": 4.98
     },
     "BLUMENAU": {
       "DIESEL_S10": 6.81,
-      "DIESEL": 6.54,
-      "ETANOL": 4.26,
-      "GASOLINA_ADITIVADA": 6.68,
+      "DIESEL": 6.69,
+      "ETANOL": 4.19,
+      "GASOLINA_ADITIVADA": 6.67,
       "GASOLINA_COMUM": 6.58,
-      "GLP": 134.35,
+      "GLP": 135.1,
       "GNV": 4.69
     },
     "BRUSQUE": {
-      "DIESEL_S10": 7.11,
-      "DIESEL": 6.43,
-      "ETANOL": 4.16,
-      "GASOLINA_ADITIVADA": 6.44,
+      "DIESEL_S10": 7.05,
+      "DIESEL": 6.6,
+      "ETANOL": 4.13,
+      "GASOLINA_ADITIVADA": 6.42,
       "GASOLINA_COMUM": 6.28,
       "GLP": 130.0,
-      "GNV": 4.95
+      "GNV": 4.93
     },
     "CACADOR": {
-      "DIESEL_S10": 6.88,
+      "DIESEL_S10": 6.96,
       "DIESEL": 6.41,
       "ETANOL": 4.85,
       "GASOLINA_ADITIVADA": 6.56,
@@ -2291,839 +2285,815 @@
       "GLP": 127.5
     },
     "CHAPECO": {
-      "DIESEL_S10": 6.64,
-      "DIESEL": 6.31,
-      "ETANOL": 4.89,
-      "GASOLINA_ADITIVADA": 6.57,
-      "GASOLINA_COMUM": 6.47,
-      "GLP": 134.1
+      "DIESEL_S10": 6.59,
+      "DIESEL": 6.29,
+      "ETANOL": 4.9,
+      "GASOLINA_ADITIVADA": 6.58,
+      "GASOLINA_COMUM": 6.48,
+      "GLP": 133.54
     },
     "CONCORDIA": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 6.65,
-      "ETANOL": 5.11,
+      "DIESEL_S10": 7.03,
+      "DIESEL": 6.68,
+      "ETANOL": 5.12,
       "GASOLINA_ADITIVADA": 6.75,
       "GASOLINA_COMUM": 6.59,
-      "GLP": 115.0
+      "GLP": 112.43
     },
     "CRICIUMA": {
-      "DIESEL_S10": 6.64,
-      "DIESEL": 6.34,
-      "ETANOL": 4.58,
-      "GASOLINA_ADITIVADA": 6.52,
-      "GASOLINA_COMUM": 6.38,
-      "GLP": 115.0,
-      "GNV": 4.85
+      "DIESEL_S10": 6.67,
+      "DIESEL": 6.44,
+      "ETANOL": 4.57,
+      "GASOLINA_ADITIVADA": 6.54,
+      "GASOLINA_COMUM": 6.39,
+      "GLP": 105.0,
+      "GNV": 4.81
     },
     "FLORIANOPOLIS": {
       "DIESEL_S10": 7.2,
       "ETANOL": 4.36,
-      "GASOLINA_ADITIVADA": 6.73,
-      "GASOLINA_COMUM": 6.54,
-      "GLP": 127.28
+      "GASOLINA_ADITIVADA": 6.67,
+      "GASOLINA_COMUM": 6.48,
+      "GLP": 128.22
     },
     "ITAJAI": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.52,
+      "DIESEL_S10": 7.01,
+      "DIESEL": 6.64,
       "ETANOL": 4.22,
-      "GASOLINA_ADITIVADA": 6.67,
-      "GASOLINA_COMUM": 6.54,
+      "GASOLINA_ADITIVADA": 6.65,
+      "GASOLINA_COMUM": 6.52,
       "GLP": 126.09,
-      "GNV": 4.99
+      "GNV": 5.19
     },
     "JOINVILLE": {
-      "DIESEL_S10": 6.86,
-      "DIESEL": 6.33,
-      "ETANOL": 4.16,
-      "GASOLINA_ADITIVADA": 6.43,
-      "GASOLINA_COMUM": 6.28,
+      "DIESEL_S10": 6.85,
+      "DIESEL": 6.32,
+      "ETANOL": 4.05,
+      "GASOLINA_ADITIVADA": 6.36,
+      "GASOLINA_COMUM": 6.22,
       "GLP": 122.1,
       "GNV": 4.72
     },
     "LAGUNA": {
-      "DIESEL_S10": 6.62,
-      "DIESEL": 6.19,
-      "ETANOL": 4.42,
+      "DIESEL_S10": 6.71,
+      "DIESEL": 6.39,
+      "ETANOL": 4.46,
       "GASOLINA_ADITIVADA": 6.49,
-      "GASOLINA_COMUM": 6.43,
-      "GLP": 114.28,
+      "GASOLINA_COMUM": 6.44,
+      "GLP": 115.0,
       "GNV": 5.03
     },
+    "MAFRA": {
+      "DIESEL_S10": 6.82,
+      "DIESEL": 6.43,
+      "ETANOL": 4.86,
+      "GASOLINA_ADITIVADA": 6.8,
+      "GASOLINA_COMUM": 6.58
+    },
     "SAO JOSE": {
-      "DIESEL_S10": 6.72,
-      "ETANOL": 4.4,
-      "GASOLINA_ADITIVADA": 6.5,
-      "GASOLINA_COMUM": 6.38,
-      "GLP": 124.8,
+      "DIESEL_S10": 6.85,
+      "DIESEL": 6.99,
+      "ETANOL": 4.38,
+      "GASOLINA_ADITIVADA": 6.46,
+      "GASOLINA_COMUM": 6.36,
+      "GLP": 124.3,
       "GNV": 4.49
     },
     "TUBARAO": {
-      "DIESEL_S10": 6.22,
-      "DIESEL": 5.99,
+      "DIESEL_S10": 6.37,
+      "DIESEL": 6.02,
       "ETANOL": 4.58,
-      "GASOLINA_ADITIVADA": 6.23,
-      "GASOLINA_COMUM": 6.1,
+      "GASOLINA_ADITIVADA": 6.22,
+      "GASOLINA_COMUM": 6.09,
       "GLP": 111.43,
       "GNV": 4.94
     },
     "VIDEIRA": {
-      "DIESEL_S10": 6.91,
-      "DIESEL": 6.76,
-      "ETANOL": 4.99,
-      "GASOLINA_ADITIVADA": 6.59,
-      "GASOLINA_COMUM": 6.54,
-      "GLP": 126.4
+      "DIESEL_S10": 6.93,
+      "DIESEL": 6.8,
+      "ETANOL": 5.06,
+      "GASOLINA_ADITIVADA": 6.63,
+      "GASOLINA_COMUM": 6.53,
+      "GLP": 125.0
     },
     "XANXERE": {
-      "DIESEL_S10": 6.8,
+      "DIESEL_S10": 6.84,
       "DIESEL": 6.55,
-      "ETANOL": 4.76,
+      "ETANOL": 4.86,
       "GASOLINA_ADITIVADA": 6.32,
-      "GASOLINA_COMUM": 6.24,
-      "GLP": 118.7
+      "GASOLINA_COMUM": 6.21,
+      "GLP": 117.45
     }
   },
   "SAO PAULO": {
     "ADAMANTINA": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.03,
-      "ETANOL": 3.5,
-      "GASOLINA_ADITIVADA": 6.54,
-      "GASOLINA_COMUM": 6.46,
-      "GLP": 101.54
+      "DIESEL_S10": 7.04,
+      "DIESEL": 6.13,
+      "ETANOL": 3.54,
+      "GASOLINA_ADITIVADA": 6.49,
+      "GASOLINA_COMUM": 6.41,
+      "GLP": 101.76
     },
     "AMERICANA": {
-      "DIESEL_S10": 6.94,
-      "DIESEL": 6.69,
-      "ETANOL": 3.76,
-      "GASOLINA_ADITIVADA": 6.66,
-      "GASOLINA_COMUM": 6.4,
-      "GLP": 116.67,
+      "DIESEL_S10": 6.97,
+      "DIESEL": 6.62,
+      "ETANOL": 3.79,
+      "GASOLINA_ADITIVADA": 6.63,
+      "GASOLINA_COMUM": 6.41,
+      "GLP": 119.99,
       "GNV": 5.59
     },
     "ARACATUBA": {
-      "DIESEL_S10": 6.79,
-      "DIESEL": 6.17,
-      "ETANOL": 3.33,
-      "GASOLINA_ADITIVADA": 6.49,
-      "GASOLINA_COMUM": 6.24,
-      "GLP": 107.06
+      "DIESEL_S10": 6.9,
+      "DIESEL": 6.39,
+      "ETANOL": 3.46,
+      "GASOLINA_ADITIVADA": 6.58,
+      "GASOLINA_COMUM": 6.35,
+      "GLP": 104.26
     },
     "ARARAQUARA": {
-      "DIESEL_S10": 6.8,
-      "DIESEL": 6.16,
-      "ETANOL": 3.51,
-      "GASOLINA_ADITIVADA": 6.47,
-      "GASOLINA_COMUM": 6.14,
-      "GLP": 118.5,
+      "DIESEL_S10": 6.99,
+      "DIESEL": 6.34,
+      "ETANOL": 3.62,
+      "GASOLINA_ADITIVADA": 6.58,
+      "GASOLINA_COMUM": 6.22,
+      "GLP": 119.58,
       "GNV": 4.7
     },
     "ARARAS": {
-      "DIESEL_S10": 6.77,
-      "DIESEL": 6.51,
-      "ETANOL": 3.6,
-      "GASOLINA_ADITIVADA": 6.44,
-      "GASOLINA_COMUM": 6.33,
-      "GLP": 112.57
+      "DIESEL_S10": 6.94,
+      "DIESEL": 6.53,
+      "ETANOL": 3.62,
+      "GASOLINA_ADITIVADA": 6.46,
+      "GASOLINA_COMUM": 6.34,
+      "GLP": 114.0
     },
     "ASSIS": {
-      "DIESEL_S10": 7.17,
-      "ETANOL": 3.69,
-      "GASOLINA_ADITIVADA": 7.07,
+      "DIESEL_S10": 7.15,
+      "DIESEL": 6.89,
+      "ETANOL": 3.77,
+      "GASOLINA_ADITIVADA": 7.29,
       "GASOLINA_COMUM": 6.62,
-      "GLP": 112.1
+      "GLP": 114.86
     },
     "ATIBAIA": {
-      "DIESEL_S10": 7.24,
-      "DIESEL": 6.7,
-      "ETANOL": 4.37,
-      "GASOLINA_ADITIVADA": 7.04,
-      "GASOLINA_COMUM": 6.83,
-      "GLP": 123.75
+      "DIESEL_S10": 7.23,
+      "DIESEL": 6.6,
+      "ETANOL": 4.34,
+      "GASOLINA_ADITIVADA": 6.95,
+      "GASOLINA_COMUM": 6.74,
+      "GLP": 123.33
     },
     "BARRETOS": {
-      "DIESEL_S10": 6.94,
-      "DIESEL": 6.99,
-      "ETANOL": 3.57,
+      "DIESEL_S10": 6.92,
+      "DIESEL": 6.54,
+      "ETANOL": 3.62,
       "GASOLINA_ADITIVADA": 6.75,
-      "GASOLINA_COMUM": 6.43,
+      "GASOLINA_COMUM": 6.48,
       "GLP": 109.17
     },
     "BARUERI": {
-      "DIESEL_S10": 7.07,
-      "DIESEL": 6.42,
-      "ETANOL": 4.16,
-      "GASOLINA_ADITIVADA": 7.08,
-      "GASOLINA_COMUM": 6.7,
-      "GLP": 118.33
+      "DIESEL_S10": 7.08,
+      "DIESEL": 6.57,
+      "ETANOL": 4.18,
+      "GASOLINA_ADITIVADA": 7.24,
+      "GASOLINA_COMUM": 6.76,
+      "GLP": 119.66
     },
     "BAURU": {
-      "DIESEL_S10": 6.68,
+      "DIESEL_S10": 6.84,
       "DIESEL": 6.12,
-      "ETANOL": 3.45,
-      "GASOLINA_ADITIVADA": 6.51,
-      "GASOLINA_COMUM": 6.28,
-      "GLP": 113.3
+      "ETANOL": 3.53,
+      "GASOLINA_ADITIVADA": 6.45,
+      "GASOLINA_COMUM": 6.24,
+      "GLP": 112.0
     },
     "BEBEDOURO": {
-      "DIESEL_S10": 6.67,
-      "DIESEL": 6.34,
-      "ETANOL": 3.51,
-      "GASOLINA_ADITIVADA": 6.41,
-      "GASOLINA_COMUM": 6.37,
-      "GLP": 123.33
+      "DIESEL_S10": 6.87,
+      "DIESEL": 6.27,
+      "ETANOL": 3.6,
+      "GASOLINA_ADITIVADA": 6.54,
+      "GASOLINA_COMUM": 6.43,
+      "GLP": 124.17
     },
     "BIRIGUI": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.19,
-      "ETANOL": 3.45,
-      "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.46,
-      "GLP": 107.78
+      "DIESEL_S10": 7.17,
+      "DIESEL": 6.33,
+      "ETANOL": 3.51,
+      "GASOLINA_ADITIVADA": 6.78,
+      "GASOLINA_COMUM": 6.48,
+      "GLP": 106.44
     },
     "BRAGANCA PAULISTA": {
-      "DIESEL_S10": 7.02,
-      "DIESEL": 6.63,
-      "ETANOL": 4.19,
-      "GASOLINA_ADITIVADA": 6.64,
-      "GASOLINA_COMUM": 6.36,
-      "GLP": 115.68
+      "DIESEL_S10": 7.32,
+      "DIESEL": 6.8,
+      "ETANOL": 4.12,
+      "GASOLINA_ADITIVADA": 6.81,
+      "GASOLINA_COMUM": 6.41,
+      "GLP": 114.85
     },
     "CACAPAVA": {
       "DIESEL_S10": 6.98,
-      "DIESEL": 6.59,
-      "ETANOL": 4.22,
+      "DIESEL": 6.19,
+      "ETANOL": 4.13,
       "GASOLINA_ADITIVADA": 6.55,
       "GASOLINA_COMUM": 6.41,
       "GLP": 99.17,
       "GNV": 5.49
     },
     "CAMPINAS": {
-      "DIESEL_S10": 7.03,
-      "DIESEL": 6.74,
-      "ETANOL": 3.68,
-      "GASOLINA_ADITIVADA": 6.55,
-      "GASOLINA_COMUM": 6.31,
-      "GLP": 118.84,
-      "GNV": 5.24
+      "DIESEL_S10": 7.12,
+      "DIESEL": 6.96,
+      "ETANOL": 3.9,
+      "GASOLINA_ADITIVADA": 6.67,
+      "GASOLINA_COMUM": 6.44,
+      "GLP": 117.99,
+      "GNV": 5.69
     },
     "CARAGUATATUBA": {
-      "DIESEL_S10": 7.49,
-      "DIESEL": 7.12,
-      "ETANOL": 4.3,
-      "GASOLINA_ADITIVADA": 6.89,
+      "DIESEL_S10": 7.54,
+      "DIESEL": 7.17,
+      "ETANOL": 4.32,
+      "GASOLINA_ADITIVADA": 6.95,
       "GASOLINA_COMUM": 6.77,
-      "GLP": 107.5
+      "GLP": 107.98
     },
     "CARAPICUIBA": {
-      "DIESEL_S10": 6.78,
-      "DIESEL": 6.39,
-      "ETANOL": 3.74,
-      "GASOLINA_ADITIVADA": 6.56,
-      "GASOLINA_COMUM": 6.36,
-      "GLP": 110.88
+      "DIESEL_S10": 6.91,
+      "ETANOL": 3.68,
+      "GASOLINA_ADITIVADA": 6.42,
+      "GASOLINA_COMUM": 6.23,
+      "GLP": 110.99
+    },
+    "CATANDUVA": {
+      "DIESEL_S10": 7.1,
+      "DIESEL": 6.99,
+      "ETANOL": 3.68,
+      "GASOLINA_ADITIVADA": 6.62,
+      "GASOLINA_COMUM": 6.45,
+      "GLP": 110.67
     },
     "COSMOPOLIS": {
-      "DIESEL": 6.99,
+      "DIESEL": 7.12,
       "ETANOL": 3.86,
       "GASOLINA_ADITIVADA": 6.42,
       "GASOLINA_COMUM": 6.21,
       "GLP": 102.49
     },
     "COTIA": {
-      "DIESEL_S10": 6.8,
+      "DIESEL_S10": 6.84,
       "DIESEL": 6.44,
-      "ETANOL": 3.77,
-      "GASOLINA_ADITIVADA": 6.56,
+      "ETANOL": 3.81,
+      "GASOLINA_ADITIVADA": 6.54,
       "GASOLINA_COMUM": 6.22,
       "GLP": 120.58
     },
     "CRUZEIRO": {
-      "DIESEL_S10": 7.15,
+      "DIESEL_S10": 7.17,
       "DIESEL": 6.97,
-      "ETANOL": 3.73,
-      "GASOLINA_ADITIVADA": 6.45,
-      "GASOLINA_COMUM": 6.31,
+      "ETANOL": 3.9,
+      "GASOLINA_ADITIVADA": 6.49,
+      "GASOLINA_COMUM": 6.34,
       "GLP": 95.28,
       "GNV": 5.47
     },
     "CUBATAO": {
       "DIESEL_S10": 7.56,
       "DIESEL": 7.39,
-      "ETANOL": 4.45,
+      "ETANOL": 4.5,
       "GASOLINA_ADITIVADA": 7.12,
       "GASOLINA_COMUM": 6.83,
-      "GLP": 123.4
+      "GLP": 122.69
     },
     "DIADEMA": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 6.88,
-      "ETANOL": 3.77,
-      "GASOLINA_ADITIVADA": 6.78,
-      "GASOLINA_COMUM": 6.28,
-      "GLP": 111.24
+      "DIESEL_S10": 6.92,
+      "DIESEL": 5.95,
+      "ETANOL": 3.75,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.18,
+      "GLP": 111.87
     },
     "EMBU DAS ARTES": {
-      "DIESEL_S10": 6.97,
+      "DIESEL_S10": 7.05,
       "DIESEL": 6.51,
-      "ETANOL": 3.88,
-      "GASOLINA_ADITIVADA": 6.93,
-      "GASOLINA_COMUM": 6.49,
+      "ETANOL": 3.99,
+      "GASOLINA_ADITIVADA": 6.94,
+      "GASOLINA_COMUM": 6.56,
       "GLP": 116.42
     },
     "FRANCA": {
-      "DIESEL_S10": 6.73,
-      "DIESEL": 6.19,
-      "ETANOL": 3.14,
-      "GASOLINA_ADITIVADA": 6.77,
-      "GASOLINA_COMUM": 6.58,
-      "GLP": 120.88
+      "DIESEL_S10": 6.75,
+      "DIESEL": 6.17,
+      "ETANOL": 3.47,
+      "GASOLINA_ADITIVADA": 6.84,
+      "GASOLINA_COMUM": 6.66,
+      "GLP": 119.98
     },
     "GARCA": {
-      "DIESEL_S10": 6.84,
+      "DIESEL_S10": 6.94,
       "DIESEL": 6.37,
-      "ETANOL": 3.51,
+      "ETANOL": 3.55,
       "GASOLINA_ADITIVADA": 6.42,
       "GASOLINA_COMUM": 6.3,
-      "GLP": 131.67
+      "GLP": 132.5
     },
     "GUARUJA": {
-      "DIESEL_S10": 7.29,
+      "DIESEL_S10": 7.35,
       "DIESEL": 6.6,
-      "ETANOL": 4.26,
-      "GASOLINA_ADITIVADA": 7.06,
-      "GASOLINA_COMUM": 6.75,
-      "GLP": 120.0
+      "ETANOL": 4.28,
+      "GASOLINA_ADITIVADA": 7.08,
+      "GASOLINA_COMUM": 6.76,
+      "GLP": 119.28
     },
     "GUARULHOS": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.39,
-      "ETANOL": 3.66,
-      "GASOLINA_ADITIVADA": 6.53,
-      "GASOLINA_COMUM": 6.3,
-      "GLP": 108.32,
+      "DIESEL_S10": 6.88,
+      "DIESEL": 6.49,
+      "ETANOL": 3.73,
+      "GASOLINA_ADITIVADA": 6.57,
+      "GASOLINA_COMUM": 6.32,
+      "GLP": 109.0,
       "GNV": 5.07
     },
     "HORTOLANDIA": {
-      "DIESEL_S10": 6.75,
-      "DIESEL": 6.34,
-      "ETANOL": 3.65,
-      "GASOLINA_ADITIVADA": 6.43,
-      "GASOLINA_COMUM": 6.22,
-      "GLP": 104.99
+      "DIESEL_S10": 6.83,
+      "DIESEL": 6.39,
+      "ETANOL": 3.69,
+      "GASOLINA_ADITIVADA": 6.56,
+      "GASOLINA_COMUM": 6.3,
+      "GLP": 104.37,
+      "GNV": 5.09
     },
     "IBITINGA": {
-      "DIESEL_S10": 7.09,
-      "DIESEL": 6.37,
-      "ETANOL": 3.73,
-      "GASOLINA_ADITIVADA": 6.53,
-      "GASOLINA_COMUM": 6.43,
-      "GLP": 116.14
+      "DIESEL_S10": 7.25,
+      "DIESEL": 6.41,
+      "ETANOL": 3.77,
+      "GASOLINA_ADITIVADA": 6.54,
+      "GASOLINA_COMUM": 6.44,
+      "GLP": 116.43
     },
     "INDAIATUBA": {
-      "DIESEL_S10": 6.78,
-      "DIESEL": 6.31,
-      "ETANOL": 3.67,
-      "GASOLINA_ADITIVADA": 6.5,
-      "GASOLINA_COMUM": 6.32,
-      "GLP": 122.17
+      "DIESEL_S10": 6.96,
+      "DIESEL": 6.36,
+      "ETANOL": 3.68,
+      "GASOLINA_ADITIVADA": 6.51,
+      "GASOLINA_COMUM": 6.28,
+      "GLP": 124.0
     },
     "ITANHAEM": {
-      "DIESEL_S10": 7.36,
-      "DIESEL": 7.19,
-      "ETANOL": 4.04,
-      "GASOLINA_ADITIVADA": 6.95,
-      "GASOLINA_COMUM": 6.61,
+      "DIESEL_S10": 7.45,
+      "DIESEL": 7.12,
+      "ETANOL": 4.03,
+      "GASOLINA_ADITIVADA": 6.89,
+      "GASOLINA_COMUM": 6.57,
       "GLP": 112.86
     },
     "ITAPECERICA DA SERRA": {
-      "DIESEL_S10": 6.85,
-      "DIESEL": 6.42,
-      "ETANOL": 3.94,
-      "GASOLINA_ADITIVADA": 6.48,
-      "GASOLINA_COMUM": 6.33,
+      "DIESEL_S10": 6.88,
+      "DIESEL": 6.43,
+      "ETANOL": 3.91,
+      "GASOLINA_ADITIVADA": 6.49,
+      "GASOLINA_COMUM": 6.34,
       "GLP": 119.26
     },
-    "ITAPIRA": {
-      "DIESEL_S10": 6.83,
-      "DIESEL": 6.46,
-      "ETANOL": 3.78,
-      "GASOLINA_ADITIVADA": 6.94,
-      "GASOLINA_COMUM": 6.51,
-      "GLP": 119.4
-    },
     "ITAPOLIS": {
-      "DIESEL_S10": 6.87,
-      "DIESEL": 6.62,
-      "ETANOL": 3.71,
-      "GASOLINA_ADITIVADA": 6.64,
-      "GASOLINA_COMUM": 6.51,
-      "GLP": 135.0
+      "DIESEL_S10": 7.01,
+      "DIESEL": 6.67,
+      "ETANOL": 3.58,
+      "GASOLINA_ADITIVADA": 6.36,
+      "GASOLINA_COMUM": 6.19,
+      "GLP": 130.5
     },
     "ITAQUAQUECETUBA": {
-      "DIESEL_S10": 7.06,
-      "DIESEL": 6.89,
-      "ETANOL": 3.95,
-      "GASOLINA_ADITIVADA": 6.64,
-      "GASOLINA_COMUM": 6.4,
-      "GLP": 96.81,
-      "GNV": 4.99
-    },
-    "ITATIBA": {
-      "DIESEL_S10": 6.88,
-      "DIESEL": 6.22,
-      "ETANOL": 3.67,
+      "DIESEL_S10": 6.99,
+      "DIESEL": 6.63,
+      "ETANOL": 3.86,
       "GASOLINA_ADITIVADA": 6.58,
       "GASOLINA_COMUM": 6.26,
-      "GLP": 110.65,
-      "GNV": 5.19
+      "GLP": 94.16,
+      "GNV": 4.99
     },
     "ITU": {
-      "DIESEL_S10": 6.75,
-      "DIESEL": 6.21,
-      "ETANOL": 3.63,
-      "GASOLINA_ADITIVADA": 6.55,
-      "GASOLINA_COMUM": 6.32,
-      "GLP": 117.0,
+      "DIESEL_S10": 6.79,
+      "DIESEL": 6.57,
+      "ETANOL": 3.62,
+      "GASOLINA_ADITIVADA": 6.6,
+      "GASOLINA_COMUM": 6.34,
+      "GLP": 117.5,
       "GNV": 4.39
     },
     "JABOTICABAL": {
-      "DIESEL_S10": 6.94,
-      "DIESEL": 6.81,
-      "ETANOL": 3.63,
-      "GASOLINA_ADITIVADA": 6.84,
-      "GASOLINA_COMUM": 6.7,
-      "GLP": 104.18
+      "DIESEL_S10": 7.28,
+      "DIESEL": 6.65,
+      "ETANOL": 3.79,
+      "GASOLINA_ADITIVADA": 6.73,
+      "GASOLINA_COMUM": 6.61,
+      "GLP": 105.98
     },
     "JACAREI": {
-      "DIESEL_S10": 6.72,
-      "DIESEL": 6.34,
-      "ETANOL": 3.64,
-      "GASOLINA_ADITIVADA": 6.37,
-      "GASOLINA_COMUM": 6.06,
+      "DIESEL_S10": 6.74,
+      "DIESEL": 6.39,
+      "ETANOL": 3.68,
+      "GASOLINA_ADITIVADA": 6.44,
+      "GASOLINA_COMUM": 6.11,
       "GLP": 112.08,
       "GNV": 5.39
     },
     "JALES": {
-      "DIESEL_S10": 6.75,
-      "DIESEL": 6.4,
-      "ETANOL": 3.6,
-      "GASOLINA_ADITIVADA": 6.64,
+      "DIESEL_S10": 6.87,
+      "DIESEL": 6.42,
+      "ETANOL": 3.67,
+      "GASOLINA_ADITIVADA": 6.58,
       "GASOLINA_COMUM": 6.44,
       "GLP": 114.16
     },
     "JAU": {
-      "DIESEL_S10": 6.95,
-      "DIESEL": 6.44,
+      "DIESEL_S10": 7.09,
+      "DIESEL": 6.52,
       "ETANOL": 3.55,
-      "GASOLINA_ADITIVADA": 6.71,
-      "GASOLINA_COMUM": 6.47,
+      "GASOLINA_ADITIVADA": 6.69,
+      "GASOLINA_COMUM": 6.46,
       "GLP": 115.48
     },
-    "JUNDIAI": {
-      "DIESEL_S10": 7.05,
-      "DIESEL": 6.56,
-      "ETANOL": 3.87,
-      "GASOLINA_ADITIVADA": 6.71,
-      "GASOLINA_COMUM": 6.43,
-      "GLP": 121.0,
-      "GNV": 5.29
+    "JOSE BONIFACIO": {
+      "DIESEL_S10": 6.82,
+      "DIESEL": 6.19,
+      "ETANOL": 3.59,
+      "GASOLINA_ADITIVADA": 6.74,
+      "GASOLINA_COMUM": 6.4,
+      "GLP": 117.14
     },
     "LEME": {
-      "DIESEL_S10": 6.48,
-      "DIESEL": 5.89,
-      "ETANOL": 4.0,
-      "GASOLINA_ADITIVADA": 6.67,
-      "GASOLINA_COMUM": 6.37,
+      "DIESEL_S10": 7.02,
+      "DIESEL": 6.21,
+      "ETANOL": 3.97,
+      "GASOLINA_ADITIVADA": 6.58,
+      "GASOLINA_COMUM": 6.3,
       "GLP": 108.33
     },
     "LIMEIRA": {
-      "DIESEL_S10": 6.7,
-      "DIESEL": 5.94,
-      "ETANOL": 3.64,
-      "GASOLINA_ADITIVADA": 6.5,
-      "GASOLINA_COMUM": 6.28,
-      "GLP": 105.56,
-      "GNV": 4.99
+      "DIESEL_S10": 6.77,
+      "DIESEL": 6.03,
+      "ETANOL": 3.67,
+      "GASOLINA_ADITIVADA": 6.47,
+      "GASOLINA_COMUM": 6.26,
+      "GLP": 103.88,
+      "GNV": 4.47
     },
     "LINS": {
-      "DIESEL_S10": 6.68,
-      "DIESEL": 6.42,
+      "DIESEL_S10": 6.82,
+      "DIESEL": 6.54,
       "ETANOL": 3.44,
       "GASOLINA_ADITIVADA": 6.55,
       "GASOLINA_COMUM": 6.54,
-      "GLP": 107.86
+      "GLP": 106.43
     },
     "MARILIA": {
-      "DIESEL_S10": 6.7,
-      "DIESEL": 6.26,
-      "ETANOL": 3.38,
-      "GASOLINA_ADITIVADA": 6.42,
-      "GASOLINA_COMUM": 6.17,
-      "GLP": 136.17
+      "DIESEL_S10": 7.13,
+      "DIESEL": 6.78,
+      "ETANOL": 3.49,
+      "GASOLINA_ADITIVADA": 6.5,
+      "GASOLINA_COMUM": 6.28,
+      "GLP": 136.67
     },
     "MATAO": {
-      "DIESEL_S10": 6.87,
-      "DIESEL": 6.67,
-      "ETANOL": 3.78,
-      "GASOLINA_ADITIVADA": 6.54,
-      "GASOLINA_COMUM": 6.39,
-      "GLP": 110.0
+      "DIESEL_S10": 7.05,
+      "DIESEL": 6.8,
+      "ETANOL": 3.77,
+      "GASOLINA_ADITIVADA": 6.45,
+      "GASOLINA_COMUM": 6.21,
+      "GLP": 113.57
     },
     "MAUA": {
-      "DIESEL_S10": 6.96,
-      "DIESEL": 6.77,
-      "ETANOL": 3.66,
-      "GASOLINA_ADITIVADA": 6.52,
-      "GASOLINA_COMUM": 6.2,
-      "GLP": 111.99,
+      "DIESEL_S10": 7.03,
+      "DIESEL": 6.78,
+      "ETANOL": 3.84,
+      "GASOLINA_ADITIVADA": 6.62,
+      "GASOLINA_COMUM": 6.34,
+      "GLP": 109.49,
       "GNV": 5.79
     },
     "MOCOCA": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 6.44,
-      "ETANOL": 4.09,
-      "GASOLINA_ADITIVADA": 6.91,
-      "GASOLINA_COMUM": 6.74,
+      "DIESEL_S10": 7.21,
+      "DIESEL": 6.5,
+      "ETANOL": 4.24,
+      "GASOLINA_ADITIVADA": 6.97,
+      "GASOLINA_COMUM": 6.75,
       "GLP": 104.85
     },
     "MOGI DAS CRUZES": {
-      "DIESEL_S10": 6.89,
-      "DIESEL": 6.71,
-      "ETANOL": 3.74,
-      "GASOLINA_ADITIVADA": 6.69,
-      "GASOLINA_COMUM": 6.39,
-      "GLP": 114.8,
-      "GNV": 5.09
+      "DIESEL_S10": 6.92,
+      "DIESEL": 6.61,
+      "ETANOL": 3.84,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.42,
+      "GLP": 115.2,
+      "GNV": 5.34
     },
     "MOGI GUACU": {
-      "DIESEL_S10": 6.81,
-      "DIESEL": 6.54,
-      "ETANOL": 3.78,
-      "GASOLINA_ADITIVADA": 6.49,
-      "GASOLINA_COMUM": 6.4,
-      "GLP": 123.0
+      "DIESEL_S10": 7.08,
+      "DIESEL": 6.5,
+      "ETANOL": 3.85,
+      "GASOLINA_ADITIVADA": 6.55,
+      "GASOLINA_COMUM": 6.42,
+      "GLP": 120.0
     },
     "MOGI MIRIM": {
-      "DIESEL_S10": 6.65,
+      "DIESEL_S10": 6.96,
       "DIESEL": 6.39,
-      "ETANOL": 3.65,
-      "GASOLINA_ADITIVADA": 6.56,
-      "GASOLINA_COMUM": 6.2,
-      "GLP": 118.0,
-      "GNV": 6.49
+      "ETANOL": 3.7,
+      "GASOLINA_ADITIVADA": 6.54,
+      "GASOLINA_COMUM": 6.29,
+      "GLP": 115.0
     },
     "MONTE ALTO": {
-      "DIESEL_S10": 6.83,
-      "DIESEL": 6.45,
-      "ETANOL": 3.69,
-      "GASOLINA_ADITIVADA": 6.87,
+      "DIESEL_S10": 7.01,
+      "DIESEL": 6.63,
+      "ETANOL": 3.75,
+      "GASOLINA_ADITIVADA": 6.89,
       "GASOLINA_COMUM": 6.62,
       "GLP": 111.71
     },
     "OLIMPIA": {
-      "DIESEL_S10": 7.15,
-      "DIESEL": 6.83,
-      "ETANOL": 3.58,
-      "GASOLINA_ADITIVADA": 6.68,
-      "GASOLINA_COMUM": 6.45,
-      "GLP": 95.83
+      "DIESEL_S10": 7.2,
+      "DIESEL": 6.72,
+      "ETANOL": 3.67,
+      "GASOLINA_ADITIVADA": 6.63,
+      "GASOLINA_COMUM": 6.42,
+      "GLP": 95.0
     },
     "OSASCO": {
-      "DIESEL_S10": 6.94,
+      "DIESEL_S10": 6.97,
       "DIESEL": 6.54,
-      "ETANOL": 3.75,
-      "GASOLINA_ADITIVADA": 6.65,
-      "GASOLINA_COMUM": 6.26,
-      "GLP": 109.29,
-      "GNV": 5.48
+      "ETANOL": 3.79,
+      "GASOLINA_ADITIVADA": 6.66,
+      "GASOLINA_COMUM": 6.27,
+      "GLP": 110.48,
+      "GNV": 5.49
     },
     "OURINHOS": {
-      "DIESEL_S10": 6.67,
-      "DIESEL": 6.39,
-      "ETANOL": 3.59,
-      "GASOLINA_ADITIVADA": 6.83,
-      "GASOLINA_COMUM": 6.46,
-      "GLP": 112.97
+      "DIESEL_S10": 6.91,
+      "DIESEL": 6.43,
+      "ETANOL": 3.72,
+      "GASOLINA_ADITIVADA": 7.25,
+      "GASOLINA_COMUM": 6.48,
+      "GLP": 110.76
     },
     "PARAGUACU PAULISTA": {
-      "DIESEL_S10": 6.75,
-      "DIESEL": 6.43,
-      "ETANOL": 3.37,
-      "GASOLINA_ADITIVADA": 6.17,
-      "GASOLINA_COMUM": 6.17,
-      "GLP": 121.25
+      "DIESEL_S10": 6.99,
+      "DIESEL": 6.18,
+      "ETANOL": 3.49,
+      "GASOLINA_ADITIVADA": 6.21,
+      "GASOLINA_COMUM": 6.1,
+      "GLP": 122.5
     },
     "PAULINIA": {
-      "DIESEL_S10": 6.71,
-      "DIESEL": 6.26,
-      "ETANOL": 3.56,
-      "GASOLINA_ADITIVADA": 6.34,
-      "GASOLINA_COMUM": 6.11,
+      "DIESEL_S10": 6.92,
+      "DIESEL": 6.29,
+      "ETANOL": 3.69,
+      "GASOLINA_ADITIVADA": 6.38,
+      "GASOLINA_COMUM": 6.25,
       "GLP": 115.0
     },
     "PIRACICABA": {
-      "DIESEL_S10": 6.72,
-      "DIESEL": 6.27,
-      "ETANOL": 3.57,
-      "GASOLINA_ADITIVADA": 6.41,
-      "GASOLINA_COMUM": 6.16,
-      "GLP": 108.63
+      "DIESEL_S10": 6.84,
+      "DIESEL": 6.28,
+      "ETANOL": 3.59,
+      "GASOLINA_ADITIVADA": 6.42,
+      "GASOLINA_COMUM": 6.17,
+      "GLP": 107.72
     },
     "PIRASSUNUNGA": {
-      "DIESEL_S10": 6.72,
-      "DIESEL": 6.47,
-      "ETANOL": 3.64,
-      "GASOLINA_ADITIVADA": 6.52,
-      "GASOLINA_COMUM": 6.33,
-      "GLP": 115.1
+      "DIESEL_S10": 7.02,
+      "DIESEL": 6.44,
+      "ETANOL": 3.65,
+      "GASOLINA_ADITIVADA": 6.53,
+      "GASOLINA_COMUM": 6.34,
+      "GLP": 115.81
     },
     "POA": {
       "DIESEL_S10": 7.42,
       "DIESEL": 6.59,
-      "ETANOL": 3.91,
-      "GASOLINA_ADITIVADA": 6.85,
-      "GASOLINA_COMUM": 6.65,
-      "GLP": 109.99,
+      "ETANOL": 4.0,
+      "GASOLINA_ADITIVADA": 6.88,
+      "GASOLINA_COMUM": 6.69,
+      "GLP": 110.56,
       "GNV": 4.79
     },
     "PORTO FERREIRA": {
       "DIESEL_S10": 7.04,
       "DIESEL": 6.43,
-      "ETANOL": 3.93,
+      "ETANOL": 3.94,
       "GASOLINA_ADITIVADA": 7.05,
       "GASOLINA_COMUM": 6.71,
       "GLP": 113.5,
       "GNV": 4.7
     },
     "PRAIA GRANDE": {
-      "DIESEL_S10": 7.18,
-      "DIESEL": 6.54,
-      "ETANOL": 4.14,
-      "GASOLINA_ADITIVADA": 6.99,
+      "DIESEL_S10": 7.21,
+      "DIESEL": 6.56,
+      "ETANOL": 4.25,
+      "GASOLINA_ADITIVADA": 7.0,
       "GASOLINA_COMUM": 6.6,
-      "GLP": 124.58
+      "GLP": 122.98
     },
     "PRESIDENTE PRUDENTE": {
-      "DIESEL_S10": 6.86,
-      "DIESEL": 6.59,
-      "ETANOL": 3.2,
+      "DIESEL_S10": 6.96,
+      "DIESEL": 6.63,
+      "ETANOL": 3.3,
       "GASOLINA_ADITIVADA": 6.86,
-      "GASOLINA_COMUM": 6.42,
-      "GLP": 114.39
+      "GASOLINA_COMUM": 6.44,
+      "GLP": 113.56
     },
     "RIBEIRAO PIRES": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.67,
-      "ETANOL": 3.83,
-      "GASOLINA_ADITIVADA": 6.79,
-      "GASOLINA_COMUM": 6.33,
-      "GLP": 119.27
+      "DIESEL_S10": 7.02,
+      "DIESEL": 6.94,
+      "ETANOL": 3.87,
+      "GASOLINA_ADITIVADA": 6.7,
+      "GASOLINA_COMUM": 6.36,
+      "GLP": 108.55
     },
     "RIBEIRAO PRETO": {
-      "DIESEL_S10": 6.97,
-      "DIESEL": 6.42,
-      "ETANOL": 3.75,
-      "GASOLINA_ADITIVADA": 6.79,
+      "DIESEL_S10": 7.03,
+      "DIESEL": 6.51,
+      "ETANOL": 3.76,
+      "GASOLINA_ADITIVADA": 6.75,
       "GASOLINA_COMUM": 6.63,
-      "GLP": 119.0,
-      "GNV": 4.59
+      "GLP": 116.25
     },
     "RIO CLARO": {
-      "DIESEL_S10": 6.84,
-      "DIESEL": 6.67,
+      "DIESEL_S10": 6.86,
+      "DIESEL": 6.57,
       "ETANOL": 3.59,
-      "GASOLINA_ADITIVADA": 6.38,
-      "GASOLINA_COMUM": 6.1,
-      "GLP": 103.0
-    },
-    "SALTO": {
-      "DIESEL_S10": 6.79,
-      "DIESEL": 6.42,
-      "ETANOL": 3.66,
-      "GASOLINA_ADITIVADA": 6.65,
-      "GASOLINA_COMUM": 6.31,
-      "GLP": 110.25
+      "GASOLINA_ADITIVADA": 6.36,
+      "GASOLINA_COMUM": 6.11,
+      "GLP": 100.0
     },
     "SANTO ANDRE": {
-      "DIESEL_S10": 6.97,
-      "DIESEL": 6.69,
-      "ETANOL": 3.82,
-      "GASOLINA_ADITIVADA": 6.72,
-      "GASOLINA_COMUM": 6.35,
-      "GLP": 118.89,
-      "GNV": 5.39
+      "DIESEL_S10": 7.21,
+      "DIESEL": 6.79,
+      "ETANOL": 3.78,
+      "GASOLINA_ADITIVADA": 6.74,
+      "GASOLINA_COMUM": 6.29,
+      "GLP": 117.39,
+      "GNV": 5.19
     },
     "SANTOS": {
-      "DIESEL_S10": 7.29,
+      "DIESEL_S10": 7.25,
       "DIESEL": 6.92,
       "ETANOL": 4.03,
-      "GASOLINA_ADITIVADA": 6.8,
-      "GASOLINA_COMUM": 6.49,
-      "GLP": 133.41
+      "GASOLINA_ADITIVADA": 6.68,
+      "GASOLINA_COMUM": 6.43,
+      "GLP": 133.97
     },
     "SAO BERNARDO DO CAMPO": {
       "DIESEL_S10": 7.31,
       "DIESEL": 7.26,
-      "ETANOL": 3.94,
-      "GASOLINA_ADITIVADA": 7.0,
-      "GASOLINA_COMUM": 6.55,
-      "GLP": 138.74,
+      "ETANOL": 4.01,
+      "GASOLINA_ADITIVADA": 7.02,
+      "GASOLINA_COMUM": 6.57,
+      "GLP": 140.99,
       "GNV": 5.39
     },
     "SAO CAETANO DO SUL": {
-      "DIESEL_S10": 6.77,
-      "DIESEL": 6.08,
-      "ETANOL": 3.83,
-      "GASOLINA_ADITIVADA": 6.65,
-      "GASOLINA_COMUM": 6.35,
+      "DIESEL_S10": 6.89,
+      "DIESEL": 5.91,
+      "ETANOL": 3.88,
+      "GASOLINA_ADITIVADA": 6.67,
+      "GASOLINA_COMUM": 6.4,
       "GLP": 119.99
     },
     "SAO CARLOS": {
-      "DIESEL_S10": 6.73,
-      "DIESEL": 6.29,
-      "ETANOL": 3.6,
-      "GASOLINA_ADITIVADA": 6.56,
+      "DIESEL_S10": 6.92,
+      "DIESEL": 6.33,
+      "ETANOL": 3.66,
+      "GASOLINA_ADITIVADA": 6.55,
       "GASOLINA_COMUM": 6.32,
-      "GLP": 131.86
+      "GLP": 132.64
     },
     "SAO JOAO DA BOA VISTA": {
-      "DIESEL_S10": 6.73,
-      "DIESEL": 6.17,
-      "ETANOL": 3.77,
+      "DIESEL_S10": 6.87,
+      "DIESEL": 6.29,
+      "ETANOL": 3.84,
       "GASOLINA_ADITIVADA": 6.53,
       "GASOLINA_COMUM": 6.36,
       "GLP": 114.71
     },
     "SAO JOSE DOS CAMPOS": {
-      "DIESEL_S10": 6.71,
-      "DIESEL": 6.09,
-      "ETANOL": 3.67,
-      "GASOLINA_ADITIVADA": 6.22,
+      "DIESEL_S10": 6.76,
+      "DIESEL": 6.29,
+      "ETANOL": 3.75,
+      "GASOLINA_ADITIVADA": 6.24,
       "GASOLINA_COMUM": 6.07,
       "GLP": 101.46,
-      "GNV": 4.69
+      "GNV": 4.64
     },
     "SAO PAULO": {
-      "DIESEL_S10": 6.88,
-      "DIESEL": 6.45,
-      "ETANOL": 3.75,
-      "GASOLINA_ADITIVADA": 6.68,
-      "GASOLINA_COMUM": 6.31,
-      "GLP": 118.04,
-      "GNV": 4.89
+      "DIESEL_S10": 6.93,
+      "DIESEL": 6.56,
+      "ETANOL": 3.81,
+      "GASOLINA_ADITIVADA": 6.67,
+      "GASOLINA_COMUM": 6.33,
+      "GLP": 118.52,
+      "GNV": 4.83
     },
     "SAO VICENTE": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.49,
-      "ETANOL": 3.9,
-      "GASOLINA_ADITIVADA": 6.71,
-      "GASOLINA_COMUM": 6.45,
+      "DIESEL_S10": 6.93,
+      "DIESEL": 6.51,
+      "ETANOL": 3.96,
+      "GASOLINA_ADITIVADA": 6.73,
+      "GASOLINA_COMUM": 6.48,
       "GLP": 119.36
     },
     "SERTAOZINHO": {
-      "DIESEL_S10": 6.81,
-      "DIESEL": 6.13,
+      "DIESEL_S10": 7.18,
+      "DIESEL": 6.12,
       "ETANOL": 3.76,
-      "GASOLINA_ADITIVADA": 6.68,
-      "GASOLINA_COMUM": 6.58,
-      "GLP": 106.24
+      "GASOLINA_ADITIVADA": 6.63,
+      "GASOLINA_COMUM": 6.57,
+      "GLP": 106.99
     },
     "SOROCABA": {
-      "DIESEL_S10": 6.71,
-      "DIESEL": 6.13,
-      "ETANOL": 3.55,
-      "GASOLINA_ADITIVADA": 6.48,
-      "GASOLINA_COMUM": 6.29,
-      "GLP": 120.41
+      "DIESEL_S10": 6.88,
+      "DIESEL": 6.34,
+      "ETANOL": 3.6,
+      "GASOLINA_ADITIVADA": 6.53,
+      "GASOLINA_COMUM": 6.31,
+      "GLP": 120.84
     },
     "SUMARE": {
-      "DIESEL_S10": 6.7,
-      "DIESEL": 6.12,
-      "ETANOL": 3.65,
-      "GASOLINA_ADITIVADA": 6.62,
-      "GASOLINA_COMUM": 6.29,
-      "GLP": 100.66
+      "DIESEL_S10": 6.88,
+      "DIESEL": 6.23,
+      "ETANOL": 3.67,
+      "GASOLINA_ADITIVADA": 6.49,
+      "GASOLINA_COMUM": 6.18,
+      "GLP": 101.66
     },
     "SUZANO": {
-      "DIESEL_S10": 6.67,
-      "DIESEL": 6.44,
-      "ETANOL": 3.61,
-      "GASOLINA_ADITIVADA": 6.52,
+      "DIESEL_S10": 6.82,
+      "DIESEL": 6.49,
+      "ETANOL": 3.67,
+      "GASOLINA_ADITIVADA": 6.54,
       "GASOLINA_COMUM": 6.21,
-      "GLP": 106.95,
+      "GLP": 107.95,
       "GNV": 5.34
     },
     "TABOAO DA SERRA": {
-      "DIESEL_S10": 7.11,
+      "DIESEL_S10": 7.17,
       "DIESEL": 7.29,
-      "ETANOL": 3.81,
-      "GASOLINA_ADITIVADA": 6.7,
-      "GASOLINA_COMUM": 6.27,
-      "GLP": 111.42
+      "ETANOL": 3.89,
+      "GASOLINA_ADITIVADA": 6.71,
+      "GASOLINA_COMUM": 6.31,
+      "GLP": 115.14
     },
     "TATUI": {
-      "DIESEL_S10": 6.92,
-      "DIESEL": 6.22,
-      "ETANOL": 3.87,
+      "DIESEL_S10": 7.0,
+      "DIESEL": 6.55,
+      "ETANOL": 3.95,
       "GASOLINA_ADITIVADA": 6.76,
-      "GASOLINA_COMUM": 6.41,
-      "GLP": 128.57
+      "GASOLINA_COMUM": 6.42,
+      "GLP": 126.67
     },
     "TAUBATE": {
-      "DIESEL_S10": 6.77,
-      "DIESEL": 6.33,
-      "ETANOL": 3.52,
-      "GASOLINA_ADITIVADA": 6.11,
-      "GASOLINA_COMUM": 5.91,
-      "GLP": 98.54,
-      "GNV": 5.49
-    },
-    "TUPA": {
-      "DIESEL_S10": 6.7,
-      "DIESEL": 6.59,
-      "ETANOL": 3.48,
-      "GASOLINA_ADITIVADA": 6.63,
-      "GASOLINA_COMUM": 6.53,
-      "GLP": 123.67
+      "DIESEL_S10": 6.83,
+      "ETANOL": 3.56,
+      "GASOLINA_ADITIVADA": 6.21,
+      "GASOLINA_COMUM": 5.89
     },
     "UBATUBA": {
-      "DIESEL_S10": 7.32,
+      "DIESEL_S10": 7.22,
       "ETANOL": 4.3,
-      "GASOLINA_ADITIVADA": 6.72,
-      "GASOLINA_COMUM": 6.69,
-      "GLP": 105.74
+      "GASOLINA_ADITIVADA": 6.73,
+      "GASOLINA_COMUM": 6.67,
+      "GLP": 106.22
     },
     "VALINHOS": {
-      "DIESEL_S10": 6.82,
-      "DIESEL": 6.37,
-      "ETANOL": 3.62,
-      "GASOLINA_ADITIVADA": 6.46,
-      "GASOLINA_COMUM": 6.26,
-      "GLP": 120.98
+      "DIESEL_S10": 7.03,
+      "DIESEL": 6.45,
+      "ETANOL": 3.79,
+      "GASOLINA_ADITIVADA": 6.55,
+      "GASOLINA_COMUM": 6.38
     },
-    "VINHEDO": {
-      "DIESEL_S10": 7.05,
-      "DIESEL": 6.66,
-      "ETANOL": 3.83,
-      "GASOLINA_ADITIVADA": 6.65,
-      "GASOLINA_COMUM": 6.3,
-      "GLP": 117.85
+    "VARZEA PAULISTA": {
+      "DIESEL_S10": 6.99,
+      "DIESEL": 6.38,
+      "ETANOL": 3.93,
+      "GASOLINA_ADITIVADA": 6.54,
+      "GASOLINA_COMUM": 6.39
     },
     "VOTORANTIM": {
-      "DIESEL_S10": 6.64,
-      "DIESEL": 6.67,
-      "ETANOL": 3.58,
-      "GASOLINA_ADITIVADA": 6.61,
-      "GASOLINA_COMUM": 6.33,
-      "GLP": 117.43
+      "DIESEL_S10": 6.77,
+      "DIESEL": 6.58,
+      "ETANOL": 3.56,
+      "GASOLINA_ADITIVADA": 6.52,
+      "GASOLINA_COMUM": 6.31,
+      "GLP": 118.57
     },
     "VOTUPORANGA": {
-      "DIESEL_S10": 6.79,
-      "DIESEL": 6.29,
-      "ETANOL": 3.4,
-      "GASOLINA_ADITIVADA": 7.25,
-      "GASOLINA_COMUM": 6.4,
+      "DIESEL_S10": 6.92,
+      "DIESEL": 6.33,
+      "ETANOL": 3.49,
+      "GASOLINA_ADITIVADA": 6.78,
+      "GASOLINA_COMUM": 6.31,
       "GLP": 114.3
     }
   },
@@ -3132,33 +3102,33 @@
       "DIESEL_S10": 6.64,
       "DIESEL": 6.64,
       "ETANOL": 5.34,
-      "GASOLINA_ADITIVADA": 7.11,
+      "GASOLINA_ADITIVADA": 7.13,
       "GASOLINA_COMUM": 7.03,
-      "GLP": 112.43,
+      "GLP": 112.63,
       "GNV": 4.83
     },
     "ITABAIANA": {
       "DIESEL_S10": 6.66,
-      "DIESEL": 6.6,
+      "DIESEL": 6.61,
       "ETANOL": 5.5,
       "GASOLINA_ADITIVADA": 7.02,
       "GASOLINA_COMUM": 6.99,
       "GLP": 114.43
     },
     "LAGARTO": {
-      "DIESEL_S10": 6.67,
-      "DIESEL": 6.6,
-      "ETANOL": 5.33,
+      "DIESEL_S10": 6.64,
+      "DIESEL": 6.66,
+      "ETANOL": 5.34,
       "GASOLINA_ADITIVADA": 7.09,
       "GASOLINA_COMUM": 6.99,
-      "GLP": 114.17,
+      "GLP": 115.0,
       "GNV": 5.85
     },
     "NOSSA SENHORA DO SOCORRO": {
       "DIESEL_S10": 6.92,
       "DIESEL": 6.65,
       "ETANOL": 5.34,
-      "GASOLINA_ADITIVADA": 7.09,
+      "GASOLINA_ADITIVADA": 7.12,
       "GASOLINA_COMUM": 7.05,
       "GLP": 110.89,
       "GNV": 4.83
@@ -3166,43 +3136,44 @@
   },
   "TOCANTINS": {
     "ARAGUAINA": {
-      "DIESEL_S10": 6.72,
-      "DIESEL": 6.59,
-      "ETANOL": 4.8,
-      "GASOLINA_ADITIVADA": 7.01,
-      "GASOLINA_COMUM": 6.79,
+      "DIESEL_S10": 6.78,
+      "DIESEL": 6.64,
+      "ETANOL": 4.81,
+      "GASOLINA_ADITIVADA": 7.04,
+      "GASOLINA_COMUM": 6.81,
       "GLP": 134.58
     },
     "GURUPI": {
-      "DIESEL_S10": 7.0,
-      "DIESEL": 6.73,
+      "DIESEL_S10": 7.01,
+      "DIESEL": 6.78,
       "ETANOL": 4.99,
       "GASOLINA_ADITIVADA": 7.29,
       "GASOLINA_COMUM": 7.09,
       "GLP": 136.0
     },
     "PALMAS": {
-      "DIESEL_S10": 7.08,
-      "DIESEL": 6.71,
+      "DIESEL_S10": 7.06,
+      "DIESEL": 6.96,
       "ETANOL": 5.03,
-      "GASOLINA_ADITIVADA": 7.17,
+      "GASOLINA_ADITIVADA": 7.12,
       "GASOLINA_COMUM": 7.01,
-      "GLP": 135.0
+      "GLP": 131.0
     },
     "PARAISO DO TOCANTINS": {
-      "DIESEL_S10": 6.79,
-      "DIESEL": 6.39,
-      "ETANOL": 4.99,
-      "GASOLINA_ADITIVADA": 6.99,
-      "GASOLINA_COMUM": 6.89
+      "DIESEL_S10": 6.83,
+      "DIESEL": 6.61,
+      "ETANOL": 5.13,
+      "GASOLINA_ADITIVADA": 7.0,
+      "GASOLINA_COMUM": 6.92,
+      "GLP": 134.86
     },
     "PORTO NACIONAL": {
-      "DIESEL_S10": 6.6,
-      "DIESEL": 6.1,
-      "ETANOL": 4.88,
-      "GASOLINA_ADITIVADA": 7.11,
-      "GASOLINA_COMUM": 6.76,
-      "GLP": 128.57
+      "DIESEL_S10": 6.74,
+      "DIESEL": 6.23,
+      "ETANOL": 4.82,
+      "GASOLINA_ADITIVADA": 7.09,
+      "GASOLINA_COMUM": 6.74,
+      "GLP": 131.43
     }
   }
 }

@@ -4,15 +4,75 @@ import requests
 from io import BytesIO
 import sys
 import re
+from datetime import datetime
 
 print("🚀 Iniciando script...")
-
-url = 'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arquivos-lpc/2026/revendas_lpc_2026-08-30_2026-09-05.xlsx'
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
 }
 
+
+# ============================================================
+# 1) DESCOBRE O LINK MAIS RECENTE DA ANP
+# ============================================================
+def descobrir_url_mais_recente():
+    """
+    Acessa a página da ANP e retorna a URL do arquivo .xlsx
+    de revendas_lpc mais recente.
+    """
+    pagina = (
+        'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/'
+        'precos/arquivos-lpc'
+    )
+
+    print(f"🔎 Buscando arquivos em: {pagina}")
+    resp = requests.get(pagina, headers=headers, timeout=60)
+    resp.raise_for_status()
+
+    # Procura todos os links .xlsx de revendas_lpc
+    # Padrão: revendas_lpc_AAAA-MM-DD_AAAA-MM-DD.xlsx
+    padrao = re.compile(
+        r'href="([^"]*revendas_lpc_(\d{4}-\d{2}-\d{2})_(\d{4}-\d{2}-\d{2})\.xlsx)"',
+        re.IGNORECASE,
+    )
+
+    encontrados = []
+    for match in padrao.finditer(resp.text):
+        href = match.group(1)
+        data_fim = match.group(3)  # usa a data final da semana pra ordenar
+
+        # Se for link relativo, completa
+        if href.startswith('/'):
+            href = 'https://www.gov.br' + href
+        elif not href.startswith('http'):
+            href = 'https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arquivos-lpc/' + href
+
+        encontrados.append((data_fim, href))
+
+    if not encontrados:
+        print("❌ Nenhum arquivo .xlsx encontrado na página.")
+        return None
+
+    # Ordena pela data final (mais recente primeiro)
+    encontrados.sort(key=lambda x: x[0], reverse=True)
+    data_fim, url = encontrados[0]
+
+    print(f"✅ Arquivo mais recente: {url}")
+    print(f"📅 Semana final: {data_fim}")
+    return url
+
+
+url = descobrir_url_mais_recente()
+
+if not url:
+    print("❌ Não foi possível descobrir a URL. Abortando.")
+    sys.exit(1)
+
+
+# ============================================================
+# 2) DOWNLOAD
+# ============================================================
 print(f"📥 Baixando: {url}")
 
 try:
@@ -23,8 +83,11 @@ except Exception as e:
     print(f"❌ Erro no download: {e}")
     sys.exit(1)
 
+
+# ============================================================
+# 3) LÊ O EXCEL
+# ============================================================
 try:
-    # Tenta encontrar o cabeçalho automaticamente
     df = None
     for skip in range(5, 15):
         try:
@@ -34,23 +97,25 @@ try:
                 df = df_temp
                 print(f"✅ Encontrado cabeçalho na linha {skip}")
                 break
-        except:
+        except Exception:
             continue
-    
+
     if df is None:
         print("❌ Não foi possível encontrar o cabeçalho")
         sys.exit(1)
-        
+
     print(f"📋 Colunas: {list(df.columns)}")
 except Exception as e:
     print(f"❌ Erro ao ler Excel: {e}")
     sys.exit(1)
 
-# Limpa dados
+
+# ============================================================
+# 4) LIMPEZA E IDENTIFICAÇÃO DE COLUNAS
+# ============================================================
 df = df.dropna(how='all')
 df.columns = [str(c).strip() for c in df.columns]
 
-# Identifica colunas
 col_estado = None
 col_municipio = None
 col_produto = None
@@ -78,38 +143,33 @@ if not all([col_estado, col_municipio, col_produto, col_valor]):
 
 print(f"🔍 Usando colunas: {col_estado}, {col_municipio}, {col_produto}, {col_valor}")
 
-# ============================================
-# AGORA PEGA TODOS OS COMBUSTÍVEIS (SEM FILTRO)
-# ============================================
+
+# ============================================================
+# 5) PROCESSA TODOS OS COMBUSTÍVEIS
+# ============================================================
 print("📊 Processando TODOS os combustíveis...")
 
-# Converte valor para número
 df[col_valor] = df[col_valor].astype(str).str.replace(',', '.').astype(float)
 
-# Agrupa por estado, município e produto
 precos_media = df.groupby(
     [col_estado, col_municipio, col_produto]
 )[col_valor].mean().reset_index()
 
 print(f"📊 Total de combinações (UF + Cidade + Produto): {len(precos_media)}")
 
-# Gera JSON com TODOS os combustíveis
 resultado = {}
 for _, row in precos_media.iterrows():
     estado = str(row[col_estado]).strip().upper()
     municipio = str(row[col_municipio]).strip().upper()
     produto = str(row[col_produto]).strip().upper()
     valor = round(float(row[col_valor]), 2)
-    
+
     if estado not in resultado:
         resultado[estado] = {}
     if municipio not in resultado[estado]:
         resultado[estado][municipio] = {}
-    
-    # Normaliza o nome do combustível para chave JSON
+
     chave = produto
-    
-    # Simplifica alguns nomes comuns
     if 'GASOLINA' in produto:
         if 'COMUM' in produto:
             chave = 'GASOLINA_COMUM'
@@ -134,22 +194,21 @@ for _, row in precos_media.iterrows():
         chave = 'QUEROSENE'
     else:
         chave = produto
-    
+
     resultado[estado][municipio][chave] = valor
 
-# ============================================
-# ESTATÍSTICAS
-# ============================================
+
+# ============================================================
+# 6) ESTATÍSTICAS
+# ============================================================
 print(f"\n📊 Estatísticas dos combustíveis:")
 
-# Conta por tipo de combustível
 combustiveis_contagem = {}
 for estado in resultado:
     for municipio in resultado[estado]:
         for produto in resultado[estado][municipio]:
             combustiveis_contagem[produto] = combustiveis_contagem.get(produto, 0) + 1
 
-# Ordena e mostra
 for produto, count in sorted(combustiveis_contagem.items()):
     print(f"  - {produto}: {count} municípios")
 
@@ -159,13 +218,15 @@ print(f"📊 Total de municípios: {total_municipios}")
 total_precos = sum(sum(len(p) for p in c.values()) for c in resultado.values())
 print(f"📊 Total de preços registrados: {total_precos}")
 
-# Salva o JSON completo
+
+# ============================================================
+# 7) SALVA O JSON
+# ============================================================
 with open('precos.json', 'w', encoding='utf-8') as f:
     json.dump(resultado, f, ensure_ascii=False, indent=2)
 
 print(f"\n✅ precos.json gerado com sucesso!")
 
-# Mostra exemplos
 print("\n📋 Exemplos de preços (primeiros 2 estados):")
 for estado in list(resultado.keys())[:2]:
     print(f"\n  {estado}:")

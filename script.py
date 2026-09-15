@@ -10,25 +10,70 @@ print("📥 Baixando...")
 r = requests.get(url, headers=headers, timeout=120)
 print(f"   xlsx: {len(r.content) / 1024 / 1024:.2f} MB")
 
-print("📖 Lendo Excel...")
+# ============================================================
+# 1) LÊ SEM CABEÇALHO PRA VER A ESTRUTURA
+# ============================================================
+print("\n📖 Lendo primeiras 20 linhas (sem cabeçalho)...")
+df_raw = pd.read_excel(BytesIO(r.content), header=None, nrows=20)
+
+for i, row in df_raw.iterrows():
+    # Mostra só as primeiras 5 colunas, truncadas
+    vals = [str(v)[:25] for v in row.values[:5]]
+    print(f"  Linha {i:2d}: {vals}")
+
+# ============================================================
+# 2) ENCONTRA A LINHA DE CABEÇALHO CORRETA
+# ============================================================
+print("\n🔎 Procurando cabeçalho...")
+
 df = None
-for skip in range(5, 15):
+linha_cabecalho = None
+
+for skip in range(0, 30):
     try:
-        t = pd.read_excel(BytesIO(r.content), header=skip)
-        cols = [str(c).upper() for c in t.columns]
-        if any('MUNICIPIO' in c or 'MUNICÍPIO' in c for c in cols):
-            df = t
-            print(f"   cabeçalho na linha {skip}")
+        t = pd.read_excel(BytesIO(r.content), header=skip, nrows=5)
+        cols = [str(c).upper().strip() for c in t.columns]
+
+        tem_cnpj = any('CNPJ' in c for c in cols)
+        tem_produto = any('PRODUTO' in c for c in cols)
+        tem_municipio = any('MUNICIPIO' in c or 'MUNICÍPIO' in c for c in cols)
+
+        if tem_cnpj and tem_produto and tem_municipio:
+            df = pd.read_excel(BytesIO(r.content), header=skip)
+            linha_cabecalho = skip
+            print(f"✅ Cabeçalho encontrado na linha {skip}")
+            print(f"📋 Colunas: {list(df.columns)}")
             break
-    except:
+    except Exception as e:
         continue
 
-print(f"📊 Total de linhas na planilha: {len(df)}")
-print(f"📋 Colunas: {list(df.columns)}")
+if df is None:
+    print("❌ Não foi possível encontrar o cabeçalho correto")
+    print("💡 Mostrando todas as linhas 0-30 com mais colunas:")
+    df_raw2 = pd.read_excel(BytesIO(r.content), header=None, nrows=30)
+    for i, row in df_raw2.iterrows():
+        vals = [str(v)[:20] for v in row.values[:10]]
+        print(f"  Linha {i:2d}: {vals}")
+    exit(1)
 
-col_produto = next(c for c in df.columns if 'PRODUTO' in c.upper())
-col_estado = next(c for c in df.columns if 'ESTADO' in c.upper() or 'UF' in c.upper())
-col_municipio = next(c for c in df.columns if 'MUNICIPIO' in c.upper() or 'MUNICÍPIO' in c.upper())
+# ============================================================
+# 3) DIAGNÓSTICO
+# ============================================================
+print(f"\n📊 Total de linhas na planilha: {len(df)}")
+
+col_produto = next(c for c in df.columns if 'PRODUTO' in str(c).upper())
+col_estado = next(
+    (c for c in df.columns if 'ESTADO' in str(c).upper() or 'UF' in str(c).upper()),
+    None
+)
+col_municipio = next(
+    c for c in df.columns
+    if 'MUNICIPIO' in str(c).upper() or 'MUNICÍPIO' in str(c).upper()
+)
+
+print(f"🔍 col_produto = {col_produto}")
+print(f"🔍 col_estado = {col_estado}")
+print(f"🔍 col_municipio = {col_municipio}")
 
 df[col_produto] = df[col_produto].astype(str).str.upper()
 df_filtrado = df[
@@ -37,16 +82,27 @@ df_filtrado = df[
 ]
 
 print(f"\n📊 Após filtro (etanol + gasolina): {len(df_filtrado)} linhas")
-print(f"📊 Municípios únicos: {df_filtrado.groupby([col_estado, col_municipio]).ngroups}")
 
-col_cnpj = next((c for c in df.columns if 'CNPJ' in c.upper()), None)
-col_end = next((c for c in df.columns if 'ENDEREÇO' in c.upper()), None)
+if col_estado:
+    print(f"📊 Municípios únicos: {df_filtrado.groupby([col_estado, col_municipio]).ngroups}")
+else:
+    print(f"📊 Municípios únicos: {df_filtrado.groupby([col_municipio]).ngroups}")
+
+col_cnpj = next((c for c in df.columns if 'CNPJ' in str(c).upper()), None)
+col_end = next((c for c in df.columns if 'ENDEREÇO' in str(c).upper()), None)
+
+print(f"🔍 col_cnpj = {col_cnpj}")
+print(f"🔍 col_end = {col_end}")
 
 if col_cnpj and col_end:
     postos_unicos = df_filtrado.groupby([col_cnpj, col_end]).ngroups
     print(f"📊 Postos únicos (CNPJ + endereço): {postos_unicos}")
 
+# ============================================================
+# 4) ESTIMATIVA DE TAMANHO
+# ============================================================
 print("\n📏 Estimando tamanho do JSON...")
+
 amostra = df_filtrado.head(1000).to_dict(orient='records')
 amostra_json = json.dumps(amostra, ensure_ascii=False)
 tamanho_amostra = len(amostra_json)
@@ -55,10 +111,18 @@ tamanho_estimado = (tamanho_amostra / 1000) * len(df_filtrado)
 print(f"   Amostra (1000 registros): {tamanho_amostra / 1024:.1f} KB")
 print(f"   Estimativa total: {tamanho_estimado / 1024 / 1024:.2f} MB")
 
+# ============================================================
+# 5) BREAKDOWN
+# ============================================================
 print(f"\n📊 Breakdown por produto:")
 for prod, count in df_filtrado[col_produto].value_counts().items():
     print(f"   {prod}: {count} linhas")
 
-print(f"\n📊 Top 5 estados por volume:")
-for uf, count in df_filtrado[col_estado].value_counts().head(5).items():
-    print(f"   {uf}: {count} linhas")
+if col_estado:
+    print(f"\n📊 Top 5 estados por volume:")
+    for uf, count in df_filtrado[col_estado].value_counts().head(5).items():
+        print(f"   {uf}: {count} linhas")
+
+print(f"\n📊 Primeiras 3 linhas de exemplo:")
+for _, row in df_filtrado.head(3).iterrows():
+    print(f"   {dict(row)}")

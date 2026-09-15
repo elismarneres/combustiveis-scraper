@@ -6,7 +6,6 @@ import sys
 import re
 import os
 import time
-import urllib.parse
 
 print("🚀 Iniciando script...")
 
@@ -220,7 +219,7 @@ medias_df = df.groupby(
     [col_estado, col_municipio, col_produto]
 )[col_valor].mean().reset_index()
 
-medias_dict = {}
+medias_dict = {}  # {uf: {municipio: {produto: media}}}
 for _, row in medias_df.iterrows():
     uf = limpar(row[col_estado]).upper()
     municipio = limpar(row[col_municipio]).upper()
@@ -239,7 +238,7 @@ for _, row in medias_df.iterrows():
 # ============================================================
 print("📊 Agrupando postos...")
 
-postos_dict = {}
+postos_dict = {}  # {(uf, municipio, cnpj, endereco, numero): {...}}
 
 for _, row in df.iterrows():
     uf = limpar(row[col_estado]).upper()
@@ -283,112 +282,72 @@ print(f"📊 Total de postos únicos: {len(postos_dict)}")
 
 
 # ============================================================
-# 5.4) BUSCA COORDENADAS VIA NOMINATIM (OpenStreetMap)  ⬅️ NOVO
+# 5.4) BUSCA COORDENADAS NA API DE REVENDEDORES DA ANP
 # ============================================================
-print("\n📊 Buscando coordenadas via Nominatim...")
+print("\n📊 Buscando coordenadas na API da ANP...")
 
-# Cache global (evita consultar o mesmo endereço 2x)
-_geocode_cache = {}
+# 1. Descobre todos os municípios+UF únicos
+municipios_uf = set()
+for (uf, municipio, *_), posto in postos_dict.items():
+    municipios_uf.add((uf, municipio))
 
+print(f"   {len(municipios_uf)} municípios para consultar")
 
-def _to_float(v):
-    """Converte valor para float de forma segura."""
-    if v is None:
-        return None
+# 2. Consulta a API por município
+coords_por_cnpj = {}
+
+for i, (uf, municipio) in enumerate(municipios_uf):
     try:
-        return float(str(v).replace(',', '.'))
-    except (ValueError, TypeError):
-        return None
-
-
-def geocodificar(endereco, municipio, uf, cep):
-    """Consulta Nominatim e retorna (lat, lon) ou (None, None)."""
-    if not endereco:
-        return None, None
-
-    # Normaliza CEP: 72010060 → 72010-060
-    cep_fmt = cep
-    if cep and len(cep) == 8 and cep.isdigit():
-        cep_fmt = f"{cep[:5]}-{cep[5:]}"
-
-    # Remove S/N que atrapalha o Nominatim
-    end_limpo = endereco
-    for token in [', S/N', ', SN', ' S/N', ' SN']:
-        end_limpo = end_limpo.replace(token, '')
-    end_limpo = end_limpo.strip()
-
-    # Monta query
-    partes = [end_limpo, municipio]
-    if uf:
-        partes.append(uf)
-    if cep_fmt:
-        partes.append(cep_fmt)
-    partes.append('Brasil')
-    query = ', '.join(p for p in partes if p)
-
-    if query in _geocode_cache:
-        return _geocode_cache[query]
-
-    try:
-        url = (
-            'https://nominatim.openstreetmap.org/search'
-            f'?q={urllib.parse.quote(query)}'
-            '&format=json&limit=1&countrycodes=br'
+        resp = requests.get(
+            'https://revendedoresapi.anp.gov.br/v1/combustivel',
+            params={'uf': uf, 'municipio': municipio},
+            headers=headers,
+            timeout=60
         )
-        r = requests.get(
-            url,
-            headers={
-                'User-Agent': 'alcolina-scraper/1.0 (contato@exemplo.com)',
-            },
-            timeout=10,
-        )
-        if r.status_code == 200:
-            arr = r.json()
-            if arr:
-                lat = _to_float(arr[0].get('lat'))
-                lon = _to_float(arr[0].get('lon'))
-                _geocode_cache[query] = (lat, lon)
-                return lat, lon
+
+        if resp.status_code == 200:
+            dados = resp.json()
+            lista = dados.get('data', [])
+
+            for item in lista:
+                cnpj = str(item.get('cnpj', '')).strip()
+                lat = item.get('latitude')
+                lon = item.get('longitude')
+
+                if cnpj and lat and lon:
+                    try:
+                        coords_por_cnpj[cnpj] = (float(lat), float(lon))
+                    except (ValueError, TypeError):
+                        pass
+
+        # Rate limit: 1 segundo entre requisições
+        time.sleep(1)
+
+        if (i + 1) % 50 == 0:
+            print(f"   {i+1}/{len(municipios_uf)} consultados...")
+
     except Exception as e:
-        print(f"   ⚠️  Erro geocodificando '{query}': {e}")
+        print(f"   ⚠️  Erro em {uf}/{municipio}: {e}")
+        continue
 
-    _geocode_cache[query] = (None, None)
-    return None, None
+print(f"✅ Coordenadas obtidas para {len(coords_por_cnpj)} postos")
 
 
-# --- Aplica geocodificação em cada posto ---
-total = len(postos_dict)
-print(f"   {total} postos para geocodificar (pode demorar ~1s cada)")
-print(f"   Tempo estimado: ~{total * 1.1 / 60:.1f} minutos\n")
+# ============================================================
+# 5.5) ADICIONA LAT/LON AOS POSTOS
+# ============================================================
+print("📊 Adicionando coordenadas aos postos...")
 
-com_coords = 0
-sem_coords = 0
-
-for i, (chave, posto) in enumerate(postos_dict.items()):
-    uf, municipio = chave[0], chave[1]
-    endereco = posto.get('endereco', '')
-    cep = posto.get('cep', '')
-
-    lat, lon = geocodificar(endereco, municipio, uf, cep)
-
-    if lat is not None and lon is not None:
+adicionados = 0
+for posto in postos_dict.values():
+    cnpj = str(posto.get('cnpj', '')).strip()
+    if cnpj in coords_por_cnpj:
+        lat, lon = coords_por_cnpj[cnpj]
         posto['lat'] = lat
         posto['lon'] = lon
-        com_coords += 1
-    else:
-        sem_coords += 1
+        adicionados += 1
 
-    # Rate limit: Nominatim exige no máximo 1 req/s
-    time.sleep(1.1)
-
-    if (i + 1) % 25 == 0:
-        print(f"   {i+1}/{total} processados "
-              f"({com_coords} com coord, {sem_coords} sem)")
-
-print(f"\n✅ {com_coords}/{total} postos receberam coordenadas")
-if sem_coords > 0:
-    print(f"⚠️  {sem_coords} postos ficaram sem coordenada "
-          f"(o app usará fallback de texto)")
+print(f"✅ {adicionados} postos receberam coordenadas")
 
 
 # ============================================================
@@ -427,13 +386,13 @@ print("\n📊 Estatísticas:")
 
 total_estados = len(resultado)
 total_municipios = sum(len(c) for c in resultado.values())
-total_postos_final = sum(
+total_postos = sum(
     len(m['postos']) for c in resultado.values() for m in c.values()
 )
 
 print(f"  Estados: {total_estados}")
 print(f"  Municípios: {total_municipios}")
-print(f"  Postos: {total_postos_final}")
+print(f"  Postos: {total_postos}")
 
 
 # ============================================================

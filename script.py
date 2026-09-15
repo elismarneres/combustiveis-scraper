@@ -4,6 +4,7 @@ import requests
 from io import BytesIO
 import sys
 import re
+import os
 from datetime import date, timedelta
 
 print("🚀 Iniciando script...")
@@ -157,15 +158,33 @@ print(f"🔍 Colunas: estado={col_estado}, municipio={col_municipio}, "
 # ============================================================
 print("📊 Processando...")
 
-# Converte preço
-df[col_valor] = (
-    df[col_valor]
-    .astype(str)
-    .str.replace('.', '', regex=False)
-    .str.replace(',', '.', regex=False)
-)
-df[col_valor] = pd.to_numeric(df[col_valor], errors='coerce')
+
+# Converte preço — aceita número (float do Excel) OU string com vírgula
+def parse_preco(v):
+    if pd.isna(v):
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    s = str(v).strip()
+    # Remove separador de milhar (ponto) e troca vírgula por ponto decimal
+    s = s.replace('.', '').replace(',', '.')
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+df[col_valor] = df[col_valor].apply(parse_preco)
 df = df.dropna(subset=[col_valor])
+
+# Sanidade: preço entre R$ 0,50 e R$ 30,00 por litro
+antes = len(df)
+df = df[(df[col_valor] >= 0.5) & (df[col_valor] <= 30)]
+descartados = antes - len(df)
+if descartados > 0:
+    print(f"⚠️  {descartados} registros descartados por preço fora do intervalo (0,5 - 30)")
+
+print(f"📊 Registros com preço válido: {len(df)}")
 
 # Filtra etanol e gasolina
 df[col_produto] = df[col_produto].astype(str).str.upper().str.strip()
@@ -203,14 +222,14 @@ postos_dict = {}  # {(uf, municipio, cnpj, endereco, numero): {...}}
 for _, row in df.iterrows():
     uf = limpar(row[col_estado]).upper()
     municipio = limpar(row[col_municipio]).upper()
-    cnpj = limpar(row.get(col_cnpj, ''))
-    razao = limpar(row.get(col_razao, ''))
-    fantasia = limpar(row.get(col_fantasia, ''))
-    endereco = limpar(row.get(col_endereco, ''))
-    numero = limpar(row.get(col_numero, ''))
-    bairro = limpar(row.get(col_bairro, ''))
-    cep = limpar(row.get(col_cep, ''))
-    bandeira = limpar(row.get(col_bandeira, ''))
+    cnpj = limpar(row.get(col_cnpj, '')) if col_cnpj else ''
+    razao = limpar(row.get(col_razao, '')) if col_razao else ''
+    fantasia = limpar(row.get(col_fantasia, '')) if col_fantasia else ''
+    endereco = limpar(row.get(col_endereco, '')) if col_endereco else ''
+    numero = limpar(row.get(col_numero, '')) if col_numero else ''
+    bairro = limpar(row.get(col_bairro, '')) if col_bairro else ''
+    cep = limpar(row.get(col_cep, '')) if col_cep else ''
+    bandeira = limpar(row.get(col_bandeira, '')) if col_bandeira else ''
 
     chave = chave_produto(str(row[col_produto]).upper())
     if chave is None:
@@ -250,7 +269,7 @@ resultado = {}
 for (uf, municipio, *_), posto in postos_dict.items():
     resultado.setdefault(uf, {}).setdefault(municipio, []).append(posto)
 
-# Ordena por preço de gasolina comum
+# Ordena por preço de gasolina comum (mais barato primeiro)
 for uf in resultado:
     for municipio in resultado[uf]:
         resultado[uf][municipio].sort(
@@ -288,7 +307,6 @@ print("\n💾 Salvando precos.json...")
 with open('precos.json', 'w', encoding='utf-8') as f:
     json.dump(resultado, f, ensure_ascii=False, separators=(',', ':'))
 
-import os
 tamanho = os.path.getsize('precos.json') / 1024 / 1024
 print(f"✅ precos.json gerado! Tamanho: {tamanho:.2f} MB")
 
